@@ -9,14 +9,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float verticalMovementSpeed = 10.0f;
 
 
-    [SerializeField] float maxXPosition = 4.48f;
-
-    float _verticalMovementSpeedModifier = 100.0f;
-    float _horizontalMovementSpeedModifier = 50.0f;
+    float _maxXPosition = 4.48f;
+    float _verticalMovementSpeedMultiplier = 100.0f;
+    float _horizontalMovementSpeedMultiplier = 50.0f;
     Vector2 _moveDirection;
 
-    PlayerInput playerInput;
-    Rigidbody objectRigidbody;
+    PlayerInput _playerInput;
+    Rigidbody _objectRigidbody;
 
 
     void OnEnable() {
@@ -30,12 +29,12 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Awake() {
-        objectRigidbody = GetComponent<Rigidbody>();
-        playerInput = GetComponent<PlayerInput>();
+        _objectRigidbody = GetComponent<Rigidbody>();
+        _playerInput = GetComponent<PlayerInput>();
     }
 
     void Update() {
-        _moveDirection = playerInput.actions["Move"].ReadValue<Vector2>();
+        _moveDirection = _playerInput.actions["Move"].ReadValue<Vector2>();
     }
 
     void FixedUpdate() {
@@ -43,15 +42,16 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Move() {
-        Vector3 moveDirection = new Vector3(horizontalMovementSpeed * _moveDirection.x * _horizontalMovementSpeedModifier, 0,
-            verticalMovementSpeed * _verticalMovementSpeedModifier) * Time.fixedDeltaTime;
-        objectRigidbody.velocity = moveDirection;
+        Vector3 moveDirection = new Vector3(horizontalMovementSpeed * _moveDirection.x * _horizontalMovementSpeedMultiplier, 
+            0,
+                verticalMovementSpeed * _verticalMovementSpeedMultiplier) * Time.fixedDeltaTime;
+        _objectRigidbody.velocity = moveDirection;
 
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -maxXPosition, maxXPosition), transform.position.y, transform.position.z);
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -_maxXPosition, _maxXPosition), transform.position.y, transform.position.z);
     }
 
     void StopMovement() {
-        objectRigidbody.velocity = Vector3.zero;
+        _objectRigidbody.velocity = Vector3.zero;
         enabled = false;
     }
 }

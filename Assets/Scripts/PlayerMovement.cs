@@ -8,10 +8,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float horizontalMovementSpeed = 15.0f;
     [SerializeField] float verticalMovementSpeed = 10.0f;
 
+    [SerializeField] bool autoMoveForward = false;
 
     float _maxXPosition = 4.48f;
-    float _verticalMovementSpeedMultiplier = 100.0f;
-    float _horizontalMovementSpeedMultiplier = 50.0f;
+    float _movementSpeedMultiplier = 50.0f;
     Vector2 _moveDirection;
 
     PlayerInput _playerInput;
@@ -42,9 +42,18 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Move() {
-        Vector3 moveDirection = new Vector3(horizontalMovementSpeed * _moveDirection.x * _horizontalMovementSpeedMultiplier, 
-            0,
-                verticalMovementSpeed * _verticalMovementSpeedMultiplier) * Time.fixedDeltaTime;
+
+        Vector3 moveDirection;
+
+        if (autoMoveForward)
+        {
+           moveDirection = new Vector3(horizontalMovementSpeed * _moveDirection.x, 0, verticalMovementSpeed) * _movementSpeedMultiplier * Time.fixedDeltaTime; 
+        }
+        else
+        {
+            moveDirection = new Vector3(horizontalMovementSpeed * _moveDirection.x, 0, verticalMovementSpeed * _moveDirection.y) * _movementSpeedMultiplier * Time.fixedDeltaTime;
+        }
+
         _objectRigidbody.velocity = moveDirection;
 
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, -_maxXPosition, _maxXPosition), transform.position.y, transform.position.z);

@@ -23,17 +23,27 @@ public class GameOverUI : MonoBehaviour
 
     void DisplayWinGamePanel() {
         gameOverText.text = "<color=\"green\"> YOU WIN </color>";
-        ShowPanel();
-
+        ShowPanel(true);
     }
 
     void DisplayLoseGamePanel() {
         gameOverText.text = "<color=\"red\"> YOU LOSE </color>";
-        ShowPanel();
+        ShowPanel(false);
     }
 
-    void ShowPanel() {
+    void ShowPanel(bool isWin) {
         gameOverPanel.gameObject.SetActive(true);
-        gameOverPanel.DOMoveY(600, showPanelAnimationDuration).SetUpdate(true);
+
+        if (isWin)
+        {
+            gameOverPanel.DOMoveY(600, showPanelAnimationDuration)
+                         .SetUpdate(true)
+                         .OnComplete(() => AudioManager.Instance.PlaySFX(GameManager.Instance.WinGameSFX));
+            return;
+        }
+
+        gameOverPanel.DOMoveY(600, showPanelAnimationDuration)
+                         .SetUpdate(true)
+                         .OnComplete(() => AudioManager.Instance.PlaySFX(GameManager.Instance.LoseGameSFX));
     }
 }

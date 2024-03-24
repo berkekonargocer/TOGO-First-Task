@@ -257,6 +257,7 @@ GameObject:
   - component: {fileID: 129437538}
   - component: {fileID: 129437537}
   - component: {fileID: 129437536}
+  - component: {fileID: 129437541}
   m_Layer: 0
   m_Name: Point (3)
   m_TagString: Collectable
@@ -278,7 +279,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onCollected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129437541}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: b60e288607499c24e9f9609c988dbfd2, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &129437537
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -365,6 +378,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 906905720}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &129437541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129437535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28375e4ef63ac96469656f0e30b428c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &157625246
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,6 +403,7 @@ GameObject:
   - component: {fileID: 157625249}
   - component: {fileID: 157625248}
   - component: {fileID: 157625247}
+  - component: {fileID: 157625252}
   m_Layer: 0
   m_Name: Obstacle (1)
   m_TagString: Collectable
@@ -399,7 +425,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onCollected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 157625252}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &157625248
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -486,6 +524,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 402288058}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &157625252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157625246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28375e4ef63ac96469656f0e30b428c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &158508011
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,6 +549,7 @@ GameObject:
   - component: {fileID: 158508014}
   - component: {fileID: 158508013}
   - component: {fileID: 158508012}
+  - component: {fileID: 158508017}
   m_Layer: 0
   m_Name: Point (6)
   m_TagString: Collectable
@@ -520,7 +571,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onCollected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 158508017}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: b60e288607499c24e9f9609c988dbfd2, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &158508013
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -607,6 +670,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 906905720}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &158508017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158508011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28375e4ef63ac96469656f0e30b428c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &167535646
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,6 +730,7 @@ GameObject:
   - component: {fileID: 203051530}
   - component: {fileID: 203051529}
   - component: {fileID: 203051528}
+  - component: {fileID: 203051533}
   m_Layer: 0
   m_Name: Point (4)
   m_TagString: Collectable
@@ -676,7 +752,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onCollected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 203051533}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: b60e288607499c24e9f9609c988dbfd2, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &203051529
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -763,6 +851,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 906905720}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &203051533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203051527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28375e4ef63ac96469656f0e30b428c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &205697879
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,6 +876,7 @@ GameObject:
   - component: {fileID: 205697882}
   - component: {fileID: 205697881}
   - component: {fileID: 205697880}
+  - component: {fileID: 205697885}
   m_Layer: 0
   m_Name: Obstacle (2)
   m_TagString: Collectable
@@ -797,7 +898,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onCollected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 205697885}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &205697881
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -884,6 +997,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 402288058}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &205697885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205697879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28375e4ef63ac96469656f0e30b428c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &280195745
 GameObject:
   m_ObjectHideFlags: 0
@@ -897,6 +1022,7 @@ GameObject:
   - component: {fileID: 280195748}
   - component: {fileID: 280195747}
   - component: {fileID: 280195746}
+  - component: {fileID: 280195751}
   m_Layer: 0
   m_Name: Point (7)
   m_TagString: Collectable
@@ -918,7 +1044,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onCollected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 280195751}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: b60e288607499c24e9f9609c988dbfd2, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &280195747
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1005,6 +1143,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 906905720}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &280195751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280195745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28375e4ef63ac96469656f0e30b428c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &307229514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1080,6 +1230,7 @@ GameObject:
   - component: {fileID: 342829419}
   - component: {fileID: 342829418}
   - component: {fileID: 342829417}
+  - component: {fileID: 342829421}
   m_Layer: 0
   m_Name: Point (12)
   m_TagString: Collectable
@@ -1116,7 +1267,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onCollected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 342829421}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: b60e288607499c24e9f9609c988dbfd2, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &342829418
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1188,6 +1351,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342829415}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &342829421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342829415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28375e4ef63ac96469656f0e30b428c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &402288057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,6 +1583,7 @@ GameObject:
   - component: {fileID: 457607612}
   - component: {fileID: 457607611}
   - component: {fileID: 457607610}
+  - component: {fileID: 457607615}
   m_Layer: 0
   m_Name: Point (2)
   m_TagString: Collectable
@@ -1429,7 +1605,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onCollected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 457607615}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: b60e288607499c24e9f9609c988dbfd2, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &457607611
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1516,6 +1704,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 906905720}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &457607615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457607609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28375e4ef63ac96469656f0e30b428c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &523472689
 GameObject:
   m_ObjectHideFlags: 0
@@ -1529,6 +1729,7 @@ GameObject:
   - component: {fileID: 523472693}
   - component: {fileID: 523472692}
   - component: {fileID: 523472691}
+  - component: {fileID: 523472695}
   m_Layer: 0
   m_Name: Point (11)
   m_TagString: Collectable
@@ -1565,7 +1766,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onCollected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 523472695}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: b60e288607499c24e9f9609c988dbfd2, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &523472692
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1637,6 +1850,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 523472689}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &523472695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523472689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28375e4ef63ac96469656f0e30b428c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &694894720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1650,6 +1875,7 @@ GameObject:
   - component: {fileID: 694894723}
   - component: {fileID: 694894722}
   - component: {fileID: 694894721}
+  - component: {fileID: 694894726}
   m_Layer: 0
   m_Name: Point (5)
   m_TagString: Collectable
@@ -1671,7 +1897,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onCollected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 694894726}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: b60e288607499c24e9f9609c988dbfd2, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &694894722
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1758,6 +1996,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 906905720}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &694894726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694894720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28375e4ef63ac96469656f0e30b428c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -3156,127 +3406,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1219946491}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1224747554
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1224747559}
-  - component: {fileID: 1224747558}
-  - component: {fileID: 1224747557}
-  - component: {fileID: 1224747556}
-  - component: {fileID: 1224747555}
-  m_Layer: 0
-  m_Name: Point
-  m_TagString: Collectable
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1224747555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224747554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cd9b1193424a9a47bae816c6f6bd84d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onCollected:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!65 &1224747556
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224747554}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1224747557
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224747554}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 799da1078c2831d42b262f12c0a7b603, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1224747558
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224747554}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1224747559
+--- !u!4 &1224747559 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7880207142685261916, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
+  m_PrefabInstance: {fileID: 4673449807355828936}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224747554}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.25, y: 0.49, z: 251.9}
-  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 906905720}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1257612132
 GameObject:
   m_ObjectHideFlags: 0
@@ -4174,6 +4308,7 @@ GameObject:
   - component: {fileID: 1504028930}
   - component: {fileID: 1504028929}
   - component: {fileID: 1504028928}
+  - component: {fileID: 1504028932}
   m_Layer: 0
   m_Name: Point (9)
   m_TagString: Collectable
@@ -4210,7 +4345,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onCollected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1504028932}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: b60e288607499c24e9f9609c988dbfd2, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1504028929
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4282,6 +4429,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1504028926}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1504028932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504028926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28375e4ef63ac96469656f0e30b428c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1505645087
 GameObject:
   m_ObjectHideFlags: 0
@@ -4295,6 +4454,7 @@ GameObject:
   - component: {fileID: 1505645091}
   - component: {fileID: 1505645090}
   - component: {fileID: 1505645089}
+  - component: {fileID: 1505645093}
   m_Layer: 0
   m_Name: Point (10)
   m_TagString: Collectable
@@ -4331,7 +4491,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onCollected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1505645093}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: b60e288607499c24e9f9609c988dbfd2, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1505645090
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4403,6 +4575,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505645087}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1505645093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505645087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28375e4ef63ac96469656f0e30b428c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1525841422
 GameObject:
   m_ObjectHideFlags: 0
@@ -4741,6 +4925,7 @@ GameObject:
   - component: {fileID: 1750113906}
   - component: {fileID: 1750113905}
   - component: {fileID: 1750113904}
+  - component: {fileID: 1750113908}
   m_Layer: 0
   m_Name: Point (8)
   m_TagString: Collectable
@@ -4777,7 +4962,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onCollected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1750113908}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: b60e288607499c24e9f9609c988dbfd2, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1750113905
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4849,6 +5046,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750113902}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1750113908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750113902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28375e4ef63ac96469656f0e30b428c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1750770961
 GameObject:
   m_ObjectHideFlags: 0
@@ -4862,6 +5071,7 @@ GameObject:
   - component: {fileID: 1750770964}
   - component: {fileID: 1750770963}
   - component: {fileID: 1750770962}
+  - component: {fileID: 1750770967}
   m_Layer: 0
   m_Name: Point (1)
   m_TagString: Collectable
@@ -4883,7 +5093,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onCollected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1750770967}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: b60e288607499c24e9f9609c988dbfd2, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1750770963
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4970,6 +5192,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 906905720}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1750770967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750770961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28375e4ef63ac96469656f0e30b428c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1846070531
 GameObject:
   m_ObjectHideFlags: 0
@@ -5529,6 +5763,7 @@ GameObject:
   - component: {fileID: 2097875948}
   - component: {fileID: 2097875947}
   - component: {fileID: 2097875946}
+  - component: {fileID: 2097875951}
   m_Layer: 0
   m_Name: Obstacle (3)
   m_TagString: Collectable
@@ -5550,7 +5785,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onCollected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2097875951}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &2097875947
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5637,6 +5884,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 402288058}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2097875951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097875945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28375e4ef63ac96469656f0e30b428c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2109815648
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5904,6 +6163,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edb8d2b2fc6e116428766f085ed8d93d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &4673449807355828936
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 906905720}
+    m_Modifications:
+    - target: {fileID: 1340314344443016684, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
+      propertyPath: onCollected.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SpawnParticle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2241412132324407392, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
+      propertyPath: m_Name
+      value: Point
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880207142685261916, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880207142685261916, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880207142685261916, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 251.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880207142685261916, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880207142685261916, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880207142685261916, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880207142685261916, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880207142685261916, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880207142685261916, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880207142685261916, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 1616036708540589973, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
 --- !u!1001 &8362243012713574839
 PrefabInstance:
   m_ObjectHideFlags: 0

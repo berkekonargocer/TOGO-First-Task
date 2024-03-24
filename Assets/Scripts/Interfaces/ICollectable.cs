@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface ICollectable
 {
-    public void Collect(PointSystem pointSystem);
+    public void Collect();
 }

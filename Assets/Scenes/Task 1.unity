@@ -203,6 +203,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: DecrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &86245474
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -343,6 +355,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 8300000, guid: f52f5b14683bd8546aedd6a1592fb1bb, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: IncrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -520,6 +544,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: DecrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &157625248
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -675,6 +711,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 8300000, guid: f52f5b14683bd8546aedd6a1592fb1bb, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: IncrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -888,6 +936,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: IncrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &203051529
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1061,6 +1121,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: DecrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &205697881
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1216,6 +1288,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 8300000, guid: f52f5b14683bd8546aedd6a1592fb1bb, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: IncrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1605,6 +1689,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: IncrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &342829418
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1826,6 +1922,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: DecrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2247,6 +2355,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: IncrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &457607611
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2436,6 +2556,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: IncrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &523472692
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2591,6 +2723,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 8300000, guid: f52f5b14683bd8546aedd6a1592fb1bb, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: IncrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3042,6 +3186,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: DecrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &777302964
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3196,6 +3352,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: DecrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3358,6 +3526,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: DecrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &837483992
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3512,6 +3692,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: DecrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3978,6 +4170,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: DecrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &968299002
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4132,6 +4336,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: DecrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4325,6 +4541,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: DecrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4618,6 +4846,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: DecrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1292059860
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4772,6 +5012,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: DecrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4934,6 +5186,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: DecrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1391863185
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5088,6 +5352,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: DecrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5250,6 +5526,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: DecrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1415305524
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5404,6 +5692,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: DecrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5614,6 +5914,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: IncrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1504028929
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5784,6 +6096,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 8300000, guid: f52f5b14683bd8546aedd6a1592fb1bb, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: IncrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6035,6 +6359,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: DecrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6444,6 +6780,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: IncrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1750113905
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6599,6 +6947,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 8300000, guid: f52f5b14683bd8546aedd6a1592fb1bb, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: IncrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7111,6 +7471,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: DecrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1924397602
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7269,6 +7641,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: DecrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &2051941179
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7408,6 +7792,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2131417999}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: DecrementPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7695,7 +8091,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalMovementSpeed: 10
-  verticalMovementSpeed: 6
+  verticalMovementSpeed: 12
+  autoMoveForward: 1
 --- !u!54 &2131417997
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7921,18 +8318,30 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1340314344443016684, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
       propertyPath: onCollected.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1340314344443016684, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
       propertyPath: onCollected.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1340314344443016684, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
+      propertyPath: onCollected.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340314344443016684, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
       propertyPath: onCollected.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 440886251}
     - target: {fileID: 1340314344443016684, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
+      propertyPath: onCollected.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 2131417999}
+    - target: {fileID: 1340314344443016684, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
       propertyPath: onCollected.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340314344443016684, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
+      propertyPath: onCollected.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1340314344443016684, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
@@ -7944,16 +8353,36 @@ PrefabInstance:
       value: PlaySFX
       objectReference: {fileID: 0}
     - target: {fileID: 1340314344443016684, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
+      propertyPath: onCollected.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: IncrementPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340314344443016684, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
       propertyPath: onCollected.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: AudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340314344443016684, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
+      propertyPath: onCollected.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: PointSystem, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340314344443016684, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
+      propertyPath: onCollected.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_IntArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1340314344443016684, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
       propertyPath: onCollected.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 8300000, guid: f52f5b14683bd8546aedd6a1592fb1bb, type: 3}
     - target: {fileID: 1340314344443016684, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
+      propertyPath: onCollected.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340314344443016684, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
       propertyPath: onCollected.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.AudioClip, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340314344443016684, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
+      propertyPath: onCollected.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2241412132324407392, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
       propertyPath: m_Name

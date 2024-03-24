@@ -6,8 +6,7 @@ public class Obstacle : MonoBehaviour, ICollectable
 {
     [SerializeField] UnityEvent onCollected;
 
-    public void Collect(PointSystem pointSystem) {
-        pointSystem.DecrementPoint(1);
+    public void Collect() {
         onCollected?.Invoke();
         Destroy(gameObject);
     }

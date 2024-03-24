@@ -42,14 +42,14 @@ public class GameManager : MonoBehaviour
     void CheckIfGameFinished() {
         if (_playerPointSystem.CurrentPoint == -1)
         {
-            AudioManager.Instance.PlaySFX(LoseGameSFX);
+            //AudioManager.Instance.PlaySFX(LoseGameSFX);
             OnLoseGame?.Invoke();
             return;
         }
 
         if(_playerPointSystem.CurrentPoint == 10)
         {
-            AudioManager.Instance.PlaySFX(WinGameSFX);
+            //AudioManager.Instance.PlaySFX(WinGameSFX);
             OnWinGame?.Invoke();
         }
     }

@@ -3,19 +3,13 @@ using UnityEngine.Pool;
 
 public class PlayerTriggerCollider : MonoBehaviour
 {
-    PointSystem playerPointSystem;
-
     //[SerializeField] IObjectPool<Road> roadPool;
-
-    private void Awake() {
-        playerPointSystem = GetComponent<PointSystem>();
-    }
 
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Collectable")) 
         {
             ICollectable collectable = other.gameObject.GetComponent<ICollectable>();
-            collectable.Collect(playerPointSystem);
+            collectable.Collect();
         }
 
         //if (other.gameObject.CompareTag("Road Spawn Trigger"))

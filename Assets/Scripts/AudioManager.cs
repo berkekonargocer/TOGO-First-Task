@@ -1,18 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+
+[RequireComponent(typeof(AudioSource))]
 public class AudioManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    [SerializeField] AudioSource MusicAudioSource;
+    [SerializeField] AudioSource SFXAudioSource;
+
+    public void PlayMusic(AudioClip clipToPlay) {
+        MusicAudioSource.clip = clipToPlay;
+        MusicAudioSource.Play();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void StopMusic() {
+        MusicAudioSource.Stop();
+    }
+
+    public void PlaySFX(AudioClip clipToPlay) {
+        SFXAudioSource.clip = clipToPlay;
+        SFXAudioSource.Play();
+    }
+
+    public void StopSFX() {
+        SFXAudioSource.Stop();
     }
 }

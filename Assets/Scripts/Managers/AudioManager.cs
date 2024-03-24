@@ -4,8 +4,25 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class AudioManager : MonoBehaviour
 {
+    public static AudioManager Instance;
+
     [SerializeField] AudioSource MusicAudioSource;
     [SerializeField] AudioSource SFXAudioSource;
+
+    void Awake() {
+        InitializeSingleton();
+    }
+
+    void InitializeSingleton() {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     public void PlayMusic(AudioClip clipToPlay) {
         MusicAudioSource.clip = clipToPlay;

@@ -19,6 +19,6 @@ public class ScoreUI : MonoBehaviour
     }
 
     void UpdateScoreText() {
-        scoreText.text = $"Score: {pointSystem.CurrentPoint}";
+        scoreText.text = $"Score: <color=\"green\"> {pointSystem.CurrentPoint} </color>";
     }
 }

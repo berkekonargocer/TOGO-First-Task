@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 
+[DisallowMultipleComponent]
 public class PointSystem : MonoBehaviour
 {
     public int CurrentPoint { get; private set; } = 0;

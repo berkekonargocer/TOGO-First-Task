@@ -20,7 +20,7 @@ public class PlayerTriggerCollider : MonoBehaviour
 
         //if (other.gameObject.CompareTag("Road Spawn Trigger"))
         //{
-        //    Road road = PointPool.Instance.Pool.Get();
+        //    Road road = RoadPool.Instance.Pool.Get();
         //    road.transform.position = new Vector3(0, 0, 155f);
         //}
     }

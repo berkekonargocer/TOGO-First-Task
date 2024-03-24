@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 
+[DisallowMultipleComponent]
 public class ScoreUI : MonoBehaviour
 {
     [SerializeField] PointSystem pointSystem;

@@ -1,9 +1,10 @@
 using UnityEngine;
 using UnityEngine.Pool;
 
-public class PointPool : MonoBehaviour
+[DisallowMultipleComponent]
+public class RoadPool : MonoBehaviour
 {
-    public static PointPool Instance { get; private set; }
+    public static RoadPool Instance { get; private set; }
 
     [SerializeField] Road pointPrefab;
     [SerializeField] int defaultCapacity;

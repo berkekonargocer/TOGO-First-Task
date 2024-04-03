@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class AudioManager : MonoBehaviour
 {
-    public static AudioManager Instance;
+    public static AudioManager Instance { get; private set; }
 
     [SerializeField] AudioSource MusicAudioSource;
     [SerializeField] AudioSource SFXAudioSource;

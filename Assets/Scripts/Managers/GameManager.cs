@@ -4,7 +4,7 @@ using UnityEngine;
 [DisallowMultipleComponent]
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance;
+    public static GameManager Instance { get; private set; }
 
     public AudioClip WinGameSFX;
     public AudioClip LoseGameSFX;

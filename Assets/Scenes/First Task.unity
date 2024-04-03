@@ -203,7 +203,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: DecrementPoint
         m_Mode: 3
@@ -359,7 +359,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: IncrementPoint
         m_Mode: 3
@@ -544,7 +544,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: DecrementPoint
         m_Mode: 3
@@ -715,7 +715,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: IncrementPoint
         m_Mode: 3
@@ -935,7 +935,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: IncrementPoint
         m_Mode: 3
@@ -1120,7 +1120,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: DecrementPoint
         m_Mode: 3
@@ -1291,7 +1291,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: IncrementPoint
         m_Mode: 3
@@ -1690,7 +1690,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: IncrementPoint
         m_Mode: 3
@@ -1927,7 +1927,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: DecrementPoint
         m_Mode: 3
@@ -2356,7 +2356,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: IncrementPoint
         m_Mode: 3
@@ -2557,7 +2557,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: IncrementPoint
         m_Mode: 3
@@ -2667,6 +2667,38 @@ MonoBehaviour:
   amplitude: 0.25
   animationSpeed: 4
   offset: 0.75
+--- !u!1 &551409966
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 551409967}
+  m_Layer: 0
+  m_Name: ----------------- PLAYER ----------------
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &551409967
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551409966}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 737354907}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &694894720
 GameObject:
   m_ObjectHideFlags: 0
@@ -2728,7 +2760,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: IncrementPoint
         m_Mode: 3
@@ -2947,6 +2979,132 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1198614425}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &737354906 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+  m_PrefabInstance: {fileID: 1749748300}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &737354907 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+  m_PrefabInstance: {fileID: 1749748300}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &737354908
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737354906}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.3302213, y: 0.8118756, z: 0.25332594}
+  m_Center: {x: 0.018740475, y: 0.41409194, z: -0.014780045}
+--- !u!114 &737354909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737354906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edb8d2b2fc6e116428766f085ed8d93d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &737354910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737354906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02dde80fdafa194e85f1b16ace52a29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &737354911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737354906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de8cf66a83dd7244f8837141f9615a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalMovementSpeed: 7
+  verticalMovementSpeed: 15
+--- !u!114 &737354912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737354906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: f8adc77420c8033489bb5bb0ca76f3c8, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 1525841426}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 1
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!54 &737354913
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737354906}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
 --- !u!1 &742260263
 GameObject:
   m_ObjectHideFlags: 0
@@ -3187,7 +3345,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: DecrementPoint
         m_Mode: 3
@@ -3357,7 +3515,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: DecrementPoint
         m_Mode: 3
@@ -3527,7 +3685,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: DecrementPoint
         m_Mode: 3
@@ -3697,7 +3855,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: DecrementPoint
         m_Mode: 3
@@ -4055,8 +4213,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2925332, y: -0, z: -0, w: 0.9562554}
-  m_LocalPosition: {x: 0, y: 7.25, z: -13.47}
+  m_LocalRotation: {x: 0.2925332, y: 3e-45, z: -1e-45, w: 0.9562554}
+  m_LocalPosition: {x: 0, y: 6.75, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4171,7 +4329,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: DecrementPoint
         m_Mode: 3
@@ -4341,7 +4499,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: DecrementPoint
         m_Mode: 3
@@ -4546,7 +4704,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: DecrementPoint
         m_Mode: 3
@@ -4847,7 +5005,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: DecrementPoint
         m_Mode: 3
@@ -5017,7 +5175,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: DecrementPoint
         m_Mode: 3
@@ -5187,7 +5345,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: DecrementPoint
         m_Mode: 3
@@ -5357,7 +5515,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: DecrementPoint
         m_Mode: 3
@@ -5527,7 +5685,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: DecrementPoint
         m_Mode: 3
@@ -5697,7 +5855,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: DecrementPoint
         m_Mode: 3
@@ -5868,7 +6026,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: IncrementPoint
         m_Mode: 3
@@ -6054,7 +6212,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: IncrementPoint
         m_Mode: 3
@@ -6317,7 +6475,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: DecrementPoint
         m_Mode: 3
@@ -6658,6 +6816,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1721226776}
   m_CullTransparentMesh: 1
+--- !u!1001 &1749748300
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 551409967}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+      propertyPath: m_Name
+      value: Mr. Incredible
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 737354913}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 737354912}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 737354911}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 737354910}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 737354909}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 737354908}
+  m_SourcePrefab: {fileID: 100100000, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
 --- !u!1 &1750113902
 GameObject:
   m_ObjectHideFlags: 0
@@ -6734,7 +6971,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: IncrementPoint
         m_Mode: 3
@@ -6905,7 +7142,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: IncrementPoint
         m_Mode: 3
@@ -7065,8 +7302,8 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 2131417992}
-  m_Follow: {fileID: 2131417992}
+  m_LookAt: {fileID: 737354907}
+  m_Follow: {fileID: 737354907}
   m_Lens:
     FieldOfView: 60.000004
     OrthographicSize: 5
@@ -7094,8 +7331,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1846070531}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2925332, y: -0, z: -0, w: 0.9562554}
-  m_LocalPosition: {x: 0, y: 7.25, z: -13.47}
+  m_LocalRotation: {x: 0.2925332, y: 3e-45, z: -1e-45, w: 0.9562554}
+  m_LocalPosition: {x: 0, y: 6.75, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7218,7 +7455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 788c55460a4ac1f42aee5ea8caf26883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointSystem: {fileID: 2131417999}
+  pointSystem: {fileID: 737354910}
   scoreText: {fileID: 742260265}
 --- !u!1 &1879770657
 GameObject:
@@ -7249,7 +7486,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2131417992}
   - {fileID: 167535647}
   - {fileID: 906905720}
   - {fileID: 402288058}
@@ -7425,7 +7661,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: DecrementPoint
         m_Mode: 3
@@ -7595,7 +7831,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: DecrementPoint
         m_Mode: 3
@@ -7750,7 +7986,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2131417999}
+      - m_Target: {fileID: 737354910}
         m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
         m_MethodName: DecrementPoint
         m_Mode: 3
@@ -7924,212 +8160,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7335274428894589309, guid: 5d554060eb1cd784c9cfa1f871fc4aa7, type: 3}
   m_PrefabInstance: {fileID: 2109815648}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2131417991
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2131417992}
-  - component: {fileID: 2131417995}
-  - component: {fileID: 2131417994}
-  - component: {fileID: 2131417993}
-  - component: {fileID: 2131417997}
-  - component: {fileID: 2131417998}
-  - component: {fileID: 2131417996}
-  - component: {fileID: 2131417999}
-  - component: {fileID: 2131418000}
-  m_Layer: 0
-  m_Name: Player
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2131417992
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2131417991}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: -3.47}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1879770658}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2131417993
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2131417991}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &2131417994
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2131417991}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 72760b23efcf2a7478fa79b610d5e700, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &2131417995
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2131417991}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2131417996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2131417991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de8cf66a83dd7244f8837141f9615a4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  horizontalMovementSpeed: 0.25
-  verticalMovementSpeed: 0.25
-  autoMoveForward: 0
---- !u!54 &2131417997
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2131417991}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
---- !u!114 &2131417998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2131417991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: f8adc77420c8033489bb5bb0ca76f3c8, type: 3}
-  m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 1525841426}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 1
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
---- !u!114 &2131417999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2131417991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f02dde80fdafa194e85f1b16ace52a29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2131418000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2131417991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edb8d2b2fc6e116428766f085ed8d93d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2139030590
 GameObject:
   m_ObjectHideFlags: 0
@@ -8291,7 +8321,7 @@ PrefabInstance:
     - target: {fileID: 1340314344443016684, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
       propertyPath: onCollected.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 2131417999}
+      objectReference: {fileID: 737354910}
     - target: {fileID: 1340314344443016684, guid: 964b23a7a167fae408908ba8f7d19203, type: 3}
       propertyPath: onCollected.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
@@ -8454,6 +8484,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 551409967}
   - {fileID: 755176572}
   - {fileID: 1602339170}
   - {fileID: 440886250}

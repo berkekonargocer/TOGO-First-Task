@@ -8,12 +8,13 @@ public class AutoForwardMovement : MonoBehaviour
     [SerializeField] float horizontalMovementSpeed = 15.0f;
     [SerializeField] float verticalMovementSpeed = 10.0f;
 
-    float _maxXPosition = 4.48f;
-    float _movementSpeedMultiplier = 50.0f;
-    Vector2 _moveDirection;
-
     PlayerInput _playerInput;
     Rigidbody _objectRigidbody;
+    
+    Vector2 _moveDirection;
+
+    const float MAX_X_POSITION = 4.48f;
+    const float MOVEMENT_SPEED_MULTIPLIER = 50.0f;
 
 
     void OnEnable() {
@@ -45,13 +46,13 @@ public class AutoForwardMovement : MonoBehaviour
 
         Vector3 moveDirection;
 
-        moveDirection = new Vector3(horizontalMovementSpeed * _moveDirection.x, 0, verticalMovementSpeed) * _movementSpeedMultiplier * Time.fixedDeltaTime;
+        moveDirection = new Vector3(horizontalMovementSpeed * _moveDirection.x, 0, verticalMovementSpeed) * MOVEMENT_SPEED_MULTIPLIER * Time.fixedDeltaTime;
         return moveDirection;
     }
 
     void ApplyMovement() {
         _objectRigidbody.velocity = GetMovementDirection();
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -_maxXPosition, _maxXPosition), transform.position.y, transform.position.z);
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -MAX_X_POSITION, MAX_X_POSITION), transform.position.y, transform.position.z);
     }
 
     void StopMovement() {

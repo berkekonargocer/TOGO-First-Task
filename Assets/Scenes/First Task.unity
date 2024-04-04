@@ -3008,8 +3008,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.3302213, y: 0.8118756, z: 0.25332594}
-  m_Center: {x: 0.018740475, y: 0.41409194, z: -0.014780045}
+  m_Size: {x: 0.75, y: 2.05, z: 0.25}
+  m_Center: {x: 0.01, y: 1.05, z: -0.015}
 --- !u!114 &737354909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6892,6 +6892,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: cabc3078a32a8da4f92d30f39d38be11, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8176087538680074713, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

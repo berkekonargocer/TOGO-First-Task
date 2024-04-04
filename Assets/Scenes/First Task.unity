@@ -3046,8 +3046,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de8cf66a83dd7244f8837141f9615a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalMovementSpeed: 7
-  verticalMovementSpeed: 15
+  horizontalMovementSpeed: 10
+  verticalMovementSpeed: 12
 --- !u!114 &737354912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4213,8 +4213,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2925332, y: 3e-45, z: -1e-45, w: 0.9562554}
-  m_LocalPosition: {x: 0, y: 6.75, z: -10}
+  m_LocalRotation: {x: 0.2925332, y: -1e-45, z: -0, w: 0.9562554}
+  m_LocalPosition: {x: 3.1e-44, y: 5.5947294, z: -17.448486}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6834,7 +6834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -9.16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6864,6 +6864,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4876805431919465287, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7108b04a2445fec4a9c08bfc9db3a637, type: 2}
+    - target: {fileID: -4387987297474559417, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: de8e90b1be57694448b65aa3aef17bdc, type: 2}
+    - target: {fileID: -2551079838146969437, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7108b04a2445fec4a9c08bfc9db3a637, type: 2}
     - target: {fileID: 919132149155446097, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
       propertyPath: m_Name
       value: Mr. Incredible
@@ -6872,6 +6884,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3490148648754086992, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: de8e90b1be57694448b65aa3aef17bdc, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: cabc3078a32a8da4f92d30f39d38be11, type: 2}
+    - target: {fileID: 8176087538680074713, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 269517030df3c0a419000c1edcd50236, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7331,8 +7355,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1846070531}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2925332, y: 3e-45, z: -1e-45, w: 0.9562554}
-  m_LocalPosition: {x: 0, y: 6.75, z: -10}
+  m_LocalRotation: {x: 0.2925332, y: -1e-45, z: -0, w: 0.9562554}
+  m_LocalPosition: {x: 3.1e-44, y: 5.5947294, z: -17.448486}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7501,8 +7525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1911176684}
   - component: {fileID: 1911176687}
-  - component: {fileID: 1911176686}
-  - component: {fileID: 1911176685}
+  - component: {fileID: 1911176688}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -7525,55 +7548,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1846070533}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1911176685
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1911176683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa7155796051b734daa718462081dc5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 6.75, z: -10}
-  m_XDamping: 1.5
-  m_YDamping: 1
-  m_ZDamping: 1.25
-  m_AngularDampingMode: 0
-  m_PitchDamping: 0
-  m_YawDamping: 0
-  m_RollDamping: 0
-  m_AngularDamping: 0
---- !u!114 &1911176686
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1911176683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4044717213e31446939f7bd49c896ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
-  m_LookaheadTime: 0
-  m_LookaheadSmoothing: 0
-  m_LookaheadIgnoreY: 0
-  m_HorizontalDamping: 0.5
-  m_VerticalDamping: 0.5
-  m_ScreenX: 0.5
-  m_ScreenY: 0.5
-  m_DeadZoneWidth: 0
-  m_DeadZoneHeight: 0
-  m_SoftZoneWidth: 0.8
-  m_SoftZoneHeight: 0.8
-  m_BiasX: 0
-  m_BiasY: 0
-  m_CenterOnActivate: 1
 --- !u!114 &1911176687
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -7586,6 +7560,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1911176688
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911176683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
+  m_LookaheadTime: 0
+  m_LookaheadSmoothing: 0
+  m_LookaheadIgnoreY: 0
+  m_XDamping: 1
+  m_YDamping: 1
+  m_ZDamping: 1
+  m_TargetMovementOnly: 1
+  m_ScreenX: 0.5
+  m_ScreenY: 0.5
+  m_CameraDistance: 10
+  m_DeadZoneWidth: 0
+  m_DeadZoneHeight: 0
+  m_DeadZoneDepth: 0
+  m_UnlimitedSoftZone: 0
+  m_SoftZoneWidth: 0.8
+  m_SoftZoneHeight: 0.8
+  m_BiasX: 0
+  m_BiasY: 0
+  m_CenterOnActivate: 1
+  m_GroupFramingMode: 2
+  m_AdjustmentMode: 0
+  m_GroupFramingSize: 0.8
+  m_MaxDollyIn: 5000
+  m_MaxDollyOut: 5000
+  m_MinimumDistance: 1
+  m_MaximumDistance: 5000
+  m_MinimumFOV: 3
+  m_MaximumFOV: 60
+  m_MinimumOrthoSize: 1
+  m_MaximumOrthoSize: 5000
 --- !u!1 &1924397599
 GameObject:
   m_ObjectHideFlags: 0

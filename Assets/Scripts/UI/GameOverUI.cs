@@ -39,14 +39,13 @@ public class GameOverUI : MonoBehaviour
     }
 
     void ShowPanel(bool isWin) {
-        
+
         gameOverPanel.gameObject.SetActive(true);
 
         if (isWin)
         {
             gameOverPanel.DOMoveY(600, showPanelAnimationDuration)
-                         .SetUpdate(true)
-                         .OnComplete(() => AudioManager.Instance.PlaySFX(GameManager.Instance.WinGameSFX));
+                         .SetUpdate(true);
             return;
         }
 

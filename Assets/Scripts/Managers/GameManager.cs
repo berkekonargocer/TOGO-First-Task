@@ -53,6 +53,7 @@ public class GameManager : MonoBehaviour
 
     public void WinGame() {
         OnWinGame?.Invoke(_playerPointSystem.CurrentPoint);
+        AudioManager.Instance.PlaySFX(WinGameSFX);
     }
 
     public void RestartLevel() {

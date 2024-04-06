@@ -11,9 +11,9 @@ public class SpeedPowerUp : Collectable
 
 
     public override void Collect() {
-        transform.position = Vector3.down * 5.0f;
-        StartCoroutine(SpeedUp());
         base.Collect();
+        StartCoroutine(SpeedUp());
+        transform.position = Vector3.down * 5.0f;
     }
 
     IEnumerator SpeedUp() {

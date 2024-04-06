@@ -434,6 +434,7 @@ GameObject:
   - component: {fileID: 91888844}
   - component: {fileID: 91888848}
   - component: {fileID: 91888849}
+  - component: {fileID: 91888850}
   m_Layer: 0
   m_Name: Invulnerability Power Up
   m_TagString: Collectable
@@ -541,7 +542,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onCollected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 91888850}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 03b24572914786a4b915d1fe17315e34, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: ec7485a1c6338d34b978a3b01ce4cb08, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   playerCollider: {fileID: 737354909}
   playerMaterial: {fileID: 737354915}
   powerUpDuration: 3
@@ -562,6 +587,18 @@ MonoBehaviour:
   rotate: 0
   rotateVector: {x: 0, y: 0, z: 0}
   rotateAnimationDuration: 4
+--- !u!114 &91888850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91888843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28375e4ef63ac96469656f0e30b428c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &114082319
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -887,6 +924,7 @@ GameObject:
   - component: {fileID: 147822592}
   - component: {fileID: 147822591}
   - component: {fileID: 147822595}
+  - component: {fileID: 147822596}
   m_Layer: 0
   m_Name: Invulnerability Power Up (2)
   m_TagString: Collectable
@@ -923,7 +961,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onCollected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 147822596}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 03b24572914786a4b915d1fe17315e34, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: ec7485a1c6338d34b978a3b01ce4cb08, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   playerCollider: {fileID: 737354909}
   playerMaterial: {fileID: 737354915}
   powerUpDuration: 3
@@ -1015,6 +1077,18 @@ MonoBehaviour:
   rotate: 0
   rotateVector: {x: 0, y: 0, z: 0}
   rotateAnimationDuration: 4
+--- !u!114 &147822596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147822589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28375e4ef63ac96469656f0e30b428c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &157625246 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1893758936239704246, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
@@ -2789,6 +2863,7 @@ GameObject:
   - component: {fileID: 416621531}
   - component: {fileID: 416621535}
   - component: {fileID: 416621536}
+  - component: {fileID: 416621537}
   m_Layer: 0
   m_Name: Speed Power Up
   m_TagString: Collectable
@@ -2896,10 +2971,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onCollected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 416621537}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 8127c99221016824f8f4d6580bac7dff, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d2751d14d1233ef4bad835127a852522, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   playerMovement: {fileID: 737354911}
   powerUpDuration: 2
-  powerUpSpeed: 13
+  powerUpSpeed: 5
 --- !u!114 &416621536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2917,6 +3016,18 @@ MonoBehaviour:
   rotate: 0
   rotateVector: {x: 0, y: 0, z: 0}
   rotateAnimationDuration: 4
+--- !u!114 &416621537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416621530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28375e4ef63ac96469656f0e30b428c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &427278285
 GameObject:
   m_ObjectHideFlags: 0
@@ -5860,8 +5971,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2588191, y: -0, z: -0, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 5.0000014, z: -17.820253}
+  m_LocalRotation: {x: 0.2164396, y: -0, z: -0, w: 0.97629607}
+  m_LocalPosition: {x: 0, y: 4.380946, z: -14.410461}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6102,6 +6213,7 @@ GameObject:
   - component: {fileID: 1039808383}
   - component: {fileID: 1039808382}
   - component: {fileID: 1039808386}
+  - component: {fileID: 1039808387}
   m_Layer: 0
   m_Name: Speed Power Up (1)
   m_TagString: Collectable
@@ -6138,10 +6250,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onCollected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 416621537}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 8127c99221016824f8f4d6580bac7dff, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d2751d14d1233ef4bad835127a852522, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   playerMovement: {fileID: 737354911}
   powerUpDuration: 2
-  powerUpSpeed: 13
+  powerUpSpeed: 5
 --- !u!65 &1039808383
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6230,6 +6366,18 @@ MonoBehaviour:
   rotate: 0
   rotateVector: {x: 0, y: 0, z: 0}
   rotateAnimationDuration: 4
+--- !u!114 &1039808387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039808380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28375e4ef63ac96469656f0e30b428c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1108056481
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6984,6 +7132,7 @@ GameObject:
   - component: {fileID: 1243112041}
   - component: {fileID: 1243112040}
   - component: {fileID: 1243112044}
+  - component: {fileID: 1243112045}
   m_Layer: 0
   m_Name: Invulnerability Power Up (1)
   m_TagString: Collectable
@@ -7020,7 +7169,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onCollected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 147822596}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 03b24572914786a4b915d1fe17315e34, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: ec7485a1c6338d34b978a3b01ce4cb08, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   playerCollider: {fileID: 737354909}
   playerMaterial: {fileID: 737354915}
   powerUpDuration: 3
@@ -7112,6 +7285,18 @@ MonoBehaviour:
   rotate: 0
   rotateVector: {x: 0, y: 0, z: 0}
   rotateAnimationDuration: 4
+--- !u!114 &1243112045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243112038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28375e4ef63ac96469656f0e30b428c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1257612132
 GameObject:
   m_ObjectHideFlags: 0
@@ -10394,7 +10579,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1743416319}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 545}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10403,7 +10588,7 @@ Transform:
   - {fileID: 830866604}
   - {fileID: 1124588444}
   - {fileID: 1996944152}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1879770658}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1743416321
 BoxCollider:
@@ -11371,14 +11556,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1846070531}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2588191, y: -0, z: -0, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 5.0000014, z: -17.820253}
+  m_LocalRotation: {x: 0.2164396, y: -0, z: -0, w: 0.97629607}
+  m_LocalPosition: {x: 0, y: 4.380946, z: -14.410461}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1911176684}
   m_Father: {fileID: 1198614425}
-  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 25, y: 0, z: 0}
 --- !u!1 &1858828944
 GameObject:
   m_ObjectHideFlags: 0
@@ -11748,6 +11933,7 @@ Transform:
   - {fileID: 402288058}
   - {fileID: 1468656980}
   - {fileID: 938291409}
+  - {fileID: 1743416320}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1911176683
@@ -11807,7 +11993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
+  m_TrackedObjectOffset: {x: 0, y: 1, z: 2}
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
@@ -11817,7 +12003,7 @@ MonoBehaviour:
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
-  m_CameraDistance: 10
+  m_CameraDistance: 8
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
@@ -12524,6 +12710,7 @@ GameObject:
   - component: {fileID: 2062778349}
   - component: {fileID: 2062778348}
   - component: {fileID: 2062778352}
+  - component: {fileID: 2062778353}
   m_Layer: 0
   m_Name: Speed Power Up (2)
   m_TagString: Collectable
@@ -12560,10 +12747,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onCollected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 416621537}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 8127c99221016824f8f4d6580bac7dff, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d2751d14d1233ef4bad835127a852522, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   playerMovement: {fileID: 737354911}
   powerUpDuration: 2
-  powerUpSpeed: 13
+  powerUpSpeed: 5
 --- !u!65 &2062778349
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12652,6 +12863,18 @@ MonoBehaviour:
   rotate: 0
   rotateVector: {x: 0, y: 0, z: 0}
   rotateAnimationDuration: 4
+--- !u!114 &2062778353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062778346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28375e4ef63ac96469656f0e30b428c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2097875945
 GameObject:
   m_ObjectHideFlags: 0
@@ -13435,4 +13658,3 @@ SceneRoots:
   - {fileID: 1198614425}
   - {fileID: 427643944}
   - {fileID: 1879770658}
-  - {fileID: 1743416320}

@@ -11,8 +11,8 @@ public class GameManager : MonoBehaviour
 
     PointSystem _playerPointSystem;
 
-    public event Action OnLoseGame;
-    public event Action OnWinGame;
+    public event Action<int> OnLoseGame;
+    public event Action<int> OnWinGame;
 
     void OnEnable() {
         _playerPointSystem = GameObject.FindWithTag("Player").GetComponent<PointSystem>();
@@ -42,16 +42,17 @@ public class GameManager : MonoBehaviour
     void CheckIfGameFinished() {
         if (_playerPointSystem.CurrentPoint == -1)
         {
-            //AudioManager.Instance.PlaySFX(LoseGameSFX);
-            OnLoseGame?.Invoke();
-            return;
+            LoseGame();
         }
+    }
 
-        if(_playerPointSystem.CurrentPoint == 10)
-        {
-            //AudioManager.Instance.PlaySFX(WinGameSFX);
-            OnWinGame?.Invoke();
-        }
+    void LoseGame() {
+        OnLoseGame?.Invoke(_playerPointSystem.CurrentPoint);
+    }
+
+
+    public void WinGame() {
+        OnWinGame?.Invoke(_playerPointSystem.CurrentPoint);
     }
 
     public void RestartLevel() {

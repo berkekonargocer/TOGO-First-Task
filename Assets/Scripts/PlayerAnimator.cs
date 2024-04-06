@@ -14,18 +14,25 @@ public class PlayerAnimator : MonoBehaviour
         GameManager.Instance.OnLoseGame -= PlayLoseGameAnimation;
     }
 
-    private void Awake() {
+    void Awake() {
         _playerAnimator = GetComponent<Animator>();
     }
 
+    public void PlayPowerUpAnimation() {
+        //_playerAnimator.SetBool
+    }
 
-    void PlayWinGameAnimation() {
+    public void PlayPointCollectAnimation() {
+        _playerAnimator.SetTrigger("pointCollected");
+    }
+
+    void PlayWinGameAnimation(int score) {
         Vector3 lookRotation = new Vector3(Camera.main.transform.position.x, transform.position.y, Camera.main.transform.position.z);
         transform.LookAt(lookRotation);
         _playerAnimator.SetBool("hasWon", true);
     }
 
-    void PlayLoseGameAnimation() {
+    void PlayLoseGameAnimation(int score) {
         Vector3 lookRotation = new Vector3(Camera.main.transform.position.x, transform.position.y, Camera.main.transform.position.z);
         transform.LookAt(lookRotation);
         _playerAnimator.SetBool("hasLost", true);

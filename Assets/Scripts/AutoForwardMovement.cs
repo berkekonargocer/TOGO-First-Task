@@ -5,16 +5,17 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(PlayerInput))]
 public class AutoForwardMovement : MonoBehaviour
 {
-    [SerializeField] float horizontalMovementSpeed = 15.0f;
-    [SerializeField] float verticalMovementSpeed = 10.0f;
+    [field: SerializeField] public float HorizontalMovementSpeed { get; private set; } = 8.0f;
+    [field: SerializeField] public float VerticalMovementSpeed { get; private set; } = 10.0f;
 
     PlayerInput _playerInput;
     Rigidbody _objectRigidbody;
-    
+
     Vector2 _moveDirection;
 
     const float MAX_X_POSITION = 4.48f;
-    const float MOVEMENT_SPEED_MULTIPLIER = 50.0f;
+    const float VERTICAL_MOVEMENT_SPEED_MULTIPLIER = 50.0f;
+    const float HORIZONTAL_MOVEMENT_SPEED_MULTIPLIER = 20.0f;
 
 
     void OnEnable() {
@@ -40,13 +41,26 @@ public class AutoForwardMovement : MonoBehaviour
         ApplyMovement();
     }
 
+    public void IncrementVerticalMovementSpeed(float speedToAddUp) {
+        VerticalMovementSpeed += speedToAddUp;
+    }
+
+    public void SetVerticalMovementSpeed(float speed) {
+        VerticalMovementSpeed = speed;
+    }
 
     Vector3 GetMovementDirection() {
-        _moveDirection = _playerInput.actions["Move"].ReadValue<Vector2>();
+        if (_playerInput.actions["LeftClick"].ReadValue<float>() == 0)
+        {
+            _moveDirection = Vector3.zero;
+        }
+        else
+        {
+            _moveDirection = _playerInput.actions["Move"].ReadValue<Vector2>();
+        }
 
-        Vector3 moveDirection;
+        Vector3 moveDirection = new Vector3(HorizontalMovementSpeed * _moveDirection.x * HORIZONTAL_MOVEMENT_SPEED_MULTIPLIER, 0, VerticalMovementSpeed * VERTICAL_MOVEMENT_SPEED_MULTIPLIER) * Time.fixedDeltaTime;
 
-        moveDirection = new Vector3(horizontalMovementSpeed * _moveDirection.x, 0, verticalMovementSpeed) * MOVEMENT_SPEED_MULTIPLIER * Time.fixedDeltaTime;
         return moveDirection;
     }
 
@@ -55,7 +69,7 @@ public class AutoForwardMovement : MonoBehaviour
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, -MAX_X_POSITION, MAX_X_POSITION), transform.position.y, transform.position.z);
     }
 
-    void StopMovement() {
+    void StopMovement(int score) {
         _objectRigidbody.velocity = Vector3.zero;
         enabled = false;
     }

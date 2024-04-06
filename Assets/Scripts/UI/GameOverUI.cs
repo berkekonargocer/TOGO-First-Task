@@ -5,6 +5,7 @@ using DG.Tweening;
 public class GameOverUI : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI gameOverText;
+    [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] Transform gameOverPanel;
 
     [SerializeField] float showPanelAnimationDuration = 1.0f;
@@ -21,17 +22,24 @@ public class GameOverUI : MonoBehaviour
         GameManager.Instance.OnLoseGame -= DisplayLoseGamePanel;
     }
 
-    void DisplayWinGamePanel() {
-        gameOverText.text = "<color=\"green\"> YOU WIN </color>";
-        ShowPanel(true);
+    void UpdateScore(int score) {
+        scoreText.text = $"Your Score Is: {score}";
     }
 
-    void DisplayLoseGamePanel() {
+    void DisplayWinGamePanel(int score) {
+        UpdateScore(score);
+        gameOverText.text = "<color=\"green\"> YOU WIN </color>";
+        ShowPanel(isWin: true);
+    }
+
+    void DisplayLoseGamePanel(int score) {
+        UpdateScore(score);
         gameOverText.text = "<color=\"red\"> YOU LOSE </color>";
-        ShowPanel(false);
+        ShowPanel(isWin: false);
     }
 
     void ShowPanel(bool isWin) {
+        
         gameOverPanel.gameObject.SetActive(true);
 
         if (isWin)

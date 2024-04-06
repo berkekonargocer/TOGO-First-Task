@@ -1,18 +1,29 @@
+using DG.Tweening;
 using UnityEngine;
 
 public class FloatAnimation : MonoBehaviour
 {
+    [SerializeField] float floatAnimationDuration = 1.0f;
+    [SerializeField] float floatOffset = 0.25f;
 
-    [SerializeField] float amplitude = 1.0f;
+    [SerializeField] bool rotate = false;
+    [SerializeField] Vector3 rotateVector;
+    [SerializeField] float rotateAnimationDuration = 4.0f;
 
-    [SerializeField] float animationSpeed = 2.0f;
-    [SerializeField] float offset = 0.25f;
+    Tween floatTween;
+    Tween rotateTween;
 
-    private void Update() {
-        float x = transform.position.x;
-        float y = Mathf.Sin(Time.time * animationSpeed) * amplitude + offset;
-        float z = transform.position.z;
+    void Awake() {
+        floatTween = transform.DOMoveY(floatOffset, floatAnimationDuration).SetEase(Ease.InOutSine).SetLoops(-1, LoopType.Yoyo).SetRelative();
 
-        transform.position = new Vector3(x, y, z);
+        if (rotate)
+        {
+            rotateTween = transform.DORotate(rotateVector, rotateAnimationDuration, RotateMode.FastBeyond360).SetEase(Ease.Linear).SetLoops(-1, LoopType.Restart); 
+        }
+    }
+
+    private void OnDestroy() {
+        floatTween.Kill();
+        rotateTween.Kill();
     }
 }

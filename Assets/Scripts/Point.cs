@@ -1,14 +1,10 @@
 using UnityEngine;
-using UnityEngine.Events;
 
 [DisallowMultipleComponent]
-public class Point : MonoBehaviour, ICollectable
+public class Point : Collectable
 {
-    [SerializeField] UnityEvent onCollected;
-
-
-    public void Collect() {
-        onCollected?.Invoke();
+    public override void Collect() {
+        base.Collect();
         Destroy(gameObject);
     }
 }

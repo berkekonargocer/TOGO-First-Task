@@ -7,9 +7,9 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Obstacle
+  m_Name: Finish Column
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_Parent: {fileID: 2100000, guid: 799da1078c2831d42b262f12c0a7b603, type: 2}
+  m_Parent: {fileID: 2100000, guid: 046f33aa360556b499da64e9c5accced, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -26,5 +26,5 @@ Material:
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _Color: {r: 0.85882354, g: 0.03137255, b: 0.03137255, a: 1}
+    - _Color: {r: 0.0754717, g: 0.0744037, b: 0.0744037, a: 1}
   m_BuildTextureStacks: []

@@ -2826,6 +2826,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 157625251}
+  - {fileID: 205697884}
   - {fileID: 2097875950}
   - {fileID: 818045286}
   - {fileID: 1415305522}
@@ -2845,8 +2847,6 @@ Transform:
   - {fileID: 837483990}
   - {fileID: 86245472}
   - {fileID: 1590038009}
-  - {fileID: 157625251}
-  - {fileID: 205697884}
   m_Father: {fileID: 1879770658}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &416621530
@@ -5818,7 +5818,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &906905720
 Transform:
   m_ObjectHideFlags: 0
@@ -5833,23 +5833,23 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1224747559}
-  - {fileID: 1464554112}
-  - {fileID: 175128796}
-  - {fileID: 1317767729}
-  - {fileID: 1721491316}
   - {fileID: 1750770966}
+  - {fileID: 457607614}
+  - {fileID: 129437540}
+  - {fileID: 203051532}
+  - {fileID: 694894725}
+  - {fileID: 158508016}
+  - {fileID: 280195750}
   - {fileID: 1750113903}
   - {fileID: 1504028927}
   - {fileID: 1505645088}
   - {fileID: 523472690}
   - {fileID: 342829416}
-  - {fileID: 457607614}
-  - {fileID: 129437540}
-  - {fileID: 203051532}
-  - {fileID: 694894725}
+  - {fileID: 1464554112}
+  - {fileID: 175128796}
+  - {fileID: 1317767729}
   - {fileID: 1863548835}
-  - {fileID: 158508016}
-  - {fileID: 280195750}
+  - {fileID: 1721491316}
   m_Father: {fileID: 1879770658}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &938291408
@@ -5867,7 +5867,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &938291409
 Transform:
   m_ObjectHideFlags: 0
@@ -6251,7 +6251,7 @@ MonoBehaviour:
   onCollected:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 416621537}
+      - m_Target: {fileID: 1039808387}
         m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
         m_MethodName: SpawnParticle
         m_Mode: 2
@@ -7170,7 +7170,7 @@ MonoBehaviour:
   onCollected:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 147822596}
+      - m_Target: {fileID: 1243112045}
         m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
         m_MethodName: SpawnParticle
         m_Mode: 2
@@ -12748,7 +12748,7 @@ MonoBehaviour:
   onCollected:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 416621537}
+      - m_Target: {fileID: 2062778353}
         m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
         m_MethodName: SpawnParticle
         m_Mode: 2

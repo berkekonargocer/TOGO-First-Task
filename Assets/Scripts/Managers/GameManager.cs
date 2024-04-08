@@ -6,8 +6,6 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-    public static bool IsGameStarted { get; private set; }
-
     [field: SerializeField] public AudioClip WinGameSFX { get; private set; }
     [field: SerializeField] public AudioClip LoseGameSFX { get; private set; }
 
@@ -16,6 +14,7 @@ public class GameManager : MonoBehaviour
     public event Action OnGameStarted;
     public event Action<int> OnLoseGame;
     public event Action<int> OnWinGame;
+
 
     void OnEnable() {
         _playerPointSystem = GameObject.FindWithTag("Player").GetComponent<PointSystem>();
@@ -54,7 +53,6 @@ public class GameManager : MonoBehaviour
     }
 
     public void StartGame() {
-        IsGameStarted = true;
         OnGameStarted?.Invoke();
     }
 

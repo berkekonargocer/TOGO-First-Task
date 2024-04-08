@@ -1,6 +1,11 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+
+public enum State
+{
+    IDLE,
+    MOVING
+}
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(PlayerInput))]
@@ -18,8 +23,7 @@ public class AutoForwardMovement : MonoBehaviour
     const float VERTICAL_MOVEMENT_SPEED_MULTIPLIER = 50.0f;
     const float HORIZONTAL_MOVEMENT_SPEED_MULTIPLIER = 20.0f;
 
-    event Action UpdateEvents;
-    //event Action FixedUpdateEvents;
+    public State CharState { get; private set; } = State.IDLE;
 
 
     void OnEnable() {
@@ -32,7 +36,6 @@ public class AutoForwardMovement : MonoBehaviour
         GameManager.Instance.OnWinGame -= StopMovement;
         GameManager.Instance.OnLoseGame -= StopMovement;
         GameManager.Instance.OnGameStarted -= StartMovement;
-        UpdateEvents -= ApplyMovement;
     }
 
     void Awake() {
@@ -41,12 +44,15 @@ public class AutoForwardMovement : MonoBehaviour
     }
 
     void Update() {
-        UpdateEvents?.Invoke();
-    }
+        switch (CharState)
+        {
+            case State.IDLE:
+                break;
+            case State.MOVING: ApplyMovement();
+                break;
 
-    //void FixedUpdate() {
-    //    FixedUpdateEvents?.Invoke();
-    //}
+        }
+    }
 
 
     Vector3 GetMovementDirection() {
@@ -70,13 +76,12 @@ public class AutoForwardMovement : MonoBehaviour
     }
 
     void StartMovement() {
-        UpdateEvents += ApplyMovement;
+        CharState = State.MOVING;
     }
 
     void StopMovement(int score) {
+        CharState = State.IDLE;
         _objectRigidbody.velocity = Vector3.zero;
-        UpdateEvents -= ApplyMovement;
-        //enabled = false;
     }
 
 

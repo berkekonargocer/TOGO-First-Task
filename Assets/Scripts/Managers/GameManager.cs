@@ -6,11 +6,14 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-    public AudioClip WinGameSFX;
-    public AudioClip LoseGameSFX;
+    public static bool IsGameStarted { get; private set; }
+
+    [field: SerializeField] public AudioClip WinGameSFX { get; private set; }
+    [field: SerializeField] public AudioClip LoseGameSFX { get; private set; }
 
     PointSystem _playerPointSystem;
 
+    public event Action OnGameStarted;
     public event Action<int> OnLoseGame;
     public event Action<int> OnWinGame;
 
@@ -50,6 +53,10 @@ public class GameManager : MonoBehaviour
         OnLoseGame?.Invoke(_playerPointSystem.CurrentPoint);
     }
 
+    public void StartGame() {
+        IsGameStarted = true;
+        OnGameStarted?.Invoke();
+    }
 
     public void WinGame() {
         OnWinGame?.Invoke(_playerPointSystem.CurrentPoint);

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -17,15 +18,21 @@ public class AutoForwardMovement : MonoBehaviour
     const float VERTICAL_MOVEMENT_SPEED_MULTIPLIER = 50.0f;
     const float HORIZONTAL_MOVEMENT_SPEED_MULTIPLIER = 20.0f;
 
+    event Action UpdateEvents;
+    //event Action FixedUpdateEvents;
+
 
     void OnEnable() {
         GameManager.Instance.OnWinGame += StopMovement;
         GameManager.Instance.OnLoseGame += StopMovement;
+        GameManager.Instance.OnGameStarted += StartMovement;
     }
 
     void OnDisable() {
         GameManager.Instance.OnWinGame -= StopMovement;
         GameManager.Instance.OnLoseGame -= StopMovement;
+        GameManager.Instance.OnGameStarted -= StartMovement;
+        UpdateEvents -= ApplyMovement;
     }
 
     void Awake() {
@@ -34,20 +41,13 @@ public class AutoForwardMovement : MonoBehaviour
     }
 
     void Update() {
-        GetMovementDirection();
+        UpdateEvents?.Invoke();
     }
 
-    void FixedUpdate() {
-        ApplyMovement();
-    }
+    //void FixedUpdate() {
+    //    FixedUpdateEvents?.Invoke();
+    //}
 
-    public void IncrementVerticalMovementSpeed(float speedToAddUp) {
-        VerticalMovementSpeed += speedToAddUp;
-    }
-
-    public void SetVerticalMovementSpeed(float speed) {
-        VerticalMovementSpeed = speed;
-    }
 
     Vector3 GetMovementDirection() {
         if (_playerInput.actions["LeftClick"].ReadValue<float>() == 0)
@@ -59,7 +59,7 @@ public class AutoForwardMovement : MonoBehaviour
             _moveDirection = _playerInput.actions["Move"].ReadValue<Vector2>();
         }
 
-        Vector3 moveDirection = new Vector3(HorizontalMovementSpeed * _moveDirection.x * HORIZONTAL_MOVEMENT_SPEED_MULTIPLIER, 0, VerticalMovementSpeed * VERTICAL_MOVEMENT_SPEED_MULTIPLIER) * Time.fixedDeltaTime;
+        Vector3 moveDirection = new Vector3(HorizontalMovementSpeed * _moveDirection.x * HORIZONTAL_MOVEMENT_SPEED_MULTIPLIER, 0, VerticalMovementSpeed * VERTICAL_MOVEMENT_SPEED_MULTIPLIER) * Time.deltaTime;
 
         return moveDirection;
     }
@@ -69,8 +69,22 @@ public class AutoForwardMovement : MonoBehaviour
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, -MAX_X_POSITION, MAX_X_POSITION), transform.position.y, transform.position.z);
     }
 
+    void StartMovement() {
+        UpdateEvents += ApplyMovement;
+    }
+
     void StopMovement(int score) {
         _objectRigidbody.velocity = Vector3.zero;
-        enabled = false;
+        UpdateEvents -= ApplyMovement;
+        //enabled = false;
+    }
+
+
+    public void IncrementVerticalMovementSpeed(float speedToAddUp) {
+        VerticalMovementSpeed += speedToAddUp;
+    }
+
+    public void SetVerticalMovementSpeed(float speed) {
+        VerticalMovementSpeed = speed;
     }
 }

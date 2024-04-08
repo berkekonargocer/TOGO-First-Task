@@ -29,13 +29,13 @@ public class AutoForwardMovement : MonoBehaviour
     void OnEnable() {
         GameManager.Instance.OnWinGame += StopMovement;
         GameManager.Instance.OnLoseGame += StopMovement;
-        GameManager.Instance.OnGameStarted += StartMovement;
+        GameManager.Instance.OnStartGame += StartMovement;
     }
 
     void OnDisable() {
         GameManager.Instance.OnWinGame -= StopMovement;
         GameManager.Instance.OnLoseGame -= StopMovement;
-        GameManager.Instance.OnGameStarted -= StartMovement;
+        GameManager.Instance.OnStartGame -= StartMovement;
     }
 
     void Awake() {
@@ -52,6 +52,15 @@ public class AutoForwardMovement : MonoBehaviour
                 break;
 
         }
+    }
+
+
+    public void IncrementVerticalMovementSpeed(float speedToAddUp) {
+        VerticalMovementSpeed += speedToAddUp;
+    }
+
+    public void SetVerticalMovementSpeed(float speed) {
+        VerticalMovementSpeed = speed;
     }
 
 
@@ -82,14 +91,5 @@ public class AutoForwardMovement : MonoBehaviour
     void StopMovement(int score) {
         CharState = State.IDLE;
         _objectRigidbody.velocity = Vector3.zero;
-    }
-
-
-    public void IncrementVerticalMovementSpeed(float speedToAddUp) {
-        VerticalMovementSpeed += speedToAddUp;
-    }
-
-    public void SetVerticalMovementSpeed(float speed) {
-        VerticalMovementSpeed = speed;
     }
 }

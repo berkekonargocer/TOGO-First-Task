@@ -7,11 +7,13 @@ public class PlayerAnimator : MonoBehaviour
     void OnEnable() {
         GameManager.Instance.OnWinGame += PlayWinGameAnimation;
         GameManager.Instance.OnLoseGame += PlayLoseGameAnimation;
+        GameManager.Instance.OnStartGame += PlayMovingAnimation;
     }
 
     void OnDisable() {
         GameManager.Instance.OnWinGame -= PlayWinGameAnimation;
         GameManager.Instance.OnLoseGame -= PlayLoseGameAnimation;
+        GameManager.Instance.OnStartGame -= PlayMovingAnimation;
     }
 
     void Awake() {
@@ -24,6 +26,11 @@ public class PlayerAnimator : MonoBehaviour
 
     public void PlayPointCollectAnimation() {
         _playerAnimator.SetTrigger("pointCollected");
+    }
+
+
+    void PlayMovingAnimation() {
+        _playerAnimator.SetBool("isMoving", true);
     }
 
     void PlayWinGameAnimation(int score) {

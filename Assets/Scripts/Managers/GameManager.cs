@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
 
     PointSystem _playerPointSystem;
 
-    public event Action OnGameStarted;
+    public event Action OnStartGame;
     public event Action<int> OnLoseGame;
     public event Action<int> OnWinGame;
 
@@ -29,6 +29,20 @@ public class GameManager : MonoBehaviour
     void Awake() {
         InitializeSingleton();
     }
+
+    public void StartGame() {
+        OnStartGame?.Invoke();
+    }
+
+    public void WinGame() {
+        OnWinGame?.Invoke(_playerPointSystem.CurrentPoint);
+        AudioManager.Instance.PlaySFX(WinGameSFX);
+    }
+
+    public void RestartLevel() {
+        Utils.RestartLevel();
+    }
+
 
     void InitializeSingleton() {
         if (Instance == null)
@@ -50,18 +64,5 @@ public class GameManager : MonoBehaviour
 
     void LoseGame() {
         OnLoseGame?.Invoke(_playerPointSystem.CurrentPoint);
-    }
-
-    public void StartGame() {
-        OnGameStarted?.Invoke();
-    }
-
-    public void WinGame() {
-        OnWinGame?.Invoke(_playerPointSystem.CurrentPoint);
-        AudioManager.Instance.PlaySFX(WinGameSFX);
-    }
-
-    public void RestartLevel() {
-        Utils.RestartLevel();
     }
 }

@@ -1,14 +1,20 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 [DisallowMultipleComponent]
-public class Obstacle : Collectable
+public class Obstacle : MonoBehaviour, ITrigger
 {
-    public override void Collect() {
+    [SerializeField] ScoreSystem playerScore;
+    [SerializeField] UnityEvent onTriggered;
+
+
+    public void Trigger() {
         if (!PlayerTriggerCollider.IS_INVULNERABLE)
         {
-            base.Collect();
+            playerScore.DecrementScore(1);
         }
 
+        onTriggered?.Invoke();
         Destroy(gameObject);
     }
 }

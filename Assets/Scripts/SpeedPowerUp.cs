@@ -1,7 +1,8 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class SpeedPowerUp : Collectable
+public class SpeedPowerUp : MonoBehaviour, ITrigger
 {
     [SerializeField] AutoForwardMovement playerMovement;
 
@@ -9,9 +10,11 @@ public class SpeedPowerUp : Collectable
 
     [SerializeField] float powerUpSpeed = 5.0f;
 
+    [SerializeField] UnityEvent onTriggered;
 
-    public override void Collect() {
-        base.Collect();
+
+    public void Trigger() {
+        onTriggered?.Invoke();
         StartCoroutine(SpeedUp());
         transform.position = Vector3.down * 5.0f;
     }

@@ -287,10 +287,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: {fileID: 737354910}
+  playerScoreSystem: {fileID: 737354910}
   onTriggered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 86245477}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &86245474
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -567,6 +591,10 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ccda929ea2b40f0449f914c232419c22, type: 2}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScore
+      value: 
+      objectReference: {fileID: 737354910}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerScoreSystem
       value: 
       objectReference: {fileID: 737354910}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
@@ -1829,10 +1857,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: {fileID: 737354910}
+  playerScoreSystem: {fileID: 737354910}
   onTriggered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 205697885}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &205697881
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1969,6 +2021,10 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ccda929ea2b40f0449f914c232419c22, type: 2}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScore
+      value: 
+      objectReference: {fileID: 737354910}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerScoreSystem
       value: 
       objectReference: {fileID: 737354910}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
@@ -2363,6 +2419,10 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ccda929ea2b40f0449f914c232419c22, type: 2}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScore
+      value: 
+      objectReference: {fileID: 737354910}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerScoreSystem
       value: 
       objectReference: {fileID: 737354910}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
@@ -3399,10 +3459,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: {fileID: 737354910}
+  playerScoreSystem: {fileID: 737354910}
   onTriggered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 427278291}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &427278288
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5174,6 +5258,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 737354910}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerScoreSystem
+      value: 
+      objectReference: {fileID: 737354910}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -5375,10 +5463,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: {fileID: 737354910}
+  playerScoreSystem: {fileID: 737354910}
   onTriggered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 777302967}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &777302964
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5527,10 +5639,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: {fileID: 737354910}
+  playerScoreSystem: {fileID: 737354910}
   onTriggered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 818045291}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &818045288
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5784,10 +5920,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: {fileID: 737354910}
+  playerScoreSystem: {fileID: 737354910}
   onTriggered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 837483995}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &837483992
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5936,10 +6096,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: {fileID: 737354910}
+  playerScoreSystem: {fileID: 737354910}
   onTriggered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 854979665}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &854979662
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6430,10 +6614,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: {fileID: 737354910}
+  playerScoreSystem: {fileID: 737354910}
   onTriggered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 968299005}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &968299002
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6858,6 +7066,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 737354910}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerScoreSystem
+      value: 
+      objectReference: {fileID: 737354910}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -7164,10 +7376,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: {fileID: 737354910}
+  playerScoreSystem: {fileID: 737354910}
   onTriggered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1173045021}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1173045018
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7351,10 +7587,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: {fileID: 737354910}
+  playerScoreSystem: {fileID: 737354910}
   onTriggered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1219946497}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1219946494
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7514,6 +7774,10 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ccda929ea2b40f0449f914c232419c22, type: 2}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScore
+      value: 
+      objectReference: {fileID: 737354910}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerScoreSystem
       value: 
       objectReference: {fileID: 737354910}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
@@ -7984,10 +8248,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: {fileID: 737354910}
+  playerScoreSystem: {fileID: 737354910}
   onTriggered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1292059863}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1292059860
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8136,10 +8424,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: {fileID: 737354910}
+  playerScoreSystem: {fileID: 737354910}
   onTriggered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1308970774}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1308970771
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8495,10 +8807,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: {fileID: 737354910}
+  playerScoreSystem: {fileID: 737354910}
   onTriggered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1391863188}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1391863185
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8620,6 +8956,10 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ccda929ea2b40f0449f914c232419c22, type: 2}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScore
+      value: 
+      objectReference: {fileID: 737354910}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerScoreSystem
       value: 
       objectReference: {fileID: 737354910}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
@@ -8824,10 +9164,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: {fileID: 737354910}
+  playerScoreSystem: {fileID: 737354910}
   onTriggered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1406123668}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1406123665
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8976,10 +9340,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: {fileID: 737354910}
+  playerScoreSystem: {fileID: 737354910}
   onTriggered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1415305527}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1415305524
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9233,10 +9621,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: {fileID: 737354910}
+  playerScoreSystem: {fileID: 737354910}
   onTriggered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1421437571}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1421437568
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10149,10 +10561,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: {fileID: 737354910}
+  playerScoreSystem: {fileID: 737354910}
   onTriggered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1590038014}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1590038011
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10325,6 +10761,10 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ccda929ea2b40f0449f914c232419c22, type: 2}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScore
+      value: 
+      objectReference: {fileID: 737354910}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerScoreSystem
       value: 
       objectReference: {fileID: 737354910}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
@@ -10502,6 +10942,10 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ccda929ea2b40f0449f914c232419c22, type: 2}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScore
+      value: 
+      objectReference: {fileID: 737354910}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerScoreSystem
       value: 
       objectReference: {fileID: 737354910}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
@@ -10998,6 +11442,10 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ccda929ea2b40f0449f914c232419c22, type: 2}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScore
+      value: 
+      objectReference: {fileID: 737354910}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerScoreSystem
       value: 
       objectReference: {fileID: 737354910}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
@@ -11932,6 +12380,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 737354910}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerScoreSystem
+      value: 
+      objectReference: {fileID: 737354910}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -12106,6 +12558,10 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ccda929ea2b40f0449f914c232419c22, type: 2}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScore
+      value: 
+      objectReference: {fileID: 737354910}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerScoreSystem
       value: 
       objectReference: {fileID: 737354910}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
@@ -13032,10 +13488,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: {fileID: 737354910}
+  playerScoreSystem: {fileID: 737354910}
   onTriggered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1924397605}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1924397602
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13327,6 +13807,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 737354910}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerScoreSystem
+      value: 
+      objectReference: {fileID: 737354910}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -13528,10 +14012,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: {fileID: 737354910}
+  playerScoreSystem: {fileID: 737354910}
   onTriggered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2051941182}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &2051941179
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13820,10 +14328,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: {fileID: 737354910}
+  playerScoreSystem: {fileID: 737354910}
   onTriggered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2097875951}
+        m_TargetAssemblyTypeName: ParticleSpawner, Assembly-CSharp
+        m_MethodName: SpawnParticle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 440886251}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &2097875947
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14024,6 +14556,10 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ccda929ea2b40f0449f914c232419c22, type: 2}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScore
+      value: 
+      objectReference: {fileID: 737354910}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerScoreSystem
       value: 
       objectReference: {fileID: 737354910}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
@@ -14498,6 +15034,22 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 737354910}
     - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
+      propertyPath: playerScoreSystem
+      value: 
+      objectReference: {fileID: 737354910}
+    - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
+      propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
+      propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
+      propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
       propertyPath: onCollected.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 440886251}
@@ -14505,6 +15057,54 @@ PrefabInstance:
       propertyPath: onCollected.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 737354910}
+    - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
+      propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5243700063084020904}
+    - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
+      propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 440886251}
+    - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
+      propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
+      propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
+      propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SpawnParticle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
+      propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlaySFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
+      propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ParticleSpawner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
+      propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: AudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
+      propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+    - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
+      propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
+    - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
+      propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.ParticleSystem, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
+      propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.AudioClip, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7928053325565185829, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.5
@@ -14557,6 +15157,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 157625253}
   m_SourcePrefab: {fileID: 100100000, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
+--- !u!114 &5243700063084020904 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 526330865426927200, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
+  m_PrefabInstance: {fileID: 5243700063084020903}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157625246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28375e4ef63ac96469656f0e30b428c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8362243012713574839
 PrefabInstance:
   m_ObjectHideFlags: 0

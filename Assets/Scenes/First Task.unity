@@ -255,7 +255,7 @@ GameObject:
   - component: {fileID: 86245478}
   m_Layer: 0
   m_Name: Obstacle (20)
-  m_TagString: Collectable
+  m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -556,6 +556,10 @@ PrefabInstance:
     - target: {fileID: 18872065152950962, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: m_Name
       value: Obstacle Circle (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 18872065152950962, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: m_TagString
+      value: Trigger
       objectReference: {fileID: 0}
     - target: {fileID: 849364765001836428, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1808,7 +1812,7 @@ GameObject:
   - component: {fileID: 205697886}
   m_Layer: 0
   m_Name: Obstacle (2)
-  m_TagString: Collectable
+  m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1954,6 +1958,10 @@ PrefabInstance:
     - target: {fileID: 18872065152950962, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: m_Name
       value: Obstacle Circle (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 18872065152950962, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: m_TagString
+      value: Trigger
       objectReference: {fileID: 0}
     - target: {fileID: 849364765001836428, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2344,6 +2352,10 @@ PrefabInstance:
     - target: {fileID: 18872065152950962, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: m_Name
       value: Obstacle Circle (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 18872065152950962, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: m_TagString
+      value: Trigger
       objectReference: {fileID: 0}
     - target: {fileID: 849364765001836428, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3355,7 +3367,7 @@ GameObject:
   - component: {fileID: 427278292}
   m_Layer: 0
   m_Name: Obstacle (7)
-  m_TagString: Collectable
+  m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5149,6 +5161,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle Circle (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 18872065152950962, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: m_TagString
+      value: Trigger
+      objectReference: {fileID: 0}
     - target: {fileID: 849364765001836428, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -5327,7 +5343,7 @@ GameObject:
   - component: {fileID: 777302968}
   m_Layer: 0
   m_Name: Obstacle (16)
-  m_TagString: Collectable
+  m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5479,7 +5495,7 @@ GameObject:
   - component: {fileID: 818045292}
   m_Layer: 0
   m_Name: Obstacle (4)
-  m_TagString: Collectable
+  m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5736,7 +5752,7 @@ GameObject:
   - component: {fileID: 837483996}
   m_Layer: 0
   m_Name: Obstacle (19)
-  m_TagString: Collectable
+  m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5888,7 +5904,7 @@ GameObject:
   - component: {fileID: 854979666}
   m_Layer: 0
   m_Name: Obstacle (12)
-  m_TagString: Collectable
+  m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6382,7 +6398,7 @@ GameObject:
   - component: {fileID: 968299006}
   m_Layer: 0
   m_Name: Obstacle (13)
-  m_TagString: Collectable
+  m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6829,6 +6845,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle Circle
       objectReference: {fileID: 0}
+    - target: {fileID: 18872065152950962, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: m_TagString
+      value: Trigger
+      objectReference: {fileID: 0}
     - target: {fileID: 849364765001836428, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -7112,7 +7132,7 @@ GameObject:
   - component: {fileID: 1173045022}
   m_Layer: 0
   m_Name: Obstacle (18)
-  m_TagString: Collectable
+  m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7299,7 +7319,7 @@ GameObject:
   - component: {fileID: 1219946498}
   m_Layer: 0
   m_Name: Obstacle (15)
-  m_TagString: Collectable
+  m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7483,6 +7503,10 @@ PrefabInstance:
     - target: {fileID: 18872065152950962, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: m_Name
       value: Obstacle Circle (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 18872065152950962, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: m_TagString
+      value: Trigger
       objectReference: {fileID: 0}
     - target: {fileID: 849364765001836428, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -7928,7 +7952,7 @@ GameObject:
   - component: {fileID: 1292059864}
   m_Layer: 0
   m_Name: Obstacle (11)
-  m_TagString: Collectable
+  m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8080,7 +8104,7 @@ GameObject:
   - component: {fileID: 1308970775}
   m_Layer: 0
   m_Name: Obstacle (8)
-  m_TagString: Collectable
+  m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8439,7 +8463,7 @@ GameObject:
   - component: {fileID: 1391863189}
   m_Layer: 0
   m_Name: Obstacle (10)
-  m_TagString: Collectable
+  m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8585,6 +8609,10 @@ PrefabInstance:
     - target: {fileID: 18872065152950962, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: m_Name
       value: Obstacle Circle (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 18872065152950962, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: m_TagString
+      value: Trigger
       objectReference: {fileID: 0}
     - target: {fileID: 849364765001836428, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -8764,7 +8792,7 @@ GameObject:
   - component: {fileID: 1406123669}
   m_Layer: 0
   m_Name: Obstacle (9)
-  m_TagString: Collectable
+  m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8916,7 +8944,7 @@ GameObject:
   - component: {fileID: 1415305528}
   m_Layer: 0
   m_Name: Obstacle (5)
-  m_TagString: Collectable
+  m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9173,7 +9201,7 @@ GameObject:
   - component: {fileID: 1421437572}
   m_Layer: 0
   m_Name: Obstacle (14)
-  m_TagString: Collectable
+  m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10089,7 +10117,7 @@ GameObject:
   - component: {fileID: 1590038015}
   m_Layer: 0
   m_Name: Obstacle (21)
-  m_TagString: Collectable
+  m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10287,6 +10315,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle Circle (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 18872065152950962, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: m_TagString
+      value: Trigger
+      objectReference: {fileID: 0}
     - target: {fileID: 849364765001836428, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -10459,6 +10491,10 @@ PrefabInstance:
     - target: {fileID: 18872065152950962, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: m_Name
       value: Obstacle Circle (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 18872065152950962, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: m_TagString
+      value: Trigger
       objectReference: {fileID: 0}
     - target: {fileID: 849364765001836428, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -10951,6 +10987,10 @@ PrefabInstance:
     - target: {fileID: 18872065152950962, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: m_Name
       value: Obstacle Circle (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 18872065152950962, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: m_TagString
+      value: Trigger
       objectReference: {fileID: 0}
     - target: {fileID: 849364765001836428, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -11879,6 +11919,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle Circle (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 18872065152950962, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: m_TagString
+      value: Trigger
+      objectReference: {fileID: 0}
     - target: {fileID: 849364765001836428, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -12051,6 +12095,10 @@ PrefabInstance:
     - target: {fileID: 18872065152950962, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: m_Name
       value: Obstacle Circle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 18872065152950962, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: m_TagString
+      value: Trigger
       objectReference: {fileID: 0}
     - target: {fileID: 849364765001836428, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -12952,7 +13000,7 @@ GameObject:
   - component: {fileID: 1924397606}
   m_Layer: 0
   m_Name: Obstacle (17)
-  m_TagString: Collectable
+  m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13266,6 +13314,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle Circle (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 18872065152950962, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: m_TagString
+      value: Trigger
+      objectReference: {fileID: 0}
     - target: {fileID: 849364765001836428, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -13444,7 +13496,7 @@ GameObject:
   - component: {fileID: 2051941183}
   m_Layer: 0
   m_Name: Obstacle (6)
-  m_TagString: Collectable
+  m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13751,7 +13803,7 @@ GameObject:
   - component: {fileID: 2097875952}
   m_Layer: 0
   m_Name: Obstacle (3)
-  m_TagString: Collectable
+  m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13961,6 +14013,10 @@ PrefabInstance:
     - target: {fileID: 18872065152950962, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: m_Name
       value: Obstacle Circle (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 18872065152950962, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: m_TagString
+      value: Trigger
       objectReference: {fileID: 0}
     - target: {fileID: 849364765001836428, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -14432,6 +14488,10 @@ PrefabInstance:
     - target: {fileID: 1893758936239704246, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
       propertyPath: m_Name
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1893758936239704246, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
+      propertyPath: m_TagString
+      value: Trigger
       objectReference: {fileID: 0}
     - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
       propertyPath: playerScore

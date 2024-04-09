@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Road Spawn Trigger
   - Collectable
+  - Trigger
   layers:
   - Default
   - TransparentFX

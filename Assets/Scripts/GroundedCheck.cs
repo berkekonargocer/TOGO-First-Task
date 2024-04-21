@@ -5,7 +5,7 @@ public class GroundedCheck : MonoBehaviour
 {
     [SerializeField] Transform groundedCheckTransform;
     [SerializeField] LayerMask groundLayer;
-    [SerializeField] Vector3 groundedCheckSize;
+    [SerializeField] Vector3 boxCastSize = new Vector3(0.5f, 0.025f, 0.275f);
 
     public bool IsGrounded { get; private set; }
     RaycastHit[] _raycastHit = new RaycastHit[1];
@@ -15,13 +15,12 @@ public class GroundedCheck : MonoBehaviour
 
 
     void FixedUpdate() {
-        int hits = Physics.BoxCastNonAlloc(groundedCheckTransform.position, groundedCheckSize * 2, groundedCheckTransform.up * -1, _raycastHit, Quaternion.identity, 0, groundLayer);
+        int hits = Physics.BoxCastNonAlloc(groundedCheckTransform.position, boxCastSize * 2, groundedCheckTransform.up * -1, _raycastHit, Quaternion.identity, 0, groundLayer);
 
         if (IsGrounded == false &&  hits == 1)
         {
             IsGrounded = true;
             OnGrounded?.Invoke();
-            Debug.Log($"Is in ground: {IsGrounded}");
             return;
         }
 
@@ -30,12 +29,10 @@ public class GroundedCheck : MonoBehaviour
             IsGrounded = false;
             OnLeftGround?.Invoke();
         }
-
-        Debug.Log($"Is in ground: {IsGrounded}");
     }
 
     private void OnDrawGizmos() {
         Gizmos.color = Color.green;
-        Gizmos.DrawWireCube(groundedCheckTransform.position + groundedCheckTransform.up * -1 * 0, groundedCheckSize);
+        Gizmos.DrawWireCube(groundedCheckTransform.position + groundedCheckTransform.up * -1 * 0, boxCastSize);
     }
 }

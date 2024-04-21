@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 
 namespace NOJUMPO
@@ -9,14 +10,14 @@ namespace NOJUMPO
         [SerializeField] float obstacleCheckRayLength;
         [SerializeField] LayerMask jumpObstacleLayer;
 
-        [SerializeField] float jumpForce;
-
         Rigidbody _objectRigidbody;
         GroundedCheck _groundedCheck;
 
         RaycastHit[] _raycastResult = new RaycastHit[1];
 
+        const float JUMP_FORCE = 65.0f;
         const float JUMP_FORCE_MULTIPLIER = 5.0f;
+        const float ON_AIR_GRAVITY = -24.81f;
 
 
         // ------------------------- UNITY BUILT-IN METHODS ------------------------
@@ -50,7 +51,8 @@ namespace NOJUMPO
 
         // ------------------------- CUSTOM PRIVATE METHODS ------------------------
         void Jump() {
-            _objectRigidbody.AddForce(_objectRigidbody.transform.up * jumpForce * JUMP_FORCE_MULTIPLIER * Time.fixedDeltaTime, ForceMode.Impulse);
+            _objectRigidbody.velocity = new Vector3(_objectRigidbody.velocity.x, 0, _objectRigidbody.velocity.z);
+            _objectRigidbody.AddForce(_objectRigidbody.transform.up * JUMP_FORCE * JUMP_FORCE_MULTIPLIER * Time.fixedDeltaTime, ForceMode.Impulse);
         }
 
         void SetGroundedDrag() {
@@ -58,7 +60,7 @@ namespace NOJUMPO
         }
 
         void SetAirDrag() {
-            Physics.gravity = new Vector3(Physics.gravity.x, -24.81f, Physics.gravity.z);
+            Physics.gravity = new Vector3(Physics.gravity.x, ON_AIR_GRAVITY, Physics.gravity.z);
         }
     }
 }

@@ -80,7 +80,7 @@ public class AutoForwardMovement : MonoBehaviour
     }
 
     void ApplyMovement() {
-        _objectRigidbody.velocity = GetMovementDirection();
+        _objectRigidbody.AddForce(GetMovementDirection(), ForceMode.Force);
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, -MAX_X_POSITION, MAX_X_POSITION), transform.position.y, transform.position.z);
     }
 

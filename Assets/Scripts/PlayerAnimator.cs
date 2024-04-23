@@ -4,13 +4,20 @@ public class PlayerAnimator : MonoBehaviour
 {
     Animator _playerAnimator;
 
+
     void OnEnable() {
+        Inventory playerInventory = GetComponent<Inventory>();
+        playerInventory.OnItemAmountChange += SetItemAmountParameter;
+
         GameManager.Instance.OnWinGame += PlayWinGameAnimation;
         GameManager.Instance.OnLoseGame += PlayLoseGameAnimation;
         GameManager.Instance.OnStartGame += PlayMovingAnimation;
     }
 
     void OnDisable() {
+        Inventory playerInventory = GetComponent<Inventory>();
+        playerInventory.OnItemAmountChange -= SetItemAmountParameter;
+
         GameManager.Instance.OnWinGame -= PlayWinGameAnimation;
         GameManager.Instance.OnLoseGame -= PlayLoseGameAnimation;
         GameManager.Instance.OnStartGame -= PlayMovingAnimation;
@@ -20,14 +27,14 @@ public class PlayerAnimator : MonoBehaviour
         _playerAnimator = GetComponent<Animator>();
     }
 
-    public void PlayPowerUpAnimation() {
-        //_playerAnimator.SetBool
-    }
 
     public void PlayPointCollectAnimation() {
         _playerAnimator.SetTrigger("pointCollected");
     }
 
+    void SetItemAmountParameter(int itemAmount) {
+        _playerAnimator.SetInteger("itemAmount", itemAmount);
+    }
 
     void PlayMovingAnimation() {
         _playerAnimator.SetBool("isMoving", true);

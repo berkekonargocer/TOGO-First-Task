@@ -1,32 +1,37 @@
 using DG.Tweening;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Inventory : MonoBehaviour
 {
     [field: SerializeField] public Transform ItemCarryPosition { get; private set; }
-    Stack<ICollectable> _items = new Stack<ICollectable>();
+    public Stack<ICollectable> Items { get; private set; } = new Stack<ICollectable>();
+
+    public event Action<int> OnItemAmountChange;
 
     public void AddItem(ICollectable collectable) {
         collectable.transform.SetParent(ItemCarryPosition);
 
-        if (_items.Count == 0)
+        if (Items.Count == 0)
         {
             collectable.transform.localPosition = Vector3.zero;
         }
         else
         {
-            Transform lastItemTransform = _items.Peek().transform;
+            Transform lastItemTransform = Items.Peek().transform;
             collectable.transform.localPosition = new Vector3(0, lastItemTransform.localPosition.y + lastItemTransform.localScale.y, 0);
         }
 
         collectable.transform.localRotation = Quaternion.Euler(new Vector3(collectable.transform.localRotation.x, Random.Range(0, 360), collectable.transform.localRotation.z));
 
-        _items.Push(collectable);
+        Items.Push(collectable);
+        OnItemAmountChange?.Invoke(Items.Count);
     }
 
     public void RemoveAnItem() {
-        ICollectable removedItem = _items.Pop();
+        ICollectable removedItem = Items.Pop();
         removedItem.transform.SetParent(null);
         int randomNum = Random.Range(0, 2);
         int moveDirection;
@@ -41,9 +46,11 @@ public class Inventory : MonoBehaviour
         }
 
         removedItem.transform.DOMove(new Vector3(moveDirection, -2, 0), 0.75f).SetRelative();
+
+        OnItemAmountChange?.Invoke(Items.Count);
     }
 
     public void RemoveAllItems() {
-
+        OnItemAmountChange?.Invoke(Items.Count);
     }
 }

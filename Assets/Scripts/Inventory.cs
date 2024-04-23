@@ -31,6 +31,9 @@ public class Inventory : MonoBehaviour
     }
 
     public void RemoveItem() {
+        if (Items.Count <= 0)
+            return;
+
         ICollectable removedItem = Items.Pop();
         removedItem.transform.gameObject.GetComponent<Collider>().enabled = false;
         removedItem.transform.SetParent(null);
@@ -52,6 +55,9 @@ public class Inventory : MonoBehaviour
     }
 
     public void RemoveAllItems() {
-        OnItemAmountChange?.Invoke(Items.Count);
+        for (int i = Items.Count; i > 0; i--)
+        {
+            RemoveItem();
+        }
     }
 }

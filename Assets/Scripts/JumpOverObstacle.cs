@@ -12,6 +12,7 @@ namespace NOJUMPO
 
         Rigidbody _objectRigidbody;
         GroundedCheck _groundedCheck;
+        PlayerAnimator _playerAnimator;
 
         RaycastHit[] _raycastResult = new RaycastHit[1];
 
@@ -24,16 +25,17 @@ namespace NOJUMPO
         void Awake() {
             _objectRigidbody = GetComponent<Rigidbody>();
             _groundedCheck = GetComponent<GroundedCheck>();
+            _playerAnimator = GetComponent<PlayerAnimator>();
         }
 
         void OnEnable() {
-            GroundedCheck.OnGrounded += SetGroundedDrag;
-            GroundedCheck.OnLeftGround += SetAirDrag;
+            _groundedCheck.OnGrounded += SetGroundedDrag;
+            _groundedCheck.OnLeftGround += SetAirDrag;
         }
 
         private void OnDisable() {
-            GroundedCheck.OnGrounded -= SetGroundedDrag;
-            GroundedCheck.OnLeftGround -= SetAirDrag;
+            _groundedCheck.OnGrounded -= SetGroundedDrag;
+            _groundedCheck.OnLeftGround -= SetAirDrag;
         }
 
         void FixedUpdate() {
@@ -45,6 +47,7 @@ namespace NOJUMPO
             if (_groundedCheck.IsGrounded)
             {
                 Jump();
+                _playerAnimator.PlayJumpAnimation();
             }
         }
 

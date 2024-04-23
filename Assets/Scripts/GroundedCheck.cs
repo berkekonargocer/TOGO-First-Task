@@ -10,8 +10,8 @@ public class GroundedCheck : MonoBehaviour
     public bool IsGrounded { get; private set; }
     RaycastHit[] _raycastHit = new RaycastHit[1];
 
-    public static event Action OnGrounded;
-    public static event Action OnLeftGround;
+    public event Action OnGrounded;
+    public event Action OnLeftGround;
 
 
     void FixedUpdate() {

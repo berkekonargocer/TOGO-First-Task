@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class PlayerAnimator : MonoBehaviour
@@ -9,6 +10,9 @@ public class PlayerAnimator : MonoBehaviour
         Inventory playerInventory = GetComponent<Inventory>();
         playerInventory.OnItemAmountChange += SetItemAmountParameter;
 
+        GroundedCheck groundedCheck = GetComponent<GroundedCheck>();
+        groundedCheck.OnGrounded += StopJumpAnimation;
+
         GameManager.Instance.OnWinGame += PlayWinGameAnimation;
         GameManager.Instance.OnLoseGame += PlayLoseGameAnimation;
         GameManager.Instance.OnStartGame += PlayMovingAnimation;
@@ -17,6 +21,9 @@ public class PlayerAnimator : MonoBehaviour
     void OnDisable() {
         Inventory playerInventory = GetComponent<Inventory>();
         playerInventory.OnItemAmountChange -= SetItemAmountParameter;
+
+        GroundedCheck groundedCheck = GetComponent<GroundedCheck>();
+        groundedCheck.OnGrounded -= StopJumpAnimation;
 
         GameManager.Instance.OnWinGame -= PlayWinGameAnimation;
         GameManager.Instance.OnLoseGame -= PlayLoseGameAnimation;
@@ -30,6 +37,14 @@ public class PlayerAnimator : MonoBehaviour
 
     public void PlayPointCollectAnimation() {
         _playerAnimator.SetTrigger("pointCollected");
+    }
+
+    public void PlayJumpAnimation() {
+        _playerAnimator.SetBool("isJumping", true);
+    }
+
+    void StopJumpAnimation() {
+        _playerAnimator.SetBool("isJumping", false);
     }
 
     void SetItemAmountParameter(int itemAmount) {

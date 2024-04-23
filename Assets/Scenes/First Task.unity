@@ -4658,7 +4658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <HorizontalMovementSpeed>k__BackingField: 5
-  <VerticalMovementSpeed>k__BackingField: 30
+  <VerticalMovementSpeed>k__BackingField: 35
 --- !u!114 &737354912
 MonoBehaviour:
   m_ObjectHideFlags: 0

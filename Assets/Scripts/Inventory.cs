@@ -30,7 +30,7 @@ public class Inventory : MonoBehaviour
         OnItemAmountChange?.Invoke(Items.Count);
     }
 
-    public void RemoveAnItem() {
+    public void RemoveItem() {
         ICollectable removedItem = Items.Pop();
         removedItem.transform.SetParent(null);
         int randomNum = Random.Range(0, 2);

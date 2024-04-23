@@ -4,21 +4,25 @@ using UnityEngine;
 [DisallowMultipleComponent]
 public class ScoreUI : MonoBehaviour
 {
-    [SerializeField] ScoreSystem pointSystem;
+    //[SerializeField] ScoreSystem pointSystem;
+    [SerializeField] Inventory playerInventory;
 
     [SerializeField] TextMeshProUGUI scoreText;
 
+
     private void OnEnable() {
-        pointSystem.OnScoreIncreased += UpdateScoreText;
-        pointSystem.OnScoreDecreased += UpdateScoreText;
+        playerInventory.OnItemAmountChange += UpdateScoreText;
+        //pointSystem.OnScoreIncreased += UpdateScoreText;
+        //pointSystem.OnScoreDecreased += UpdateScoreText;
     }
 
     private void OnDisable() {
-        pointSystem.OnScoreIncreased -= UpdateScoreText;
-        pointSystem.OnScoreDecreased -= UpdateScoreText;
+        playerInventory.OnItemAmountChange -= UpdateScoreText;
+        //pointSystem.OnScoreIncreased -= UpdateScoreText;
+        //pointSystem.OnScoreDecreased -= UpdateScoreText;
     }
 
-    void UpdateScoreText() {
-        scoreText.text = $"Score: <color=\"green\"> {pointSystem.CurrentScore} </color>";
+    void UpdateScoreText(int score) {
+        scoreText.text = $"Score: <color=\"green\"> {score} </color>";
     }
 }

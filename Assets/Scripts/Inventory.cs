@@ -32,6 +32,7 @@ public class Inventory : MonoBehaviour
 
     public void RemoveItem() {
         ICollectable removedItem = Items.Pop();
+        removedItem.transform.gameObject.GetComponent<Collider>().enabled = false;
         removedItem.transform.SetParent(null);
         int randomNum = Random.Range(0, 2);
         int moveDirection;

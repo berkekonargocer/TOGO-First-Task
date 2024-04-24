@@ -4,12 +4,12 @@ using UnityEngine.Events;
 [DisallowMultipleComponent]
 public class Obstacle : MonoBehaviour, ITrigger
 {
-    [SerializeField] ScoreSystem playerScoreSystem;
+    [SerializeField] Inventory playerInventory;
     [SerializeField] UnityEvent onTriggered;
 
 
     public void Trigger() {
-        if (playerScoreSystem.CurrentScore == 0)
+        if (playerInventory.Items.Count == 0)
         {
             GameManager.Instance.LoseGame();
         }

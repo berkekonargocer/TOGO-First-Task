@@ -282,6 +282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 737354921}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -599,6 +600,10 @@ PrefabInstance:
       propertyPath: playerScore
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 737354921}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
@@ -1984,6 +1989,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 737354921}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -2161,6 +2167,10 @@ PrefabInstance:
       propertyPath: playerScore
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 737354921}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
@@ -2587,6 +2597,10 @@ PrefabInstance:
       propertyPath: playerScore
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 737354921}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
@@ -3443,6 +3457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 737354921}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -5179,6 +5194,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 737354921}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
       objectReference: {fileID: 0}
@@ -5412,6 +5431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 737354921}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -5599,6 +5619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 737354921}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -5891,6 +5912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 737354921}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -6078,6 +6100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 737354921}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -6731,6 +6754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 737354921}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -7287,6 +7311,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 737354921}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
       objectReference: {fileID: 0}
@@ -7625,6 +7653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 737354921}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -7940,6 +7969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 737354921}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -8140,6 +8170,10 @@ PrefabInstance:
       propertyPath: playerScore
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 737354921}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
@@ -8640,6 +8674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 737354921}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -8827,6 +8862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 737354921}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -9221,6 +9257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 737354921}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -9383,6 +9420,10 @@ PrefabInstance:
       propertyPath: playerScore
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 737354921}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
@@ -9617,6 +9658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 737354921}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -9804,6 +9846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 737354921}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -9991,6 +10034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 737354921}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -11040,6 +11084,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 737354921}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -11254,6 +11299,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 737354921}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
       objectReference: {fileID: 0}
@@ -11462,6 +11511,10 @@ PrefabInstance:
       propertyPath: playerScore
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 737354921}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
@@ -11990,6 +12043,10 @@ PrefabInstance:
       propertyPath: playerScore
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 737354921}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
@@ -13178,6 +13235,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 737354921}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
       objectReference: {fileID: 0}
@@ -13386,6 +13447,10 @@ PrefabInstance:
       propertyPath: playerScore
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 737354921}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
@@ -14343,6 +14408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 737354921}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -14704,6 +14770,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 737354921}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
       objectReference: {fileID: 0}
@@ -14937,6 +15007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 737354921}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -15264,6 +15335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 737354921}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -15505,6 +15577,10 @@ PrefabInstance:
       propertyPath: playerScore
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 737354921}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
@@ -16101,6 +16177,10 @@ PrefabInstance:
       propertyPath: playerScore
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 737354921}
     - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
       propertyPath: playerScoreSystem
       value: 

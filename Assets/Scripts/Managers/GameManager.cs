@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     [field: SerializeField] public AudioClip WinGameSFX { get; private set; }
     [field: SerializeField] public AudioClip LoseGameSFX { get; private set; }
 
-    ScoreSystem _playerPointSystem;
+    Inventory _playerInventory;
 
     public event Action OnStartGame;
     public event Action<int> OnLoseGame;
@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
 
 
     void OnEnable() {
-        _playerPointSystem = GameObject.FindWithTag("Player").GetComponent<ScoreSystem>();
+        _playerInventory = GameObject.FindWithTag("Player").GetComponent<Inventory>();
     }
 
     void Awake() {
@@ -30,12 +30,12 @@ public class GameManager : MonoBehaviour
     }
 
     public void WinGame() {
-        OnWinGame?.Invoke(_playerPointSystem.CurrentScore);
+        OnWinGame?.Invoke(_playerInventory.Items.Count);
         AudioManager.Instance.PlaySFX(WinGameSFX);
     }
 
     public void LoseGame() {
-        OnLoseGame?.Invoke(_playerPointSystem.CurrentScore);
+        OnLoseGame?.Invoke(_playerInventory.Items.Count);
     }
 
     public void RestartLevel() {

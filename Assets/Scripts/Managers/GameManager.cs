@@ -9,8 +9,7 @@ public class GameManager : MonoBehaviour
     [field: SerializeField] public AudioClip WinGameSFX { get; private set; }
     [field: SerializeField] public AudioClip LoseGameSFX { get; private set; }
 
-    //ScoreSystem _playerPointSystem;
-    Inventory _playerInventory;
+    ScoreSystem _playerPointSystem;
 
     public event Action OnStartGame;
     public event Action<int> OnLoseGame;
@@ -18,28 +17,25 @@ public class GameManager : MonoBehaviour
 
 
     void OnEnable() {
-        //_playerPointSystem = GameObject.FindWithTag("Player").GetComponent<ScoreSystem>();
-        //_playerPointSystem.OnScoreIncreased += CheckIfGameFinished;
-        //_playerPointSystem.OnScoreDecreased += CheckIfGameFinished;
-
-        _playerInventory = GameObject.FindWithTag("Player").GetComponent<Inventory>();
+        _playerPointSystem = GameObject.FindWithTag("Player").GetComponent<ScoreSystem>();
     }
 
-    void OnDisable() {
-        //_playerPointSystem.OnScoreIncreased -= CheckIfGameFinished;
-        //_playerPointSystem.OnScoreDecreased -= CheckIfGameFinished;
-    }
     void Awake() {
         InitializeSingleton();
     }
+
 
     public void StartGame() {
         OnStartGame?.Invoke();
     }
 
     public void WinGame() {
-        //OnWinGame?.Invoke(_playerPointSystem.CurrentScore);
+        OnWinGame?.Invoke(_playerPointSystem.CurrentScore);
         AudioManager.Instance.PlaySFX(WinGameSFX);
+    }
+
+    public void LoseGame() {
+        OnLoseGame?.Invoke(_playerPointSystem.CurrentScore);
     }
 
     public void RestartLevel() {
@@ -56,16 +52,5 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-
-    void CheckIfGameFinished() {
-        //if (_playerPointSystem.CurrentScore == -1)
-        //{
-        //    LoseGame();
-        //}
-    }
-
-    void LoseGame() {
-        //OnLoseGame?.Invoke(_playerPointSystem.CurrentScore);
     }
 }

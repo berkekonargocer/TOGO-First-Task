@@ -4,15 +4,15 @@ using UnityEngine.Events;
 [DisallowMultipleComponent]
 public class Obstacle : MonoBehaviour, ITrigger
 {
-    //[SerializeField] ScoreSystem playerScoreSystem;
+    [SerializeField] ScoreSystem playerScoreSystem;
     [SerializeField] UnityEvent onTriggered;
 
 
     public void Trigger() {
-        //if (!PlayerTriggerCollider.IS_INVULNERABLE)
-        //{
-        //    playerScoreSystem.DecrementScore(1);
-        //}
+        if (playerScoreSystem.CurrentScore == 0)
+        {
+            GameManager.Instance.LoseGame();
+        }
 
         onTriggered?.Invoke();
         Destroy(gameObject);

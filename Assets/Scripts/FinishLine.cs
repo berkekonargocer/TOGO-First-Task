@@ -3,9 +3,15 @@ using UnityEngine;
 public class FinishLine : MonoBehaviour
 {
     private void OnTriggerExit(Collider other) {
-        if (other.CompareTag("Player"))
+        if (other.TryGetComponent(out Inventory inventory))
         {
-            GameManager.Instance.WinGame();
+            if(inventory.Items.Count > 0)
+            {
+                GameManager.Instance.WinGame();
+                return;
+            }
+
+            GameManager.Instance.LoseGame();
         }
     }
 }

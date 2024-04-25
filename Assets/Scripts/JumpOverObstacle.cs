@@ -11,6 +11,9 @@ namespace NOJUMPO
         [SerializeField] float obstacleCheckRayLength;
         [SerializeField] LayerMask jumpObstacleLayer;
 
+
+        [SerializeField] AudioClip jumpSFX;
+
         Rigidbody _objectRigidbody;
         GroundedCheck _groundedCheck;
         PlayerAnimator _playerAnimator;
@@ -57,6 +60,7 @@ namespace NOJUMPO
         void Jump() {
             _objectRigidbody.velocity = new Vector3(_objectRigidbody.velocity.x, 0, _objectRigidbody.velocity.z);
             _objectRigidbody.AddForce(_objectRigidbody.transform.up * JUMP_FORCE * JUMP_FORCE_MULTIPLIER * Time.fixedDeltaTime, ForceMode.Impulse);
+            AudioManager.Instance.PlaySFX(jumpSFX);
         }
 
         void SetGroundedDrag() {

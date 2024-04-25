@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1743416320}
     m_Modifications:
+    - target: {fileID: 634874504982633683, guid: 3330944a6cabe7b4f8ffcdcdfd6c3076, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2600513010917674148, guid: 3330944a6cabe7b4f8ffcdcdfd6c3076, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.5
@@ -183,6 +187,11 @@ PrefabInstance:
 --- !u!4 &1761518 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2600513010917674148, guid: 3330944a6cabe7b4f8ffcdcdfd6c3076, type: 3}
+  m_PrefabInstance: {fileID: 1761517}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1761519 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 634874504982633683, guid: 3330944a6cabe7b4f8ffcdcdfd6c3076, type: 3}
   m_PrefabInstance: {fileID: 1761517}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &40653928
@@ -2240,6 +2249,11 @@ MonoBehaviour:
   desiredMoveDuration: 4
   verticalMoveLimit: 4
   maxXPosition: 3
+--- !u!198 &204940402 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 634874504982633683, guid: 3330944a6cabe7b4f8ffcdcdfd6c3076, type: 3}
+  m_PrefabInstance: {fileID: 15921414997017740}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &204940403 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2600513010917674148, guid: 3330944a6cabe7b4f8ffcdcdfd6c3076, type: 3}
@@ -13837,6 +13851,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 625239d435aebd444be18ec4950d480d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winGameParticleFX:
+  - {fileID: 204940402}
+  - {fileID: 1761519}
 --- !u!1001 &1749748300
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17666,6 +17683,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1743416320}
     m_Modifications:
+    - target: {fileID: 634874504982633683, guid: 3330944a6cabe7b4f8ffcdcdfd6c3076, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2600513010917674148, guid: 3330944a6cabe7b4f8ffcdcdfd6c3076, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.5

@@ -10,13 +10,13 @@ public class ScoreUI : MonoBehaviour
     [SerializeField] TextMeshProUGUI scoreText;
 
 
-    private void OnEnable() {
+    void OnEnable() {
         playerInventory.OnItemAmountChange += UpdateScoreText;
         //pointSystem.OnScoreIncreased += UpdateScoreText;
         //pointSystem.OnScoreDecreased += UpdateScoreText;
     }
 
-    private void OnDisable() {
+    void OnDisable() {
         playerInventory.OnItemAmountChange -= UpdateScoreText;
         //pointSystem.OnScoreIncreased -= UpdateScoreText;
         //pointSystem.OnScoreDecreased -= UpdateScoreText;

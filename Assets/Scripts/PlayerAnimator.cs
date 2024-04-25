@@ -58,6 +58,7 @@ public class PlayerAnimator : MonoBehaviour
     void PlayWinGameAnimation(int score) {
         Vector3 lookRotation = new Vector3(Camera.main.transform.position.x, transform.position.y, Camera.main.transform.position.z);
         transform.LookAt(lookRotation);
+        
         _playerAnimator.SetBool("hasWon", true);
     }
 

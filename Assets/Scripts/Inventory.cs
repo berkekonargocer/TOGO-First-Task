@@ -1,6 +1,7 @@
 using DG.Tweening;
 using System;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -11,6 +12,16 @@ public class Inventory : MonoBehaviour
     public Stack<ICollectable> Items { get; private set; } = new Stack<ICollectable>();
 
     public event Action<int> OnItemAmountChange;
+
+
+    void OnEnable() {
+        GameManager.Instance.OnWinGame += OnWinGame;
+    }
+
+    void OnDisable() {
+        GameManager.Instance.OnWinGame -= OnWinGame;
+    }
+
 
     public void AddItem(ICollectable collectable) {
         Transform collectableTransform = collectable.transform;
@@ -39,8 +50,23 @@ public class Inventory : MonoBehaviour
 
         Transform removedItemTransform = Items.Pop().transform;
         GameObject removedObject = removedItemTransform.gameObject;
-        removedObject.GetComponent<Collider>().enabled = false;
         removedItemTransform.SetParent(null);
+
+        ItemRemoveAnimation(removedItemTransform, removedObject);
+
+        OnItemAmountChange?.Invoke(Items.Count);
+    }
+
+    public void RemoveAllItems() {
+        for (int i = Items.Count; i > 0; i--)
+        {
+            RemoveItem();
+        }
+    }
+
+
+    void ItemRemoveAnimation(Transform removedItemTransform, GameObject removedObject) {
+        removedObject.GetComponent<Collider>().enabled = false;
         int randomNum = Random.Range(0, 2);
         int moveDirection;
 
@@ -54,14 +80,19 @@ public class Inventory : MonoBehaviour
         }
 
         removedItemTransform.DOMove(new Vector3(moveDirection, -2, 0), 0.75f).SetRelative().OnComplete(() => Destroy(removedObject));
-
-        OnItemAmountChange?.Invoke(Items.Count);
     }
 
-    public void RemoveAllItems() {
+    void OnWinGame(int score) {
         for (int i = Items.Count; i > 0; i--)
         {
-            RemoveItem();
+            Transform itemTransform = Items.Pop().transform;
+            itemTransform.SetParent(null);
+            Collider itemCollider = itemTransform.GetComponent<Collider>();
+            itemCollider.enabled = true;
+            itemCollider.isTrigger = false;
+            itemTransform.AddComponent<Rigidbody>();
         }
+
+        OnItemAmountChange?.Invoke(Items.Count);
     }
 }

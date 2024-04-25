@@ -8,11 +8,11 @@ public class PlayerTriggerCollider : MonoBehaviour
     Inventory _playerInventory;
 
 
-    private void Awake() {
+    void Awake() {
         _playerInventory = GetComponent<Inventory>();
     }
 
-    private void OnTriggerEnter(Collider other) {
+    void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Collectable")) 
         {
             ICollectable collectable = other.gameObject.GetComponent<ICollectable>();

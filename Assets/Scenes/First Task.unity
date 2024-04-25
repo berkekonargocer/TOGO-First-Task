@@ -4118,7 +4118,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -12700,6 +12700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7da5b5dde644ac143a90c9a600634819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <BackgroundMusic>k__BackingField: {fileID: 8300000, guid: 9bab07b36f0e5044d9776a8867a3f447, type: 3}
   <WinGameSFX>k__BackingField: {fileID: 8300000, guid: ed59d6eb08afa0545abdde1bfd916971, type: 3}
   <LoseGameSFX>k__BackingField: {fileID: 8300000, guid: 92814fff2dd9bb4459a5e6e3e54b6404, type: 3}
 --- !u!1001 &1647203978

@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
+    [field: SerializeField] public AudioClip BackgroundMusic { get; private set; }
     [field: SerializeField] public AudioClip WinGameSFX { get; private set; }
     [field: SerializeField] public AudioClip LoseGameSFX { get; private set; }
 
@@ -27,15 +28,18 @@ public class GameManager : MonoBehaviour
 
     public void StartGame() {
         OnStartGame?.Invoke();
+        AudioManager.Instance.PlayMusic(BackgroundMusic);
     }
 
     public void WinGame() {
         OnWinGame?.Invoke(_playerInventory.Items.Count);
+        AudioManager.Instance.StopMusic();
         AudioManager.Instance.PlaySFX(WinGameSFX);
     }
 
     public void LoseGame() {
         OnLoseGame?.Invoke(_playerInventory.Items.Count);
+        AudioManager.Instance.StopMusic();
         AudioManager.Instance.PlaySFX(LoseGameSFX);
     }
 

@@ -35,6 +35,7 @@ public class AudioManager : MonoBehaviour
     }
 
     public void PlaySFX(AudioClip clipToPlay) {
+        SFXAudioSource.Stop();
         SFXAudioSource.clip = clipToPlay;
         SFXAudioSource.Play();
     }

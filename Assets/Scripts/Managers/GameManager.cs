@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
 
     public void LoseGame() {
         OnLoseGame?.Invoke(_playerInventory.Items.Count);
+        AudioManager.Instance.PlaySFX(LoseGameSFX);
     }
 
     public void RestartLevel() {

@@ -46,11 +46,12 @@ public class GameOverUI : MonoBehaviour
         {
             gameOverPanel.DOMoveY(600, showPanelAnimationDuration)
                          .SetUpdate(true);
+                         //.OnComplete(() => AudioManager.Instance.PlaySFX(GameManager.Instance.WinGameSFX));
             return;
         }
 
         gameOverPanel.DOMoveY(600, showPanelAnimationDuration)
-                         .SetUpdate(true)
-                         .OnComplete(() => AudioManager.Instance.PlaySFX(GameManager.Instance.LoseGameSFX));
+                         .SetUpdate(true);
+                         //.OnComplete(() => AudioManager.Instance.PlaySFX(GameManager.Instance.LoseGameSFX));
     }
 }

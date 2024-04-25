@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[DisallowMultipleComponent]
 public class FinishLine : MonoBehaviour
 {
     private void OnTriggerExit(Collider other) {

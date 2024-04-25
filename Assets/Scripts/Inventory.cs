@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+[DisallowMultipleComponent]
 public class Inventory : MonoBehaviour
 {
     [field: SerializeField] public Transform ItemCarryPosition { get; private set; }
@@ -34,9 +35,10 @@ public class Inventory : MonoBehaviour
         if (Items.Count <= 0)
             return;
 
-        ICollectable removedItem = Items.Pop();
-        removedItem.transform.gameObject.GetComponent<Collider>().enabled = false;
-        removedItem.transform.SetParent(null);
+        Transform removedItem = Items.Pop().transform;
+        GameObject removedObject = removedItem.gameObject;
+        removedObject.GetComponent<Collider>().enabled = false;
+        removedItem.SetParent(null);
         int randomNum = Random.Range(0, 2);
         int moveDirection;
 
@@ -49,7 +51,7 @@ public class Inventory : MonoBehaviour
             moveDirection = 15;
         }
 
-        removedItem.transform.DOMove(new Vector3(moveDirection, -2, 0), 0.75f).SetRelative();
+        removedItem.DOMove(new Vector3(moveDirection, -2, 0), 0.75f).SetRelative().OnComplete(() => Destroy(removedObject));
 
         OnItemAmountChange?.Invoke(Items.Count);
     }

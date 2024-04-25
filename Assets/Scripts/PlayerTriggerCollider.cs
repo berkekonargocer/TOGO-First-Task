@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[DisallowMultipleComponent]
 public class PlayerTriggerCollider : MonoBehaviour
 {
     public static bool IS_INVULNERABLE { get; private set; } = false;

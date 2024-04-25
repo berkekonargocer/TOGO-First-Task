@@ -1,6 +1,6 @@
-using TMPro;
 using UnityEngine;
 
+[DisallowMultipleComponent]
 public class PlayerAnimator : MonoBehaviour
 {
     Animator _playerAnimator;

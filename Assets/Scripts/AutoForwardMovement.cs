@@ -7,6 +7,7 @@ public enum State
     MOVING
 }
 
+[DisallowMultipleComponent]
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(PlayerInput))]
 public class AutoForwardMovement : MonoBehaviour

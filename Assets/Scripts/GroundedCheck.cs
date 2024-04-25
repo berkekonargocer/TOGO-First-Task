@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 
+[DisallowMultipleComponent]
 public class GroundedCheck : MonoBehaviour
 {
     [SerializeField] Transform groundedCheckTransform;

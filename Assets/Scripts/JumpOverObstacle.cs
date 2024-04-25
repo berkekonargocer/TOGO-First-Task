@@ -1,8 +1,9 @@
-using DG.Tweening;
 using UnityEngine;
+
 
 namespace NOJUMPO
 {
+    [DisallowMultipleComponent]
     public class JumpOverObstacle : MonoBehaviour
     {
         // -------------------------------- FIELDS ---------------------------------

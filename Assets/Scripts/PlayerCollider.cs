@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [DisallowMultipleComponent]
-public class PlayerTriggerCollider : MonoBehaviour
+public class PlayerCollider : MonoBehaviour
 {
     public static bool IS_INVULNERABLE { get; private set; } = false;
 
@@ -13,7 +13,7 @@ public class PlayerTriggerCollider : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other) {
-        if (other.gameObject.CompareTag("Collectable")) 
+        if (other.gameObject.CompareTag("Collectable"))
         {
             ICollectable collectable = other.gameObject.GetComponent<ICollectable>();
             collectable?.Collect(_playerInventory);
@@ -25,6 +25,10 @@ public class PlayerTriggerCollider : MonoBehaviour
             ITrigger triggerable = other.gameObject.GetComponent<ITrigger>();
             triggerable?.Trigger();
         }
+    }
+
+    void OnCollisionEnter(Collision collision) {
+
     }
 
 

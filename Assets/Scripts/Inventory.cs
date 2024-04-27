@@ -14,6 +14,8 @@ public class Inventory : MonoBehaviour
     public event Action<int> OnItemAmountChange;
 
 
+    [SerializeField] float itemStackOffset = 0.1f;
+
     void OnEnable() {
         GameManager.Instance.OnWinGame += OnWinGame;
     }
@@ -25,7 +27,10 @@ public class Inventory : MonoBehaviour
 
     public void AddItem(ICollectable collectable) {
         Transform collectableTransform = collectable.transform;
-        collectableTransform.gameObject.GetComponent<Collider>().enabled = false;
+
+        Collider collectableCollider = collectableTransform.gameObject.GetComponent<Collider>();
+        collectableCollider.enabled = false;
+
         collectableTransform.SetParent(ItemCarryPosition);
 
         if (Items.Count == 0)
@@ -35,13 +40,16 @@ public class Inventory : MonoBehaviour
         else
         {
             Transform lastItemTransform = Items.Peek().transform;
-            collectableTransform.localPosition = new Vector3(0, lastItemTransform.localPosition.y + lastItemTransform.localScale.y, 0);
+            collectableTransform.localPosition = new Vector3(0, 0, lastItemTransform.localPosition.z + lastItemTransform.localScale.z + itemStackOffset);
         }
 
-        collectableTransform.localRotation = Quaternion.Euler(new Vector3(collectableTransform.localRotation.x, Random.Range(0, 360), collectableTransform.localRotation.z));
+        //collectableTransform.localRotation = Quaternion.Euler(new Vector3(collectableTransform.localRotation.x, Random.Range(0, 360), collectableTransform.localRotation.z));
 
         Items.Push(collectable);
+
         OnItemAmountChange?.Invoke(Items.Count);
+
+        collectableCollider.enabled = true;
     }
 
     public void RemoveItem() {
@@ -79,7 +87,7 @@ public class Inventory : MonoBehaviour
             moveDirection = 15;
         }
 
-        removedItemTransform.DOMove(new Vector3(moveDirection, -2, 0), 0.75f).SetRelative().OnComplete(() => Destroy(removedObject));
+        removedItemTransform.DOMove(new Vector3(moveDirection, 0, 0), 0.75f).SetRelative().OnComplete(() => Destroy(removedObject));
     }
 
     void OnWinGame(int score) {

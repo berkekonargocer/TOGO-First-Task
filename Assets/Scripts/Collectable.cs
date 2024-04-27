@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class Collectable : MonoBehaviour, ICollectable
 {
 
-    [SerializeField] CollectableType collectableType;
+    [field: SerializeField] public CollectableType Type { get; private set; }
     [SerializeField] UnityEvent onCollected;
     FloatAnimation _floatAnimation;
 
@@ -28,17 +28,15 @@ public class Collectable : MonoBehaviour, ICollectable
     }
 
     public void SetType(CollectableType type) {
-        collectableType = type;
-        collectableType.ApplyTransformation(_meshFilter);
+        Type = type;
+        Type.ApplyTransformation(_meshFilter);
     }
 
     void OnTriggerEnter(Collider other) {
         switch (other.tag)
         {
             case "CollectableTransformer":
-                collectableType.Transform(this);
-                break;
-            default:
+                Type.TransformType(this);
                 break;
         }
     }

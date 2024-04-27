@@ -12,7 +12,6 @@ namespace NOJUMPO
 
 #endif
 
-
         [SerializeField] Mesh meshType;
         [SerializeField] int point;
         [SerializeField] ParticleSystem transformSFX;
@@ -27,7 +26,7 @@ namespace NOJUMPO
 
 
         // ------------------------- CUSTOM PUBLIC METHODS -------------------------
-        public void Transform(Collectable collectable) {
+        public void TransformType(Collectable collectable) {
             collectable.SetType(transformType);
         }
 

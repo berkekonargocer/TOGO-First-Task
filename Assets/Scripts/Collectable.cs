@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [DisallowMultipleComponent]
-public class PizzaBox : MonoBehaviour, ICollectable
+public class Collectable : MonoBehaviour, ICollectable
 {
     [SerializeField] UnityEvent onCollected;
     FloatAnimation _floatAnimation;

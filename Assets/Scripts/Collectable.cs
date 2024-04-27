@@ -23,6 +23,8 @@ public class Collectable : MonoBehaviour, ICollectable
         Destroy(_floatAnimation);
         _floatAnimation = null;
 
+        tag = "Untagged";
+
         onCollected?.Invoke();
         inventory.AddItem(this);
     }

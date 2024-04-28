@@ -23,7 +23,10 @@ public class GameManager : MonoBehaviour
     }
 
     void OnEnable() {
-        _playerInventory = GameObject.FindWithTag("Player").GetComponent<Inventory>();
+        if (_playerInventory == null)
+        {
+            _playerInventory = GameObject.FindWithTag("Player").GetComponent<Inventory>(); 
+        }
     }
 
 

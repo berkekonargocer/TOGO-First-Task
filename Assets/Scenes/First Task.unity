@@ -402,7 +402,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 737354921}
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
   onTriggered:
     m_PersistentCalls:
@@ -419,7 +418,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 737354921}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: RemoveItem
         m_Mode: 1
@@ -712,7 +711,7 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerInventory
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
@@ -756,15 +755,15 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -2301,7 +2300,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 737354921}
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
   onTriggered:
     m_PersistentCalls:
@@ -2318,7 +2316,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 737354921}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: RemoveItem
         m_Mode: 1
@@ -2476,7 +2474,7 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerInventory
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
@@ -2520,15 +2518,15 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -2924,7 +2922,7 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerInventory
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
@@ -2968,15 +2966,15 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -3929,7 +3927,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 737354921}
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
   onTriggered:
     m_PersistentCalls:
@@ -3946,7 +3943,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 737354921}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: RemoveItem
         m_Mode: 1
@@ -5882,7 +5879,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   boxCastSize: {x: 0.5, y: 0.025, z: 0.275}
---- !u!114 &737354921
+--- !u!114 &737354923
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5891,7 +5888,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 737354906}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c087ab36275da8642b7bf01fe9463833, type: 3}
+  m_Script: {fileID: 11500000, guid: f35ccb82aec6a604b9482a036189ac86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   <ItemCarryPosition>k__BackingField: {fileID: 451317743}
@@ -6098,7 +6095,7 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerInventory
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
@@ -6142,15 +6139,15 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -6350,7 +6347,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 737354921}
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
   onTriggered:
     m_PersistentCalls:
@@ -6367,7 +6363,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 737354921}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: RemoveItem
         m_Mode: 1
@@ -6593,7 +6589,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 737354921}
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
   onTriggered:
     m_PersistentCalls:
@@ -6610,7 +6605,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 737354921}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: RemoveItem
         m_Mode: 1
@@ -6875,7 +6870,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 737354921}
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
   onTriggered:
     m_PersistentCalls:
@@ -6892,7 +6886,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 737354921}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: RemoveItem
         m_Mode: 1
@@ -7185,7 +7179,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 737354921}
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
   onTriggered:
     m_PersistentCalls:
@@ -7202,7 +7195,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 737354921}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: RemoveItem
         m_Mode: 1
@@ -7863,7 +7856,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 737354921}
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
   onTriggered:
     m_PersistentCalls:
@@ -7880,7 +7872,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 737354921}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: RemoveItem
         m_Mode: 1
@@ -8550,7 +8542,7 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerInventory
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
@@ -8594,15 +8586,15 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -8920,7 +8912,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 737354921}
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
   onTriggered:
     m_PersistentCalls:
@@ -8937,7 +8928,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 737354921}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: RemoveItem
         m_Mode: 1
@@ -9465,7 +9456,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 737354921}
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
   onTriggered:
     m_PersistentCalls:
@@ -9482,7 +9472,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 737354921}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: RemoveItem
         m_Mode: 1
@@ -9658,7 +9648,7 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerInventory
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
@@ -9702,15 +9692,15 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -10176,7 +10166,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 737354921}
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
   onTriggered:
     m_PersistentCalls:
@@ -10193,7 +10182,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 737354921}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: RemoveItem
         m_Mode: 1
@@ -10353,7 +10342,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 737354921}
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
   onTriggered:
     m_PersistentCalls:
@@ -10370,7 +10358,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 737354921}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: RemoveItem
         m_Mode: 1
@@ -10754,7 +10742,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 737354921}
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
   onTriggered:
     m_PersistentCalls:
@@ -10771,7 +10758,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 737354921}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: RemoveItem
         m_Mode: 1
@@ -10909,7 +10896,7 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerInventory
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
@@ -10953,15 +10940,15 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -11161,7 +11148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 737354921}
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
   onTriggered:
     m_PersistentCalls:
@@ -11178,7 +11164,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 737354921}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: RemoveItem
         m_Mode: 1
@@ -11338,7 +11324,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 737354921}
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
   onTriggered:
     m_PersistentCalls:
@@ -11355,7 +11340,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 737354921}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: RemoveItem
         m_Mode: 1
@@ -11515,7 +11500,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 737354921}
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
   onTriggered:
     m_PersistentCalls:
@@ -11532,7 +11516,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 737354921}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: RemoveItem
         m_Mode: 1
@@ -12886,7 +12870,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 737354921}
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
   onTriggered:
     m_PersistentCalls:
@@ -12903,7 +12886,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 737354921}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: RemoveItem
         m_Mode: 1
@@ -13093,7 +13076,7 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerInventory
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
@@ -13137,15 +13120,15 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -13357,7 +13340,7 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerInventory
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
@@ -13401,15 +13384,15 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -14062,7 +14045,7 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerInventory
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
@@ -14106,15 +14089,15 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -14678,7 +14661,7 @@ PrefabInstance:
       addedObject: {fileID: 737354919}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 737354921}
+      addedObject: {fileID: 737354923}
   m_SourcePrefab: {fileID: 100100000, guid: 0284039f2a0129842b4132f936c321c7, type: 3}
 --- !u!1 &1750113902
 GameObject:
@@ -15277,7 +15260,7 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerInventory
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
@@ -15321,15 +15304,15 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -15507,7 +15490,7 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerInventory
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
@@ -15551,15 +15534,15 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -15918,7 +15901,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 788c55460a4ac1f42aee5ea8caf26883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 737354921}
   scoreText: {fileID: 742260265}
 --- !u!114 &1858828950
 MonoBehaviour:
@@ -16518,7 +16500,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 737354921}
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
   onTriggered:
     m_PersistentCalls:
@@ -16535,7 +16516,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 737354921}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: RemoveItem
         m_Mode: 1
@@ -17031,7 +17012,7 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerInventory
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
@@ -17075,15 +17056,15 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -17405,7 +17386,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 737354921}
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
   onTriggered:
     m_PersistentCalls:
@@ -17422,7 +17402,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 737354921}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: RemoveItem
         m_Mode: 1
@@ -17722,7 +17702,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 737354921}
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
   onTriggered:
     m_PersistentCalls:
@@ -17739,7 +17718,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 737354921}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: RemoveItem
         m_Mode: 1
@@ -18086,7 +18065,7 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerInventory
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: playerScoreSystem
       value: 
@@ -18130,15 +18109,15 @@ PrefabInstance:
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 6101237332976482528, guid: 4b02f9cd1808d124d97b00d85c4b4da7, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -18799,7 +18778,7 @@ PrefabInstance:
     - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
       propertyPath: playerInventory
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
       propertyPath: playerScoreSystem
       value: 
@@ -18843,15 +18822,15 @@ PrefabInstance:
     - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 737354921}
+      objectReference: {fileID: 0}
     - target: {fileID: 5669755628319314660, guid: 583bc6ec84af3754dba3a7e779c51fd6, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2

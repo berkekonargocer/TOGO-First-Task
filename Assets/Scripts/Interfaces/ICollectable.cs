@@ -3,5 +3,5 @@ using UnityEngine;
 public interface ICollectable
 {
     public Transform transform { get; }
-    public void Collect(Inventory inventory);
+    public void Collect();
 }

@@ -5,18 +5,12 @@ public class PlayerCollider : MonoBehaviour
 {
     public static bool IS_INVULNERABLE { get; private set; } = false;
 
-    Inventory _playerInventory;
-
-
-    void Awake() {
-        _playerInventory = GetComponent<Inventory>();
-    }
 
     void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Collectable"))
         {
             ICollectable collectable = other.gameObject.GetComponent<ICollectable>();
-            collectable?.Collect(_playerInventory);
+            collectable?.Collect();
             return;
         }
 

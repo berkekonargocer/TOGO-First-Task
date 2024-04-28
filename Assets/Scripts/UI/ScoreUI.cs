@@ -4,17 +4,15 @@ using UnityEngine;
 [DisallowMultipleComponent]
 public class ScoreUI : MonoBehaviour
 {
-    [SerializeField] Inventory playerInventory;
-
     [SerializeField] TextMeshProUGUI scoreText;
 
 
     void OnEnable() {
-        playerInventory.OnItemAmountChange += UpdateScoreText;
+        PlayerInventory.Instance.OnItemAmountChange += UpdateScoreText;
     }
 
     void OnDisable() {
-        playerInventory.OnItemAmountChange -= UpdateScoreText;
+        PlayerInventory.Instance.OnItemAmountChange -= UpdateScoreText;
     }
 
     void UpdateScoreText(int score) {

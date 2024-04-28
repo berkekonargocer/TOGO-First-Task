@@ -4,7 +4,6 @@ using UnityEngine.Events;
 [DisallowMultipleComponent]
 public class Obstacle : MonoBehaviour, ITrigger
 {
-    [SerializeField] Inventory playerInventory;
     [SerializeField] ParticleSystem obstacleHitParticleFX;
 
     [SerializeField] UnityEvent onTriggered;
@@ -23,7 +22,7 @@ public class Obstacle : MonoBehaviour, ITrigger
         _obstacleCollider.enabled = false;
         _particleSpawner.SpawnParticle(obstacleHitParticleFX);
 
-        if (playerInventory.Items.Count == 0)
+        if (PlayerInventory.Instance.Items.Count == 0)
         {
             GameManager.Instance.LoseGame();
             Destroy(gameObject);

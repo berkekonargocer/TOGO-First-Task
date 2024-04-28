@@ -19,14 +19,14 @@ public class Collectable : MonoBehaviour, ICollectable
     }
 
 
-    public void Collect(Inventory inventory) {
+    public void Collect() {
         Destroy(_floatAnimation);
         _floatAnimation = null;
 
         tag = "Untagged";
 
         onCollected?.Invoke();
-        inventory.AddItem(this);
+        PlayerInventory.Instance.AddItem(this);
     }
 
     public void SetType(CollectableType type) {
@@ -39,6 +39,14 @@ public class Collectable : MonoBehaviour, ICollectable
         {
             case "CollectableTransformer":
                 Type.TransformType(this);
+                break;
+            case "Collectable":
+                ICollectable collectable = other.gameObject.GetComponent<ICollectable>();
+                collectable?.Collect();
+                break;
+            case "Trigger":
+                ITrigger triggerable = other.gameObject.GetComponent<ITrigger>();
+                triggerable?.Trigger();
                 break;
         }
     }

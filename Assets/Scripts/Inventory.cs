@@ -1,4 +1,5 @@
 using DG.Tweening;
+using NOJUMPO;
 using System;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -33,14 +34,19 @@ public class Inventory : MonoBehaviour
 
         collectableTransform.SetParent(ItemCarryPosition);
 
+        FollowWithOffset fwOffset = collectableTransform.AddComponent<FollowWithOffset>();
+
         if (Items.Count == 0)
         {
             collectableTransform.localPosition = Vector3.zero;
+            fwOffset.Setup(ItemCarryPosition, Vector3.zero, FollowDirection.Z);
         }
         else
         {
             Transform lastItemTransform = Items.Peek().transform;
-            collectableTransform.localPosition = new Vector3(0, 0, lastItemTransform.localPosition.z + lastItemTransform.localScale.z + itemStackOffset);
+            fwOffset.Setup(lastItemTransform, new Vector3(0, 0, lastItemTransform.localScale.z + itemStackOffset), FollowDirection.Z);
+
+            //collectableTransform.localPosition = new Vector3(0, 0, lastItemTransform.localPosition.z + lastItemTransform.localScale.z + itemStackOffset);
         }
 
         //collectableTransform.localRotation = Quaternion.Euler(new Vector3(collectableTransform.localRotation.x, Random.Range(0, 360), collectableTransform.localRotation.z));

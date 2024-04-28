@@ -51,6 +51,11 @@ namespace NOJUMPO
 
 
         // ------------------------- CUSTOM PUBLIC METHODS -------------------------
+        public void Setup(Transform transformToFollow, Vector3 offset, FollowDirection direction) {
+            this.transformToFollow = transformToFollow;
+            this.offset = offset;
+            followDirection = direction;
+        }
 
 
         // ------------------------ CUSTOM PROTECTED METHODS -----------------------

@@ -8,17 +8,14 @@ public class Obstacle : MonoBehaviour, ITrigger
     [SerializeField] UnityEvent onTriggered;
 
     ParticleSpawner _particleSpawner;
-    Collider _obstacleCollider;
 
 
     void Awake() {
         _particleSpawner = GetComponent<ParticleSpawner>();
-        _obstacleCollider = GetComponent<Collider>();
     }
 
 
     public void Trigger() {
-        _obstacleCollider.enabled = false;
         _particleSpawner.SpawnParticle(obstacleHitParticleFX);
 
         if (GameManager.Instance.PlayerInventory.Items.Count == 0)
@@ -29,6 +26,5 @@ public class Obstacle : MonoBehaviour, ITrigger
         }
 
         onTriggered?.Invoke();
-        Destroy(gameObject);
     }
 }

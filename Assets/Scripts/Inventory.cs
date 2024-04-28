@@ -1,6 +1,7 @@
 using DG.Tweening;
 using NOJUMPO;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -16,6 +17,7 @@ public class Inventory : MonoBehaviour
 
     [SerializeField] float itemStackOffset = 0.1f;
 
+    bool _isAddAnimationRunning = false;
 
     void OnEnable() {
         GameManager.Instance.OnWinGame += OnWinGame;
@@ -57,6 +59,8 @@ public class Inventory : MonoBehaviour
 
         OnItemAmountChange?.Invoke(Items.Count);
 
+        ItemAddAnimation();
+
         collectableCollider.enabled = true;
     }
 
@@ -80,6 +84,11 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    void ItemAddAnimation() {
+        StopCoroutine(ScaleUpAndDownOrderly());
+        _isAddAnimationRunning = false;
+        StartCoroutine(ScaleUpAndDownOrderly());
+    }
 
     void ItemRemoveAnimation(Transform removedItemTransform, GameObject removedObject) {
         removedObject.GetComponent<Collider>().enabled = false;
@@ -110,5 +119,22 @@ public class Inventory : MonoBehaviour
         }
 
         OnItemAmountChange?.Invoke(Items.Count);
+    }
+
+    IEnumerator ScaleUpAndDownOrderly() {
+        _isAddAnimationRunning = true;
+        WaitForSeconds waitTime = new WaitForSeconds(0.2f);
+
+        foreach (ICollectable collectable in Items)
+        {
+            if (!_isAddAnimationRunning)
+                break;
+
+            float initialScale = collectable.transform.localScale.x;
+            collectable.transform.DOScale(0.1f, 0.2f).SetRelative().OnComplete(()=> collectable.transform.DOScale(initialScale, 0.2f));
+            yield return waitTime;
+        }
+
+        _isAddAnimationRunning = false;
     }
 }

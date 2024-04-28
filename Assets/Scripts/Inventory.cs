@@ -7,10 +7,8 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 
 [DisallowMultipleComponent]
-public class PlayerInventory : MonoBehaviour
+public class Inventory : MonoBehaviour
 {
-    public static PlayerInventory Instance { get; private set; }
-
     [field: SerializeField] public Transform ItemCarryPosition { get; private set; }
     public Stack<ICollectable> Items { get; private set; } = new Stack<ICollectable>();
 
@@ -18,17 +16,6 @@ public class PlayerInventory : MonoBehaviour
 
     [SerializeField] float itemStackOffset = 0.1f;
 
-    void Awake() {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-        
-    }
 
     void OnEnable() {
         GameManager.Instance.OnWinGame += OnWinGame;

@@ -10,7 +10,7 @@ public class PlayerCollider : MonoBehaviour
         if (other.gameObject.CompareTag("Collectable"))
         {
             ICollectable collectable = other.gameObject.GetComponent<ICollectable>();
-            collectable?.Collect();
+            collectable?.Collect(GameManager.Instance.PlayerInventory);
             return;
         }
 

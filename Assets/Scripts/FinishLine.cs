@@ -6,7 +6,7 @@ public class FinishLine : MonoBehaviour
     [SerializeField] ParticleSystem[] winGameParticleFX;
 
     void OnTriggerExit(Collider other) {
-        if (other.TryGetComponent(out PlayerInventory inventory))
+        if (other.TryGetComponent(out Inventory inventory))
         {
             if(inventory.Items.Count > 0)
             {

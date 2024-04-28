@@ -10,12 +10,20 @@ public class GameManager : MonoBehaviour
     [field: SerializeField] public AudioClip WinGameSFX { get; private set; }
     [field: SerializeField] public AudioClip LoseGameSFX { get; private set; }
 
+    public Inventory PlayerInventory { get { return _playerInventory; } }
+    Inventory _playerInventory;
+
     public event Action OnStartGame;
     public event Action<int> OnLoseGame;
     public event Action<int> OnWinGame;
 
+
     void Awake() {
         InitializeSingleton();
+    }
+
+    void OnEnable() {
+        _playerInventory = GameObject.FindWithTag("Player").GetComponent<Inventory>();
     }
 
 
@@ -25,13 +33,13 @@ public class GameManager : MonoBehaviour
     }
 
     public void WinGame() {
-        OnWinGame?.Invoke(PlayerInventory.Instance.Items.Count);
+        OnWinGame?.Invoke(_playerInventory.Items.Count);
         AudioManager.Instance.StopMusic();
         AudioManager.Instance.PlaySFX(WinGameSFX);
     }
 
     public void LoseGame() {
-        OnLoseGame?.Invoke(PlayerInventory.Instance.Items.Count);
+        OnLoseGame?.Invoke(_playerInventory.Items.Count);
         AudioManager.Instance.StopMusic();
         AudioManager.Instance.PlaySFX(LoseGameSFX);
     }

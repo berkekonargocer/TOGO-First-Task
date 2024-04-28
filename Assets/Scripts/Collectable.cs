@@ -5,7 +5,6 @@ using UnityEngine.Events;
 [DisallowMultipleComponent]
 public class Collectable : MonoBehaviour, ICollectable
 {
-
     [field: SerializeField] public CollectableType Type { get; private set; }
     [SerializeField] UnityEvent onCollected;
     FloatAnimation _floatAnimation;
@@ -19,14 +18,14 @@ public class Collectable : MonoBehaviour, ICollectable
     }
 
 
-    public void Collect() {
+    public void Collect(Inventory inventory) {
         Destroy(_floatAnimation);
         _floatAnimation = null;
 
         tag = "Untagged";
 
         onCollected?.Invoke();
-        PlayerInventory.Instance.AddItem(this);
+        inventory.AddItem(this);
     }
 
     public void SetType(CollectableType type) {
@@ -42,7 +41,7 @@ public class Collectable : MonoBehaviour, ICollectable
                 break;
             case "Collectable":
                 ICollectable collectable = other.gameObject.GetComponent<ICollectable>();
-                collectable?.Collect();
+                collectable?.Collect(GameManager.Instance.PlayerInventory);
                 break;
             case "Trigger":
                 ITrigger triggerable = other.gameObject.GetComponent<ITrigger>();

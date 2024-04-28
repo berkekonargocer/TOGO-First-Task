@@ -8,11 +8,11 @@ public class ScoreUI : MonoBehaviour
 
 
     void OnEnable() {
-        PlayerInventory.Instance.OnItemAmountChange += UpdateScoreText;
+        GameManager.Instance.PlayerInventory.OnItemAmountChange += UpdateScoreText;
     }
 
     void OnDisable() {
-        PlayerInventory.Instance.OnItemAmountChange -= UpdateScoreText;
+        GameManager.Instance.PlayerInventory.OnItemAmountChange -= UpdateScoreText;
     }
 
     void UpdateScoreText(int score) {

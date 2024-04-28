@@ -7,7 +7,7 @@ public class PlayerAnimator : MonoBehaviour
 
 
     void OnEnable() {
-        PlayerInventory.Instance.OnItemAmountChange += SetItemAmountParameter;
+        GameManager.Instance.PlayerInventory.OnItemAmountChange += SetItemAmountParameter;
 
         GroundedCheck groundedCheck = GetComponent<GroundedCheck>();
         groundedCheck.OnGrounded += StopJumpAnimation;
@@ -18,7 +18,7 @@ public class PlayerAnimator : MonoBehaviour
     }
 
     void OnDisable() {
-        PlayerInventory.Instance.OnItemAmountChange -= SetItemAmountParameter;
+        GameManager.Instance.PlayerInventory.OnItemAmountChange -= SetItemAmountParameter;
 
         GroundedCheck groundedCheck = GetComponent<GroundedCheck>();
         groundedCheck.OnGrounded -= StopJumpAnimation;

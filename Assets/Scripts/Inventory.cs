@@ -14,8 +14,8 @@ public class Inventory : MonoBehaviour
 
     public event Action<int> OnItemAmountChange;
 
-
     [SerializeField] float itemStackOffset = 0.1f;
+
 
     void OnEnable() {
         GameManager.Instance.OnWinGame += OnWinGame;
@@ -35,17 +35,19 @@ public class Inventory : MonoBehaviour
         collectableTransform.SetParent(ItemCarryPosition);
 
         FollowWithOffset fwOffset = collectableTransform.AddComponent<FollowWithOffset>();
+        SmoothFollow smoothFollow = collectableTransform.AddComponent<SmoothFollow>();
 
         if (Items.Count == 0)
         {
             collectableTransform.localPosition = Vector3.zero;
             fwOffset.Setup(ItemCarryPosition, Vector3.zero, FollowDirection.Z);
+            smoothFollow.Setup(transform, Vector3.zero, FollowDirection.X, 18);
         }
         else
         {
             Transform lastItemTransform = Items.Peek().transform;
             fwOffset.Setup(lastItemTransform, new Vector3(0, 0, lastItemTransform.localScale.z + itemStackOffset), FollowDirection.Z);
-
+            smoothFollow.Setup(lastItemTransform, Vector3.zero, FollowDirection.X, 18);
             //collectableTransform.localPosition = new Vector3(0, 0, lastItemTransform.localPosition.z + lastItemTransform.localScale.z + itemStackOffset);
         }
 

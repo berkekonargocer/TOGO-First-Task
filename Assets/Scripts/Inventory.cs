@@ -85,9 +85,7 @@ public class Inventory : MonoBehaviour
     }
 
     void ItemAddAnimation() {
-        StopCoroutine(ScaleUpAndDownOrderly());
-        _isAddAnimationRunning = false;
-        StartCoroutine(ScaleUpAndDownOrderly());
+        StartCoroutine(ScaleUpAndDownItemsOrderly(Items));
     }
 
     void ItemRemoveAnimation(Transform removedItemTransform, GameObject removedObject) {
@@ -121,20 +119,16 @@ public class Inventory : MonoBehaviour
         OnItemAmountChange?.Invoke(Items.Count);
     }
 
-    IEnumerator ScaleUpAndDownOrderly() {
-        _isAddAnimationRunning = true;
+    IEnumerator ScaleUpAndDownItemsOrderly(Stack<ICollectable> stack) {
         WaitForSeconds waitTime = new WaitForSeconds(0.2f);
 
-        foreach (ICollectable collectable in Items)
-        {
-            if (!_isAddAnimationRunning)
-                break;
+        List<ICollectable> tempList = new List<ICollectable>(stack);
 
+        foreach (ICollectable collectable in tempList)
+        {
             float initialScale = collectable.transform.localScale.x;
-            collectable.transform.DOScale(0.1f, 0.2f).SetRelative().OnComplete(()=> collectable.transform.DOScale(initialScale, 0.2f));
+            collectable.transform.DOScale(0.1f, 0.2f).SetRelative().OnComplete(() => collectable.transform.DOScale(initialScale, 0.2f));
             yield return waitTime;
         }
-
-        _isAddAnimationRunning = false;
     }
 }

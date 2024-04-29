@@ -6,6 +6,8 @@ using UnityEngine.Events;
 public class Collectable : MonoBehaviour, ICollectable
 {
     [field: SerializeField] public CollectableType Type { get; private set; }
+
+    [SerializeField] AudioClip collectSFX;
     [SerializeField] UnityEvent onCollected;
 
     MeshFilter _meshFilter;
@@ -28,10 +30,12 @@ public class Collectable : MonoBehaviour, ICollectable
 
         onCollected?.Invoke();
         inventory.AddItem(this);
+        AudioManager.Instance.PlaySFX(collectSFX);
     }
 
     public void SetType(CollectableType type) {
         _transformVFX.Play();
+        AudioManager.Instance.PlaySFX(type.TransformSFX);
         Type = type;
         Type.ApplyTransformation(_meshFilter);
     }

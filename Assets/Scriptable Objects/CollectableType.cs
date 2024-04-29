@@ -13,7 +13,7 @@ namespace NOJUMPO
 #endif
 
         [SerializeField] Mesh meshType;
-        [SerializeField] AudioClip transformSFX;
+        [field: SerializeField] public AudioClip TransformSFX { get; private set; }
         [SerializeField] CollectableType transformType;
 
         [field: SerializeField] public int Point { get; private set; }
@@ -32,7 +32,6 @@ namespace NOJUMPO
 
         public void ApplyTransformation(MeshFilter meshFilter) {
             meshFilter.mesh = meshType;
-            //transformSFX.Play();
         }
 
         // ------------------------- CUSTOM PRIVATE METHODS ------------------------

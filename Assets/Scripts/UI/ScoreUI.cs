@@ -1,3 +1,4 @@
+using NOJUMPO;
 using TMPro;
 using UnityEngine;
 
@@ -6,6 +7,7 @@ public class ScoreUI : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI scoreText;
 
+    [SerializeField] IntCountTowards score;
 
     void OnEnable() {
         GameManager.Instance.PlayerInventory.OnItemAmountChange += UpdateScoreText;
@@ -16,6 +18,7 @@ public class ScoreUI : MonoBehaviour
     }
 
     void UpdateScoreText(int score) {
-        scoreText.text = $"Score: <color=\"green\"> {score} </color>";
+        this.score.Value = score * 5;
+        //scoreText.text = $"Score: <color=\"green\"> {score} </color>";
     }
 }

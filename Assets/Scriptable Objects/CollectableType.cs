@@ -13,7 +13,7 @@ namespace NOJUMPO
 #endif
 
         [SerializeField] Mesh meshType;
-        [SerializeField] ParticleSystem transformSFX;
+        [SerializeField] AudioClip transformSFX;
         [SerializeField] CollectableType transformType;
 
         [field: SerializeField] public int Point { get; private set; }

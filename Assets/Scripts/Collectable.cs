@@ -7,14 +7,16 @@ public class Collectable : MonoBehaviour, ICollectable
 {
     [field: SerializeField] public CollectableType Type { get; private set; }
     [SerializeField] UnityEvent onCollected;
-    FloatAnimation _floatAnimation;
 
     MeshFilter _meshFilter;
+    ParticleSystem _transformVFX;
+    FloatAnimation _floatAnimation;
 
 
     private void Awake() {
-        _floatAnimation = GetComponent<FloatAnimation>();
         _meshFilter = GetComponent<MeshFilter>();
+        _transformVFX = GetComponent<ParticleSystem>();
+        _floatAnimation = GetComponent<FloatAnimation>();
     }
 
 
@@ -29,6 +31,7 @@ public class Collectable : MonoBehaviour, ICollectable
     }
 
     public void SetType(CollectableType type) {
+        _transformVFX.Play();
         Type = type;
         Type.ApplyTransformation(_meshFilter);
     }

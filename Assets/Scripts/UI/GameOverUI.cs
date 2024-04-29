@@ -1,12 +1,15 @@
 using TMPro;
 using UnityEngine;
 using DG.Tweening;
+using NOJUMPO;
 
 public class GameOverUI : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI gameOverText;
-    [SerializeField] TextMeshProUGUI scoreText;
+    [SerializeField] CountingFloat score;
     [SerializeField] Transform gameOverPanel;
+
+    [SerializeField] GameObject scoreHUDGameObj;
 
     [SerializeField] float showPanelAnimationDuration = 1.0f;
 
@@ -23,35 +26,25 @@ public class GameOverUI : MonoBehaviour
     }
 
     void UpdateScore(int score) {
-        scoreText.text = $"Your Score Is: {score}";
+        this.score.Value = score * 5;
     }
 
     void DisplayWinGamePanel(int score) {
-        UpdateScore(score);
         gameOverText.text = "<color=\"green\"> YOU WIN </color>";
-        ShowPanel(isWin: true);
+        ShowPanel(score);
     }
 
     void DisplayLoseGamePanel(int score) {
-        UpdateScore(score);
         gameOverText.text = "<color=\"red\"> YOU LOSE </color>";
-        ShowPanel(isWin: false);
+        ShowPanel(score);
     }
 
-    void ShowPanel(bool isWin) {
-
+    void ShowPanel(int score) {
+        scoreHUDGameObj.SetActive(false);
         gameOverPanel.gameObject.SetActive(true);
 
-        if (isWin)
-        {
-            gameOverPanel.DOMoveY(600, showPanelAnimationDuration)
-                         .SetUpdate(true);
-                         //.OnComplete(() => AudioManager.Instance.PlaySFX(GameManager.Instance.WinGameSFX));
-            return;
-        }
-
         gameOverPanel.DOMoveY(600, showPanelAnimationDuration)
-                         .SetUpdate(true);
-                         //.OnComplete(() => AudioManager.Instance.PlaySFX(GameManager.Instance.LoseGameSFX));
+                         .SetUpdate(true)
+                         .OnComplete(() => UpdateScore(score));
     }
 }

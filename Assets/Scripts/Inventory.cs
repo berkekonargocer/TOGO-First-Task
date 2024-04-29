@@ -18,11 +18,11 @@ public class Inventory : MonoBehaviour
 
 
     void OnEnable() {
-        GameManager.Instance.OnWinGame += OnWinGame;
+        //GameManager.Instance.OnWinGame += OnWinGame;
     }
 
     void OnDisable() {
-        GameManager.Instance.OnWinGame -= OnWinGame;
+        //GameManager.Instance.OnWinGame -= OnWinGame;
     }
 
 
@@ -103,19 +103,19 @@ public class Inventory : MonoBehaviour
         removedItemTransform.DOMove(new Vector3(moveDirection, 0, 0), 0.75f).SetRelative().OnComplete(() => Destroy(removedObject));
     }
 
-    void OnWinGame(int score) {
-        for (int i = Items.Count; i > 0; i--)
-        {
-            Transform itemTransform = Items.Pop().transform;
-            itemTransform.SetParent(null);
-            Collider itemCollider = itemTransform.GetComponent<Collider>();
-            itemCollider.enabled = true;
-            itemCollider.isTrigger = false;
-            itemTransform.AddComponent<Rigidbody>();
-        }
+    //void OnWinGame(int score) {
+    //    for (int i = Items.Count; i > 0; i--)
+    //    {
+    //        Transform itemTransform = Items.Pop().transform;
+    //        itemTransform.SetParent(null);
+    //        Collider itemCollider = itemTransform.GetComponent<Collider>();
+    //        itemCollider.enabled = true;
+    //        itemCollider.isTrigger = false;
+    //        itemTransform.gameObject.AddComponent<Rigidbody>();
+    //    }
 
-        OnItemAmountChange?.Invoke(Items.Count);
-    }
+    //    OnItemAmountChange?.Invoke(Items.Count);
+    //}
 
     IEnumerator ScaleUpAndDownItemsOrderly(Stack<ICollectable> stack) {
         WaitForSeconds waitTime = new WaitForSeconds(0.15f);

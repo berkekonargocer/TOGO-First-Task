@@ -11,6 +11,10 @@ namespace NOJUMPO
         [SerializeField] protected int countFPS = 30;
         [SerializeField] protected float duration = 1.0f;
 
+        [SerializeField] protected bool playScaleAnimation = false;
+
+        [SerializeField] protected string numberTextColorCode = "white";
+
         protected TextMeshProUGUI _numberText;
         protected Coroutine _countCoroutine;
         protected WaitForSeconds _waitTime;

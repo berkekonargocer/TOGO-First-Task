@@ -16,6 +16,5 @@ public class ScoreUI : MonoBehaviour
 
     void UpdateScoreText(int score) {
         this.score.Value = score * 5;
-        //scoreText.text = $"Score: <color=\"green\"> {score} </color>";
     }
 }

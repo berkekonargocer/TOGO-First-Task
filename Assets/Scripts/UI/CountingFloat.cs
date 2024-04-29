@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using UnityEngine;
 
@@ -9,7 +10,6 @@ namespace NOJUMPO
         public float Value { get { return _value; } set { UpdateText(value); _value = value; } }
         float _value;
 
-        
 
         // ------------------------- CUSTOM PUBLIC METHODS -------------------------
         void UpdateText(float newValue) {
@@ -17,11 +17,21 @@ namespace NOJUMPO
             {
                 StopCoroutine(_countCoroutine);
             }
+
+            if (playScaleAnimation)
+            {
+                ScaleUpAndDownAnim(); 
+            }
+
             _countCoroutine = StartCoroutine(Count(newValue));
         }
 
 
         // ------------------------- CUSTOM PRIVATE METHODS ------------------------
+        void ScaleUpAndDownAnim() {
+            transform.DOScale(1.2f, 0.25f).OnComplete(() => transform.DOScale(1.0f, 0.25f)).SetEase(Ease.InOutSine);
+        }
+
         IEnumerator Count(float newValue) {
             float previousValue = _value;
             int stepAmount;
@@ -46,7 +56,7 @@ namespace NOJUMPO
                         previousValue = newValue;
                     }
 
-                    _numberText.SetText($"Score: <color=\"green\"> {previousValue.ToString("F0")} </color>");
+                    _numberText.SetText($"<color=\"{numberTextColorCode}\"> {previousValue.ToString("F0")} </color>");
 
                     yield return _waitTime;
                 }
@@ -62,7 +72,7 @@ namespace NOJUMPO
                         previousValue = newValue;
                     }
 
-                    _numberText.SetText($"Score: <color=\"green\"> {previousValue.ToString("F0")} </color>");
+                    _numberText.SetText($"<color=\"{numberTextColorCode}\"> {previousValue.ToString("F0")} </color>");
 
                     yield return _waitTime;
                 }

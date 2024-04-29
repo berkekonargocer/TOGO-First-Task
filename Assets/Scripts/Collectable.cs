@@ -15,7 +15,7 @@ public class Collectable : MonoBehaviour, ICollectable
     FloatAnimation _floatAnimation;
 
 
-    private void Awake() {
+    void Awake() {
         _meshFilter = GetComponent<MeshFilter>();
         _transformVFX = GetComponent<ParticleSystem>();
         _floatAnimation = GetComponent<FloatAnimation>();

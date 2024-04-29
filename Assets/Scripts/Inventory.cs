@@ -3,7 +3,6 @@ using NOJUMPO;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -17,7 +16,6 @@ public class Inventory : MonoBehaviour
 
     [SerializeField] float itemStackOffset = 0.15f;
 
-    bool _isAddAnimationRunning = false;
 
     void OnEnable() {
         GameManager.Instance.OnWinGame += OnWinGame;
@@ -38,8 +36,8 @@ public class Inventory : MonoBehaviour
         collectableTransform.localPosition = Vector3.zero;
         collectableTransform.localRotation = Quaternion.Euler(Vector3.zero);
 
-        FollowWithOffset fwOffset = collectableTransform.AddComponent<FollowWithOffset>();
-        SmoothFollow smoothFollow = collectableTransform.AddComponent<SmoothFollow>();
+        FollowWithOffset fwOffset = collectableTransform.gameObject.AddComponent<FollowWithOffset>();
+        SmoothFollow smoothFollow = collectableTransform.gameObject.AddComponent<SmoothFollow>();
 
         if (Items.Count == 0)
         {
@@ -51,7 +49,6 @@ public class Inventory : MonoBehaviour
             Transform lastItemTransform = Items.Peek().transform;
             fwOffset.Setup(lastItemTransform, new Vector3(0, 0, lastItemTransform.localScale.z + itemStackOffset), FollowDirection.Z);
             smoothFollow.Setup(lastItemTransform, Vector3.zero, FollowDirection.X, 16);
-            //collectableTransform.localPosition = new Vector3(0, 0, lastItemTransform.localPosition.z + lastItemTransform.localScale.z + itemStackOffset);
         }
 
         Items.Push(collectable);
@@ -83,12 +80,14 @@ public class Inventory : MonoBehaviour
         }
     }
 
+
     void ItemAddAnimation() {
         StartCoroutine(ScaleUpAndDownItemsOrderly(Items));
     }
 
     void ItemRemoveAnimation(Transform removedItemTransform, GameObject removedObject) {
         removedObject.GetComponent<Collider>().enabled = false;
+
         int randomNum = Random.Range(0, 2);
         int moveDirection;
 

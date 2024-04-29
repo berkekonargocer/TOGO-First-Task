@@ -53802,10 +53802,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2718464931541656535, guid: ab0e9499c681254499e19b776270c9c9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2718464931541656535, guid: ab0e9499c681254499e19b776270c9c9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2718464931541656535, guid: ab0e9499c681254499e19b776270c9c9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.55
+      objectReference: {fileID: 0}
     - target: {fileID: 3544701072432438709, guid: ab0e9499c681254499e19b776270c9c9, type: 3}
       propertyPath: m_Name
       value: Collectable Transformer
       objectReference: {fileID: 0}
+    - target: {fileID: 6441630284037341053, guid: ab0e9499c681254499e19b776270c9c9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c07d031a0053fc8429fbfc0175b17c8b, type: 2}
     - target: {fileID: 7080563910303186796, guid: ab0e9499c681254499e19b776270c9c9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

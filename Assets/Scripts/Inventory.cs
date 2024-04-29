@@ -15,7 +15,7 @@ public class Inventory : MonoBehaviour
 
     public event Action<int> OnItemAmountChange;
 
-    [SerializeField] float itemStackOffset = 0.1f;
+    [SerializeField] float itemStackOffset = 0.15f;
 
     bool _isAddAnimationRunning = false;
 
@@ -43,13 +43,13 @@ public class Inventory : MonoBehaviour
         {
             collectableTransform.localPosition = Vector3.zero;
             fwOffset.Setup(ItemCarryPosition, Vector3.zero, FollowDirection.Z);
-            smoothFollow.Setup(transform, Vector3.zero, FollowDirection.X, 18);
+            smoothFollow.Setup(transform, Vector3.zero, FollowDirection.X, 16);
         }
         else
         {
             Transform lastItemTransform = Items.Peek().transform;
             fwOffset.Setup(lastItemTransform, new Vector3(0, 0, lastItemTransform.localScale.z + itemStackOffset), FollowDirection.Z);
-            smoothFollow.Setup(lastItemTransform, Vector3.zero, FollowDirection.X, 18);
+            smoothFollow.Setup(lastItemTransform, Vector3.zero, FollowDirection.X, 16);
             //collectableTransform.localPosition = new Vector3(0, 0, lastItemTransform.localPosition.z + lastItemTransform.localScale.z + itemStackOffset);
         }
 
@@ -120,7 +120,7 @@ public class Inventory : MonoBehaviour
     }
 
     IEnumerator ScaleUpAndDownItemsOrderly(Stack<ICollectable> stack) {
-        WaitForSeconds waitTime = new WaitForSeconds(0.2f);
+        WaitForSeconds waitTime = new WaitForSeconds(0.15f);
 
         List<ICollectable> tempList = new List<ICollectable>(stack);
 
@@ -129,6 +129,7 @@ public class Inventory : MonoBehaviour
             float initialScale = collectable.transform.localScale.x;
             collectable.transform.DOScale(0.1f, 0.2f).SetRelative().OnComplete(() => collectable.transform.DOScale(initialScale, 0.2f));
             yield return waitTime;
+            collectable.transform.localScale = Vector3.one * initialScale;
         }
     }
 }

@@ -11,23 +11,15 @@ namespace NOJUMPO
         [SerializeField] protected int countFPS = 30;
         [SerializeField] protected float duration = 1.0f;
 
-        protected TextMeshProUGUI _textMeshProUGUI;
+        protected TextMeshProUGUI _numberText;
         protected Coroutine _countCoroutine;
+        protected WaitForSeconds _waitTime;
 
 
         // ------------------------- UNITY BUILT-IN METHODS ------------------------
         protected virtual void Awake() {
-            _textMeshProUGUI = GetComponent<TextMeshProUGUI>();    
+            _numberText = GetComponent<TextMeshProUGUI>();
+            _waitTime = new WaitForSeconds(1.0f / countFPS);
         }
-
-
-        // ------------------------- CUSTOM PUBLIC METHODS -------------------------
-
-
-        // ------------------------ CUSTOM PROTECTED METHODS -----------------------
-
-
-        // ------------------------- CUSTOM PRIVATE METHODS ------------------------
-
     }
 }

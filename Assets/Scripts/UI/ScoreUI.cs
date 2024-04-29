@@ -4,7 +4,7 @@ using UnityEngine;
 [DisallowMultipleComponent]
 public class ScoreUI : MonoBehaviour
 {
-    [SerializeField] IntCountTowards score;
+    [SerializeField] CountingFloat score;
 
     void OnEnable() {
         GameManager.Instance.PlayerInventory.OnItemAmountChange += UpdateScoreText;

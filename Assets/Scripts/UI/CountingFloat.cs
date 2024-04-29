@@ -3,15 +3,16 @@ using UnityEngine;
 
 namespace NOJUMPO
 {
-    public class IntCountTowards : CountTowards
+    public class CountingFloat : CountTowards
     {
         // -------------------------------- FIELDS ---------------------------------
-        public int Value { get { return _value; } set { UpdateText(value); _value = value; } }
-        int _value;
+        public float Value { get { return _value; } set { UpdateText(value); _value = value; } }
+        float _value;
 
+        
 
         // ------------------------- CUSTOM PUBLIC METHODS -------------------------
-        void UpdateText(int newValue) {
+        void UpdateText(float newValue) {
             if (_countCoroutine != null)
             {
                 StopCoroutine(_countCoroutine);
@@ -21,9 +22,8 @@ namespace NOJUMPO
 
 
         // ------------------------- CUSTOM PRIVATE METHODS ------------------------
-        IEnumerator Count(int newValue) {
-            WaitForSeconds waitTime = new WaitForSeconds(1.0f / countFPS);
-            int previousValue = _value;
+        IEnumerator Count(float newValue) {
+            float previousValue = _value;
             int stepAmount;
 
             if (newValue - previousValue < 0)
@@ -46,9 +46,9 @@ namespace NOJUMPO
                         previousValue = newValue;
                     }
 
-                    _textMeshProUGUI.SetText($"Score: <color=\"green\"> {previousValue.ToString("F0")} </color>");
+                    _numberText.SetText($"Score: <color=\"green\"> {previousValue.ToString("F0")} </color>");
 
-                    yield return waitTime;
+                    yield return _waitTime;
                 }
             }
             else
@@ -62,9 +62,9 @@ namespace NOJUMPO
                         previousValue = newValue;
                     }
 
-                    _textMeshProUGUI.SetText($"Score: <color=\"green\"> {previousValue.ToString("F0")} </color>");
+                    _numberText.SetText($"Score: <color=\"green\"> {previousValue.ToString("F0")} </color>");
 
-                    yield return waitTime;
+                    yield return _waitTime;
                 }
             }
         }

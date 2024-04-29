@@ -13,18 +13,6 @@ namespace NOJUMPO
         [SerializeField] FollowDirection followDirection;
 
         // ------------------------- UNITY BUILT-IN METHODS ------------------------
-        void Awake() {
-        }
-
-        void OnEnable() {
-        }
-
-        void OnDisable() {
-        }
-
-        void Start() {
-        }
-
         void FixedUpdate() {
             switch (followDirection)
             {

@@ -3210,6 +3210,7 @@ GameObject:
   - component: {fileID: 328883236}
   - component: {fileID: 328883235}
   - component: {fileID: 328883234}
+  - component: {fileID: 328883239}
   m_Layer: 0
   m_Name: Cube Money (4)
   m_TagString: Collectable
@@ -3313,12 +3314,29 @@ Transform:
   m_GameObject: {fileID: 328883233}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -7.2842785e-23, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25199994, z: 13.860001}
+  m_LocalPosition: {x: 0, y: 0.43999994, z: 13.860001}
   m_LocalScale: {x: 0.55, y: 0.55, z: 0.55}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &328883239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328883233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d9ec4af4afa0b943971ba791c2d0ac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatAnimationDuration: 1
+  floatOffset: 0.25
+  rotate: 1
+  rotateVector: {x: 0, y: 360, z: 0}
+  rotateAnimationDuration: 4
 --- !u!1 &331506864
 GameObject:
   m_ObjectHideFlags: 0
@@ -3684,6 +3702,7 @@ GameObject:
   - component: {fileID: 353570088}
   - component: {fileID: 353570087}
   - component: {fileID: 353570086}
+  - component: {fileID: 353570091}
   m_Layer: 0
   m_Name: Cube Money (9)
   m_TagString: Collectable
@@ -3787,12 +3806,29 @@ Transform:
   m_GameObject: {fileID: 353570085}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -7.2842785e-23, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25199994, z: 66.8}
+  m_LocalPosition: {x: 0, y: 0.43999994, z: 66.8}
   m_LocalScale: {x: 0.55, y: 0.55, z: 0.55}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &353570091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353570085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d9ec4af4afa0b943971ba791c2d0ac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatAnimationDuration: 1
+  floatOffset: 0.25
+  rotate: 1
+  rotateVector: {x: 0, y: 360, z: 0}
+  rotateAnimationDuration: 4
 --- !u!1 &402288057
 GameObject:
   m_ObjectHideFlags: 0
@@ -9420,6 +9456,7 @@ GameObject:
   - component: {fileID: 1209929605}
   - component: {fileID: 1209929604}
   - component: {fileID: 1209929603}
+  - component: {fileID: 1209929608}
   m_Layer: 0
   m_Name: Cube Money (2)
   m_TagString: Collectable
@@ -9523,12 +9560,29 @@ Transform:
   m_GameObject: {fileID: 1209929602}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -7.2842785e-23, w: 1}
-  m_LocalPosition: {x: 0, y: 0.252, z: -5.79}
+  m_LocalPosition: {x: 0, y: 0.44, z: 88.8}
   m_LocalScale: {x: 0.55, y: 0.55, z: 0.55}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1209929608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209929602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d9ec4af4afa0b943971ba791c2d0ac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatAnimationDuration: 1
+  floatOffset: 0.25
+  rotate: 1
+  rotateVector: {x: 0, y: 360, z: 0}
+  rotateAnimationDuration: 4
 --- !u!1 &1219946491
 GameObject:
   m_ObjectHideFlags: 0
@@ -13431,6 +13485,7 @@ GameObject:
   - component: {fileID: 1653393424}
   - component: {fileID: 1653393423}
   - component: {fileID: 1653393422}
+  - component: {fileID: 1653393427}
   m_Layer: 0
   m_Name: Cube Money (10)
   m_TagString: Collectable
@@ -13534,12 +13589,29 @@ Transform:
   m_GameObject: {fileID: 1653393421}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -7.2842785e-23, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25199994, z: 81.4}
+  m_LocalPosition: {x: 0, y: 0.43999994, z: 81.4}
   m_LocalScale: {x: 0.55, y: 0.55, z: 0.55}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1653393427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653393421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d9ec4af4afa0b943971ba791c2d0ac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatAnimationDuration: 1
+  floatOffset: 0.25
+  rotate: 1
+  rotateVector: {x: 0, y: 360, z: 0}
+  rotateAnimationDuration: 4
 --- !u!4 &1668100663 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3009235758847534970, guid: c787dbe8d15ac7a458a1bc95e39371a9, type: 3}
@@ -13851,6 +13923,7 @@ GameObject:
   - component: {fileID: 1699834204}
   - component: {fileID: 1699834203}
   - component: {fileID: 1699834207}
+  - component: {fileID: 1699834208}
   m_Layer: 0
   m_Name: Cube Money
   m_TagString: Collectable
@@ -13938,7 +14011,7 @@ Transform:
   m_GameObject: {fileID: 1699834202}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -7.2842785e-23, w: 1}
-  m_LocalPosition: {x: 0, y: 0.252, z: -9.24}
+  m_LocalPosition: {x: 0, y: 0.44, z: -9.24}
   m_LocalScale: {x: 0.55, y: 0.55, z: 0.55}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13960,6 +14033,23 @@ MonoBehaviour:
   onCollected:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1699834208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699834202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d9ec4af4afa0b943971ba791c2d0ac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatAnimationDuration: 1
+  floatOffset: 0.25
+  rotate: 1
+  rotateVector: {x: 0, y: 360, z: 0}
+  rotateAnimationDuration: 4
 --- !u!1 &1721226776
 GameObject:
   m_ObjectHideFlags: 0
@@ -16410,6 +16500,7 @@ GameObject:
   - component: {fileID: 1872119564}
   - component: {fileID: 1872119563}
   - component: {fileID: 1872119562}
+  - component: {fileID: 1872119567}
   m_Layer: 0
   m_Name: Cube Money (8)
   m_TagString: Collectable
@@ -16513,12 +16604,29 @@ Transform:
   m_GameObject: {fileID: 1872119561}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -7.2842785e-23, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25199994, z: 55.66}
+  m_LocalPosition: {x: 0, y: 0.43999994, z: 55.66}
   m_LocalScale: {x: 0.55, y: 0.55, z: 0.55}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1872119567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872119561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d9ec4af4afa0b943971ba791c2d0ac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatAnimationDuration: 1
+  floatOffset: 0.25
+  rotate: 1
+  rotateVector: {x: 0, y: 360, z: 0}
+  rotateAnimationDuration: 4
 --- !u!1 &1879770657
 GameObject:
   m_ObjectHideFlags: 0
@@ -16571,6 +16679,7 @@ GameObject:
   - component: {fileID: 1908545705}
   - component: {fileID: 1908545704}
   - component: {fileID: 1908545703}
+  - component: {fileID: 1908545708}
   m_Layer: 0
   m_Name: Cube Money (7)
   m_TagString: Collectable
@@ -16674,12 +16783,29 @@ Transform:
   m_GameObject: {fileID: 1908545702}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -7.2842785e-23, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25199994, z: 46.88}
+  m_LocalPosition: {x: 0, y: 0.43999994, z: 46.88}
   m_LocalScale: {x: 0.55, y: 0.55, z: 0.55}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1908545708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908545702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d9ec4af4afa0b943971ba791c2d0ac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatAnimationDuration: 1
+  floatOffset: 0.25
+  rotate: 1
+  rotateVector: {x: 0, y: 360, z: 0}
+  rotateAnimationDuration: 4
 --- !u!1 &1911176683
 GameObject:
   m_ObjectHideFlags: 3
@@ -17277,6 +17403,7 @@ GameObject:
   - component: {fileID: 1963620918}
   - component: {fileID: 1963620917}
   - component: {fileID: 1963620916}
+  - component: {fileID: 1963620921}
   m_Layer: 0
   m_Name: Cube Money (6)
   m_TagString: Collectable
@@ -17380,12 +17507,29 @@ Transform:
   m_GameObject: {fileID: 1963620915}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -7.2842785e-23, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25199994, z: 34.94}
+  m_LocalPosition: {x: 0, y: 0.43999994, z: 34.94}
   m_LocalScale: {x: 0.55, y: 0.55, z: 0.55}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1963620921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963620915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d9ec4af4afa0b943971ba791c2d0ac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatAnimationDuration: 1
+  floatOffset: 0.25
+  rotate: 1
+  rotateVector: {x: 0, y: 360, z: 0}
+  rotateAnimationDuration: 4
 --- !u!1 &1982106237
 GameObject:
   m_ObjectHideFlags: 0
@@ -17838,6 +17982,7 @@ GameObject:
   - component: {fileID: 2029258060}
   - component: {fileID: 2029258059}
   - component: {fileID: 2029258058}
+  - component: {fileID: 2029258063}
   m_Layer: 0
   m_Name: Cube Money (3)
   m_TagString: Collectable
@@ -17941,12 +18086,29 @@ Transform:
   m_GameObject: {fileID: 2029258057}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -7.2842785e-23, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25199994, z: 8.49}
+  m_LocalPosition: {x: 0, y: 0.43999994, z: 8.49}
   m_LocalScale: {x: 0.55, y: 0.55, z: 0.55}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2029258063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029258057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d9ec4af4afa0b943971ba791c2d0ac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatAnimationDuration: 1
+  floatOffset: 0.25
+  rotate: 1
+  rotateVector: {x: 0, y: 360, z: 0}
+  rotateAnimationDuration: 4
 --- !u!1 &2029857682
 GameObject:
   m_ObjectHideFlags: 0
@@ -17960,6 +18122,7 @@ GameObject:
   - component: {fileID: 2029857685}
   - component: {fileID: 2029857684}
   - component: {fileID: 2029857683}
+  - component: {fileID: 2029857688}
   m_Layer: 0
   m_Name: Cube Money (5)
   m_TagString: Collectable
@@ -18063,12 +18226,29 @@ Transform:
   m_GameObject: {fileID: 2029857682}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -7.2842785e-23, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25199994, z: 26.66}
+  m_LocalPosition: {x: 0, y: 0.43999994, z: 26.66}
   m_LocalScale: {x: 0.55, y: 0.55, z: 0.55}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2029857688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029857682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d9ec4af4afa0b943971ba791c2d0ac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatAnimationDuration: 1
+  floatOffset: 0.25
+  rotate: 1
+  rotateVector: {x: 0, y: 360, z: 0}
+  rotateAnimationDuration: 4
 --- !u!1 &2051941176
 GameObject:
   m_ObjectHideFlags: 0
@@ -18589,6 +18769,7 @@ GameObject:
   - component: {fileID: 2107172133}
   - component: {fileID: 2107172132}
   - component: {fileID: 2107172131}
+  - component: {fileID: 2107172136}
   m_Layer: 0
   m_Name: Cube Money (1)
   m_TagString: Collectable
@@ -18692,12 +18873,29 @@ Transform:
   m_GameObject: {fileID: 2107172130}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -7.2842785e-23, w: 1}
-  m_LocalPosition: {x: 0, y: 0.252, z: -7.31}
+  m_LocalPosition: {x: 0, y: 0.44, z: -1.17}
   m_LocalScale: {x: 0.55, y: 0.55, z: 0.55}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2107172136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107172130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d9ec4af4afa0b943971ba791c2d0ac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatAnimationDuration: 1
+  floatOffset: 0.25
+  rotate: 1
+  rotateVector: {x: 0, y: 360, z: 0}
+  rotateAnimationDuration: 4
 --- !u!1001 &2109815648
 PrefabInstance:
   m_ObjectHideFlags: 0

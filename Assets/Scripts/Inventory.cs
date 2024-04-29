@@ -53,7 +53,7 @@ public class Inventory : MonoBehaviour
             //collectableTransform.localPosition = new Vector3(0, 0, lastItemTransform.localPosition.z + lastItemTransform.localScale.z + itemStackOffset);
         }
 
-        //collectableTransform.localRotation = Quaternion.Euler(new Vector3(collectableTransform.localRotation.x, Random.Range(0, 360), collectableTransform.localRotation.z));
+        collectableTransform.localRotation = Quaternion.Euler(Vector3.zero);
 
         Items.Push(collectable);
 

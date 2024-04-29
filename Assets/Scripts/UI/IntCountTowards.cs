@@ -9,8 +9,6 @@ namespace NOJUMPO
         public int Value { get { return _value; } set { UpdateText(value); _value = value; } }
         int _value;
 
-        // ------------------------- UNITY BUILT-IN METHODS ------------------------
-
 
         // ------------------------- CUSTOM PUBLIC METHODS -------------------------
         void UpdateText(int newValue) {
@@ -20,9 +18,6 @@ namespace NOJUMPO
             }
             _countCoroutine = StartCoroutine(Count(newValue));
         }
-
-
-        // ------------------------ CUSTOM PROTECTED METHODS -----------------------
 
 
         // ------------------------- CUSTOM PRIVATE METHODS ------------------------
@@ -51,7 +46,7 @@ namespace NOJUMPO
                         previousValue = newValue;
                     }
 
-                    _textMeshProUGUI.SetText(previousValue.ToString("F0"));
+                    _textMeshProUGUI.SetText($"Score: <color=\"green\"> {previousValue.ToString("F0")} </color>");
 
                     yield return waitTime;
                 }
@@ -67,7 +62,7 @@ namespace NOJUMPO
                         previousValue = newValue;
                     }
 
-                    _textMeshProUGUI.SetText(previousValue.ToString("F0"));
+                    _textMeshProUGUI.SetText($"Score: <color=\"green\"> {previousValue.ToString("F0")} </color>");
 
                     yield return waitTime;
                 }

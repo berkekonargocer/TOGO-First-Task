@@ -1,12 +1,9 @@
 using NOJUMPO;
-using TMPro;
 using UnityEngine;
 
 [DisallowMultipleComponent]
 public class ScoreUI : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI scoreText;
-
     [SerializeField] IntCountTowards score;
 
     void OnEnable() {

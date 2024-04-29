@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   developerDescription: 
   meshType: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
-  point: 15
   transformSFX: {fileID: 0}
   transformType: {fileID: 11400000, guid: 235af273a16179d45af840aa049f40db, type: 2}
+  <Point>k__BackingField: 10

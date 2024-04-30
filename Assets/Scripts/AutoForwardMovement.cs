@@ -12,15 +12,15 @@ public enum State
 [RequireComponent(typeof(PlayerInput))]
 public class AutoForwardMovement : MonoBehaviour
 {
-    [field: SerializeField] public float HorizontalMovementSpeed { get; private set; } = 8.0f;
-    [field: SerializeField] public float VerticalMovementSpeed { get; private set; } = 10.0f;
+    [field: SerializeField] public float HorizontalMovementSpeed { get; private set; } = 6.0f;
+    [field: SerializeField] public float VerticalMovementSpeed { get; private set; } = 35.0f;
 
     PlayerInput _playerInput;
     Rigidbody _objectRigidbody;
 
     Vector2 _moveDirection;
 
-    const float MAX_X_POSITION = 4.48f;
+    const float MAX_X_POSITION = 4.85f;
     const float VERTICAL_MOVEMENT_SPEED_MULTIPLIER = 50.0f;
     const float HORIZONTAL_MOVEMENT_SPEED_MULTIPLIER = 20.0f;
 

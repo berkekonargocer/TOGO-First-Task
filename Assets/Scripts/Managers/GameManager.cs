@@ -1,3 +1,4 @@
+using NOJUMPO;
 using System;
 using UnityEngine;
 
@@ -36,13 +37,13 @@ public class GameManager : MonoBehaviour
     }
 
     public void WinGame() {
-        OnWinGame?.Invoke(_playerInventory.Items.Count);
+        OnWinGame?.Invoke(ScoreManager.Instance.Score);
         AudioManager.Instance.StopMusic();
         AudioManager.Instance.PlaySFX(WinGameSFX);
     }
 
     public void LoseGame() {
-        OnLoseGame?.Invoke(_playerInventory.Items.Count);
+        OnLoseGame?.Invoke(ScoreManager.Instance.Score);
         AudioManager.Instance.StopMusic();
         AudioManager.Instance.PlaySFX(LoseGameSFX);
     }

@@ -26,7 +26,7 @@ public class GameOverUI : MonoBehaviour
     }
 
     void UpdateScore(int score) {
-        this.score.Value = score * 5;
+        this.score.Value = score;
     }
 
     void DisplayWinGamePanel(int score) {

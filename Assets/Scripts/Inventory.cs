@@ -64,7 +64,9 @@ public class Inventory : MonoBehaviour
         if (Items.Count <= 0)
             return;
 
-        Transform removedItemTransform = Items.Pop().transform;
+        ICollectable removedItem = Items.Pop();
+        ScoreManager.Instance.DecrementScore(removedItem.Type.Point);
+        Transform removedItemTransform = removedItem.transform;
         GameObject removedObject = removedItemTransform.gameObject;
         removedItemTransform.SetParent(null);
 

@@ -30,12 +30,15 @@ public class Collectable : MonoBehaviour, ICollectable
 
         onCollected?.Invoke();
         inventory.AddItem(this);
+        ScoreManager.Instance.IncrementScore(Type.Point);
         AudioManager.Instance.PlaySFX(collectSFX);
     }
 
     public void SetType(CollectableType type) {
         _transformVFX.Play();
         AudioManager.Instance.PlaySFX(type.TransformSFX);
+        ScoreManager.Instance.DecrementScore(Type.Point);
+        ScoreManager.Instance.IncrementScore(type.Point);
         Type = type;
         Type.ApplyTransformation(_meshFilter);
     }

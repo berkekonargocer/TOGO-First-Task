@@ -7,14 +7,14 @@ public class ScoreUI : MonoBehaviour
     [SerializeField] CountingFloat score;
 
     void OnEnable() {
-        GameManager.Instance.PlayerInventory.OnItemAmountChange += UpdateScoreText;
+        ScoreManager.Instance.OnScoreChanged += UpdateScoreText;
     }
 
     void OnDisable() {
-        GameManager.Instance.PlayerInventory.OnItemAmountChange -= UpdateScoreText;
+        ScoreManager.Instance.OnScoreChanged -= UpdateScoreText;
     }
 
     void UpdateScoreText(int score) {
-        this.score.Value = score * 5;
+        this.score.Value = score;
     }
 }

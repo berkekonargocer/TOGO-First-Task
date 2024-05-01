@@ -21,8 +21,8 @@ public class FinishLine : MonoBehaviour
         {
             Transform collectableTransform = collectable.transform;
 
-            Destroy(collectableTransform.GetComponent<FollowWithOffset>());
-            Destroy(collectableTransform.GetComponent<SmoothFollow>());
+            Destroy(collectable.GetFollowWithOffset);
+            Destroy(collectable.GetSmoothFollow);
 
             if (collectable.Type.Point == 10)
             {

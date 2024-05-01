@@ -19,6 +19,9 @@ namespace NOJUMPO
 
         // ------------------------- UNITY BUILT-IN METHODS ------------------------
         void Update() {
+            if (transformToFollow == null)
+                return;
+
             switch (followDirection)
             {
                 case FollowDirection.ALL:

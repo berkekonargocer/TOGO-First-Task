@@ -14,6 +14,9 @@ namespace NOJUMPO
 
         // ------------------------- UNITY BUILT-IN METHODS ------------------------
         void FixedUpdate() {
+            if (transformToFollow == null)
+                return;
+
             switch (followDirection)
             {
                 case FollowDirection.ALL:

@@ -6,6 +6,9 @@ using UnityEngine.Events;
 public class Collectable : MonoBehaviour, ICollectable
 {
     [field: SerializeField] public CollectableType Type { get; private set; }
+    public Collider GetCollider {  get; private set; }
+    public FollowWithOffset GetFollowWithOffset { get; private set; }
+    public SmoothFollow GetSmoothFollow { get; private set; }
 
     [SerializeField] AudioClip collectSFX;
     [SerializeField] UnityEvent onCollected;
@@ -16,6 +19,9 @@ public class Collectable : MonoBehaviour, ICollectable
 
 
     void Awake() {
+        GetCollider = GetComponent<Collider>();
+        GetFollowWithOffset = GetComponent<FollowWithOffset>();
+        GetSmoothFollow = GetComponent<SmoothFollow>();
         _meshFilter = GetComponent<MeshFilter>();
         _transformVFX = GetComponent<ParticleSystem>();
         _floatAnimation = GetComponent<FloatAnimation>();

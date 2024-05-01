@@ -29,15 +29,15 @@ public class Inventory : MonoBehaviour
     public void AddItem(ICollectable collectable) {
         Transform collectableTransform = collectable.transform;
 
-        Collider collectableCollider = collectableTransform.gameObject.GetComponent<Collider>();
+        Collider collectableCollider = collectable.GetCollider;
         collectableCollider.enabled = false;
 
         collectableTransform.SetParent(ItemCarryPosition);
         collectableTransform.localPosition = Vector3.zero;
         collectableTransform.localRotation = Quaternion.Euler(Vector3.zero);
 
-        FollowWithOffset fwOffset = collectableTransform.gameObject.AddComponent<FollowWithOffset>();
-        SmoothFollow smoothFollow = collectableTransform.gameObject.AddComponent<SmoothFollow>();
+        FollowWithOffset fwOffset = collectable.GetFollowWithOffset;
+        SmoothFollow smoothFollow = collectable.GetSmoothFollow;
 
         if (Items.Count == 0)
         {
@@ -67,10 +67,9 @@ public class Inventory : MonoBehaviour
         ICollectable removedItem = Items.Pop();
         ScoreManager.Instance.DecrementScore(removedItem.Type.Point);
         Transform removedItemTransform = removedItem.transform;
-        GameObject removedObject = removedItemTransform.gameObject;
         removedItemTransform.SetParent(null);
 
-        ItemRemoveAnimation(removedItemTransform, removedObject);
+        ItemRemoveAnimation(removedItemTransform, removedItem.GetCollider);
 
         OnItemAmountChange?.Invoke(Items.Count);
     }
@@ -87,8 +86,8 @@ public class Inventory : MonoBehaviour
         StartCoroutine(ScaleUpAndDownItemsOrderly(Items));
     }
 
-    void ItemRemoveAnimation(Transform removedItemTransform, GameObject removedObject) {
-        removedObject.GetComponent<Collider>().enabled = false;
+    void ItemRemoveAnimation(Transform removedItemTransform, Collider removedObjectCollider) {
+        removedObjectCollider.enabled = false;
 
         int randomNum = Random.Range(0, 2);
         int moveDirection;
@@ -102,7 +101,7 @@ public class Inventory : MonoBehaviour
             moveDirection = 15;
         }
 
-        removedItemTransform.DOMove(new Vector3(moveDirection, 0, 0), 0.75f).SetRelative().OnComplete(() => Destroy(removedObject));
+        removedItemTransform.DOMove(new Vector3(moveDirection, 0, 0), 0.75f).SetRelative().OnComplete(() => Destroy(removedObjectCollider));
     }
 
     //void OnWinGame(int score) {
@@ -120,14 +119,14 @@ public class Inventory : MonoBehaviour
     //}
 
     IEnumerator ScaleUpAndDownItemsOrderly(Stack<ICollectable> stack) {
-        WaitForSeconds waitTime = new WaitForSeconds(0.15f);
+        WaitForSeconds waitTime = new WaitForSeconds(0.1f);
 
         List<ICollectable> tempList = new List<ICollectable>(stack);
 
         foreach (ICollectable collectable in tempList)
         {
             float initialScale = collectable.transform.localScale.x;
-            collectable.transform.DOScale(0.1f, 0.2f).SetRelative().OnComplete(() => collectable.transform.DOScale(initialScale, 0.2f));
+            collectable.transform.DOScale(0.15f, 0.15f).SetRelative().OnComplete(() => collectable.transform.DOScale(initialScale, 0.15f));
             yield return waitTime;
             collectable.transform.localScale = Vector3.one * initialScale;
         }

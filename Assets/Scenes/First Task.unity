@@ -3998,7 +3998,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &402288058
 Transform:
   m_ObjectHideFlags: 0
@@ -14790,7 +14790,7 @@ MonoBehaviour:
   winGameParticleFX:
   - {fileID: 204940402}
   - {fileID: 1761519}
-  collectableStackPoint:
+  collectableStackPoints:
   - {fileID: 1624142844}
   - {fileID: 1772438419}
   itemStackOffset: 0

@@ -19,44 +19,7 @@ public class FinishLine : MonoBehaviour
     void OnTriggerExit(Collider other) {
         if (other.TryGetComponent(out ICollectable collectable))
         {
-            Transform collectableTransform = collectable.transform;
-
-            Destroy(collectable.GetFollowWithOffset);
-            Destroy(collectable.GetSmoothFollow);
-
-            if (collectable.Type.Point == 10)
-            {
-                collectableTransform.SetParent(collectableStackPoints[0]);
-
-                if (stackedSphereCollectableTransforms.Count == 0)
-                {
-                    collectableTransform.localPosition = Vector3.zero;
-                }
-                else
-                {
-                    Transform lastCollectableTransform = stackedSphereCollectableTransforms.Peek();
-                    collectableTransform.localPosition = new Vector3(0, lastCollectableTransform.localPosition.y + lastCollectableTransform.localScale.y + itemStackOffset, 0);
-                }
-
-                stackedSphereCollectableTransforms.Push(collectableTransform);
-
-                return;
-            }
-
-            collectableTransform.SetParent(collectableStackPoints[1]);
-
-            if (stackedCubeCollectableTransforms.Count == 0)
-            {
-                collectableTransform.localPosition = Vector3.zero;
-            }
-            else
-            {
-                Transform lastCollectableTransform = stackedCubeCollectableTransforms.Peek();
-                collectableTransform.localPosition = new Vector3(0, lastCollectableTransform.localPosition.y + lastCollectableTransform.localScale.y + itemStackOffset, 0);
-                collectableTransform.localRotation = Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0));
-            }
-
-            stackedCubeCollectableTransforms.Push(collectableTransform);
+            StackCollectables(collectable);
         }
 
         if (other.TryGetComponent(out Inventory inventory))
@@ -74,5 +37,46 @@ public class FinishLine : MonoBehaviour
 
             GameManager.Instance.LoseGame();
         }
+    }
+
+    void StackCollectables(ICollectable collectable) {
+        Transform collectableTransform = collectable.transform;
+
+        Destroy(collectable.GetFollowWithOffset);
+        Destroy(collectable.GetSmoothFollow);
+
+        if (collectable.Type.Point == 10)
+        {
+            collectableTransform.SetParent(collectableStackPoints[0]);
+
+            if (stackedSphereCollectableTransforms.Count == 0)
+            {
+                collectableTransform.localPosition = Vector3.zero;
+            }
+            else
+            {
+                Transform lastCollectableTransform = stackedSphereCollectableTransforms.Peek();
+                collectableTransform.localPosition = new Vector3(0, lastCollectableTransform.localPosition.y + lastCollectableTransform.localScale.y + itemStackOffset, 0);
+            }
+
+            stackedSphereCollectableTransforms.Push(collectableTransform);
+
+            return;
+        }
+
+        collectableTransform.SetParent(collectableStackPoints[1]);
+
+        if (stackedCubeCollectableTransforms.Count == 0)
+        {
+            collectableTransform.localPosition = Vector3.zero;
+        }
+        else
+        {
+            Transform lastCollectableTransform = stackedCubeCollectableTransforms.Peek();
+            collectableTransform.localPosition = new Vector3(0, lastCollectableTransform.localPosition.y + lastCollectableTransform.localScale.y + itemStackOffset, 0);
+            collectableTransform.localRotation = Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0));
+        }
+
+        stackedCubeCollectableTransforms.Push(collectableTransform);
     }
 }

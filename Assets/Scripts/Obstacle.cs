@@ -8,6 +8,8 @@ public class Obstacle : MonoBehaviour, ITrigger
     [SerializeField] ParticleSystem obstacleHitParticleFX;
     [SerializeField] UnityEvent onTriggered;
 
+    int _destroyCount;
+
     ParticleSpawner _particleSpawner;
 
 

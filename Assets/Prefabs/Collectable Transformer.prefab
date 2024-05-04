@@ -4923,9 +4923,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7080563910303186796}
   - component: {fileID: 1220092147706540357}
+  - component: {fileID: 3081763307860324965}
   m_Layer: 0
   m_Name: Collectable Transformer
-  m_TagString: CollectableTransformer
+  m_TagString: CollectableTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4970,6 +4971,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.25, y: 2.5, z: 0.3}
   m_Center: {x: 0, y: 0.25, z: 0}
+--- !u!114 &3081763307860324965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3544701072432438709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9fc386323dacb44f924971654f4e938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6241112603291393809
 GameObject:
   m_ObjectHideFlags: 0

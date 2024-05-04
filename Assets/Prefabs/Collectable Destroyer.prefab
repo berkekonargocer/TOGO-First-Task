@@ -17,8 +17,12 @@ PrefabInstance:
       value: Collectable Destroyer
       objectReference: {fileID: 0}
     - target: {fileID: 3544701072432438709, guid: ab0e9499c681254499e19b776270c9c9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3544701072432438709, guid: ab0e9499c681254499e19b776270c9c9, type: 3}
       propertyPath: m_TagString
-      value: CollectableDestroyer
+      value: CollectableTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 3789247647087871686, guid: ab0e9499c681254499e19b776270c9c9, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -68,7 +72,8 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e759eba6e9329974ba2ac652c37721ae, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3081763307860324965, guid: ab0e9499c681254499e19b776270c9c9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

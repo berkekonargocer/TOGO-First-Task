@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class Collectable : MonoBehaviour, ICollectable
 {
     [field: SerializeField] public CollectableType Type { get; private set; }
-    public Collider GetCollider {  get; private set; }
+    public Collider GetCollider { get; private set; }
     public FollowWithOffset GetFollowWithOffset { get; private set; }
     public SmoothFollow GetSmoothFollow { get; private set; }
 
@@ -52,9 +52,6 @@ public class Collectable : MonoBehaviour, ICollectable
     void OnTriggerEnter(Collider other) {
         switch (other.tag)
         {
-            case "CollectableTransformer":
-                Type.TransformType(this);
-                break;
             case "Collectable":
                 ICollectable collectable = other.gameObject.GetComponent<ICollectable>();
                 collectable?.Collect(GameManager.Instance.PlayerInventory);
@@ -62,6 +59,10 @@ public class Collectable : MonoBehaviour, ICollectable
             case "Trigger":
                 ITrigger triggerable = other.gameObject.GetComponent<ITrigger>();
                 triggerable?.Trigger();
+                break;
+            case "CollectableTrigger":
+                ICollectableTrigger collectableTrigger = other.gameObject.GetComponent<ICollectableTrigger>();
+                collectableTrigger?.Trigger(this);
                 break;
         }
     }

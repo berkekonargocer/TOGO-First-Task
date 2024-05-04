@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -6,6 +7,8 @@ using UnityEngine.Events;
 public class Obstacle : MonoBehaviour, ITrigger
 {
     [SerializeField] ParticleSystem obstacleHitParticleFX;
+    [SerializeField] TextMeshPro destroyCountText;
+
     [SerializeField] UnityEvent onTriggered;
 
     int _destroyCount;
@@ -29,5 +32,7 @@ public class Obstacle : MonoBehaviour, ITrigger
         }
 
         onTriggered?.Invoke();
+        _destroyCount++;
+        destroyCountText.SetText(_destroyCount.ToString());
     }
 }

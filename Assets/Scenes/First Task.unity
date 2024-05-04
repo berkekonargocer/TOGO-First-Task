@@ -470,6 +470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+  destroyCountText: {fileID: 0}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -2495,6 +2496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+  destroyCountText: {fileID: 0}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -4238,6 +4240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+  destroyCountText: {fileID: 0}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -6351,6 +6354,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 853143263658901757, guid: 8de64e60fab44a249af39e137f241eaf, type: 3}
+      propertyPath: variableName
+      value: 
+      objectReference: {fileID: 736577232}
+    - target: {fileID: 853143263658901757, guid: 8de64e60fab44a249af39e137f241eaf, type: 3}
+      propertyPath: destroyCountText
+      value: 
+      objectReference: {fileID: 736577232}
+    - target: {fileID: 853143263658901757, guid: 8de64e60fab44a249af39e137f241eaf, type: 3}
       propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 440886251}
@@ -6361,6 +6372,10 @@ PrefabInstance:
     - target: {fileID: 2229012246817726230, guid: 8de64e60fab44a249af39e137f241eaf, type: 3}
       propertyPath: m_Name
       value: Collectable Destroyer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615260189528273100, guid: 8de64e60fab44a249af39e137f241eaf, type: 3}
+      propertyPath: m_text
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5592753103084109263, guid: 8de64e60fab44a249af39e137f241eaf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6405,8 +6420,22 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3930142725956857071, guid: 8de64e60fab44a249af39e137f241eaf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 8de64e60fab44a249af39e137f241eaf, type: 3}
+--- !u!114 &736577232 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3615260189528273100, guid: 8de64e60fab44a249af39e137f241eaf, type: 3}
+  m_PrefabInstance: {fileID: 736577231}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &737354907 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5641206536190978391, guid: d2e75682e834c8b44aaa7688b65a2bcb, type: 3}
@@ -6788,6 +6817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+  destroyCountText: {fileID: 0}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -7035,6 +7065,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+  destroyCountText: {fileID: 0}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -7467,6 +7498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+  destroyCountText: {fileID: 0}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -7776,6 +7808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+  destroyCountText: {fileID: 0}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -8551,6 +8584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+  destroyCountText: {fileID: 0}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -9742,6 +9776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+  destroyCountText: {fileID: 0}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -10760,6 +10795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+  destroyCountText: {fileID: 0}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -10936,6 +10972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+  destroyCountText: {fileID: 0}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -11576,6 +11613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+  destroyCountText: {fileID: 0}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -11757,6 +11795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+  destroyCountText: {fileID: 0}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -11933,6 +11972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+  destroyCountText: {fileID: 0}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -13481,6 +13521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+  destroyCountText: {fileID: 0}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -16986,6 +17027,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+  destroyCountText: {fileID: 0}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -17776,6 +17818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+  destroyCountText: {fileID: 0}
   onTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -18092,6 +18135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+  destroyCountText: {fileID: 0}
   onTriggered:
     m_PersistentCalls:
       m_Calls:

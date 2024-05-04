@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [DisallowMultipleComponent]
+[RequireComponent(typeof(ParticleSpawner))]
 public class Obstacle : MonoBehaviour, ITrigger
 {
     [SerializeField] ParticleSystem obstacleHitParticleFX;

@@ -6350,13 +6350,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 853143263658901757, guid: 8de64e60fab44a249af39e137f241eaf, type: 3}
+      propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 440886251}
+    - target: {fileID: 853143263658901757, guid: 8de64e60fab44a249af39e137f241eaf, type: 3}
+      propertyPath: onTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 737354923}
     - target: {fileID: 2229012246817726230, guid: 8de64e60fab44a249af39e137f241eaf, type: 3}
       propertyPath: m_Name
       value: Collectable Destroyer
       objectReference: {fileID: 0}
     - target: {fileID: 5592753103084109263, guid: 8de64e60fab44a249af39e137f241eaf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.3241959
+      value: 2.66
       objectReference: {fileID: 0}
     - target: {fileID: 5592753103084109263, guid: 8de64e60fab44a249af39e137f241eaf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6364,7 +6372,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5592753103084109263, guid: 8de64e60fab44a249af39e137f241eaf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.8
+      value: 44.19
       objectReference: {fileID: 0}
     - target: {fileID: 5592753103084109263, guid: 8de64e60fab44a249af39e137f241eaf, type: 3}
       propertyPath: m_LocalRotation.w

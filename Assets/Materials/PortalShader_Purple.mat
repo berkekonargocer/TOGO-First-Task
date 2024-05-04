@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ShaderGraph_PortalShader
+  m_Name: PortalShader_Purple
   m_Shader: {fileID: -6465566751694194690, guid: 7efcf7714b50f594a9beec9e3e091fdd, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -36,7 +36,7 @@ Material:
     - _Speed: 0.1
     - _TwirlStrength: 11.5
     m_Colors:
-    - _Color: {r: 1, g: 0.15368819, b: 0.1273585, a: 1}
+    - _Color: {r: 0.5568628, g: 0.3529412, b: 0.9254902, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &8628532258436190944
 MonoBehaviour:

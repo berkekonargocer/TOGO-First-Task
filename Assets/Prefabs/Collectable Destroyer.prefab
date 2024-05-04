@@ -18,19 +18,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3544701072432438709, guid: ab0e9499c681254499e19b776270c9c9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3544701072432438709, guid: ab0e9499c681254499e19b776270c9c9, type: 3}
       propertyPath: m_TagString
-      value: CollectableTrigger
+      value: Trigger
       objectReference: {fileID: 0}
     - target: {fileID: 3789247647087871686, guid: ab0e9499c681254499e19b776270c9c9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e759eba6e9329974ba2ac652c37721ae, type: 2}
+    - target: {fileID: 6441630284037341053, guid: ab0e9499c681254499e19b776270c9c9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1cb9e0aa66379e943b2720a566715d08, type: 2}
     - target: {fileID: 7080563910303186796, guid: ab0e9499c681254499e19b776270c9c9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.3241959
+      value: 2.66
       objectReference: {fileID: 0}
     - target: {fileID: 7080563910303186796, guid: ab0e9499c681254499e19b776270c9c9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -38,7 +42,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7080563910303186796, guid: ab0e9499c681254499e19b776270c9c9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.8
+      value: 44.19
       objectReference: {fileID: 0}
     - target: {fileID: 7080563910303186796, guid: ab0e9499c681254499e19b776270c9c9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -76,5 +80,68 @@ PrefabInstance:
     - {fileID: 3081763307860324965, guid: ab0e9499c681254499e19b776270c9c9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3544701072432438709, guid: ab0e9499c681254499e19b776270c9c9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 853143263658901757}
+    - targetCorrespondingSourceObject: {fileID: 3544701072432438709, guid: ab0e9499c681254499e19b776270c9c9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 655229775324177556}
   m_SourcePrefab: {fileID: 100100000, guid: ab0e9499c681254499e19b776270c9c9, type: 3}
+--- !u!1 &2229012246817726230 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3544701072432438709, guid: ab0e9499c681254499e19b776270c9c9, type: 3}
+  m_PrefabInstance: {fileID: 3449269184601047715}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &853143263658901757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2229012246817726230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e96f9110a540e574d99f2a908d20762a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleHitParticleFX: {fileID: 6113468713991354517, guid: 1b461cbe0f961334185726a55f5be8ca, type: 3}
+  onTriggered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d662a74cae3c324458b801470c12ffdd, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
+        m_MethodName: RemoveItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &655229775324177556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2229012246817726230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28375e4ef63ac96469656f0e30b428c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

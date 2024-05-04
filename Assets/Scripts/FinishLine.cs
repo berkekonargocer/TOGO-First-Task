@@ -16,10 +16,11 @@ public class FinishLine : MonoBehaviour
     Stack<Transform> stackedCubeCollectableTransforms = new Stack<Transform>();
 
 
+
     void OnTriggerExit(Collider other) {
         if (other.TryGetComponent(out ICollectable collectable))
         {
-            StackCollectables(collectable);
+            Destroy(collectable.transform.gameObject);
         }
 
         if (other.TryGetComponent(out Inventory inventory))

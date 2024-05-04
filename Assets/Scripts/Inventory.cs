@@ -69,7 +69,7 @@ public class Inventory : MonoBehaviour
         Transform removedItemTransform = removedItem.transform;
         removedItemTransform.SetParent(null);
 
-        ItemRemoveAnimation(removedItemTransform, removedItem.GetCollider);
+        ItemRemoveAnimation(removedItemTransform);
 
         OnItemAmountChange?.Invoke(Items.Count);
     }
@@ -86,8 +86,9 @@ public class Inventory : MonoBehaviour
         StartCoroutine(ScaleUpAndDownItemsOrderly(Items));
     }
 
-    void ItemRemoveAnimation(Transform removedItemTransform, Collider removedObjectCollider) {
-        removedObjectCollider.enabled = false;
+    void ItemRemoveAnimation(Transform removedItemTransform) {
+        GameObject removedObject = removedItemTransform.gameObject;
+        removedObject.GetComponent<Collider>().enabled = false;
 
         int randomNum = Random.Range(0, 2);
         int moveDirection;
@@ -101,7 +102,7 @@ public class Inventory : MonoBehaviour
             moveDirection = 15;
         }
 
-        removedItemTransform.DOMove(new Vector3(moveDirection, 0, 0), 0.75f).SetRelative().OnComplete(() => Destroy(removedObjectCollider));
+        removedItemTransform.DOMove(new Vector3(moveDirection, 0, 0), 0.75f).SetRelative().OnComplete(() => Destroy(removedObject));
     }
 
     //void OnWinGame(int score) {

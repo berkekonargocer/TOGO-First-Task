@@ -27,17 +27,20 @@ public class FinishLine : MonoBehaviour
         {
             if (inventory.Items.Count > 0)
             {
-                for (int i = 0; i < winGameParticleFX.Length; i++)
-                {
-                    winGameParticleFX[i].Play();
-                }
-
-                GameManager.Instance.WinGame();
-                return;
+                WinResponse();
             }
 
             GameManager.Instance.LoseGame();
         }
+    }
+
+    void WinResponse() {
+        for (int i = 0; i < winGameParticleFX.Length; i++)
+        {
+            winGameParticleFX[i].Play();
+        }
+
+        GameManager.Instance.WinGame();
     }
 
     void StackCollectables(ICollectable collectable) {

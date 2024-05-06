@@ -25,6 +25,10 @@ public class FinishLine : MonoBehaviour
     void OnTriggerExitICollectable(Collider other) {
         if (other.TryGetComponent(out ICollectable collectable))
         {
+            GameObject inventoryParent = collectable.transform.parent.gameObject;
+            GameObject playerParent = inventoryParent.transform.parent.gameObject;
+            Inventory inventory = playerParent.GetComponentInChildren<Inventory>();
+            Debug.Log($"{inventory.Items.Count}");
             Destroy(collectable.transform.gameObject);
         }
     }
@@ -35,6 +39,7 @@ public class FinishLine : MonoBehaviour
             if (inventory.Items.Count > 0)
             {
                 WinResponse();
+                return;
             }
 
             GameManager.Instance.LoseGame();

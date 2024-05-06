@@ -1,3 +1,4 @@
+using Cysharp.Threading.Tasks;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -7,12 +8,16 @@ public class FinishLine : MonoBehaviour
 {
     [SerializeField] ParticleSystem[] winGameParticleFX;
 
-    [SerializeField] Transform[] collectableStackPoints = new Transform[2];
+    [SerializeField] Transform[] pointDestinations;
 
-    [SerializeField] float itemStackOffset;
+    //[SerializeField] Transform[] collectableStackPoints = new Transform[2];
 
-    Stack<Transform> stackedSphereCollectableTransforms = new Stack<Transform>();
-    Stack<Transform> stackedCubeCollectableTransforms = new Stack<Transform>();
+    //[SerializeField] float itemStackOffset;
+
+    //Stack<Transform> stackedSphereCollectableTransforms = new Stack<Transform>();
+    //Stack<Transform> stackedCubeCollectableTransforms = new Stack<Transform>();
+
+    Transform _playerTransform;
 
 
     void OnTriggerExit(Collider other) {
@@ -25,20 +30,20 @@ public class FinishLine : MonoBehaviour
     void OnTriggerExitICollectable(Collider other) {
         if (other.TryGetComponent(out ICollectable collectable))
         {
-            GameObject inventoryParent = collectable.transform.parent.gameObject;
-            GameObject playerParent = inventoryParent.transform.parent.gameObject;
-            Inventory inventory = playerParent.GetComponentInChildren<Inventory>();
-            Debug.Log($"{inventory.Items.Count}");
-            Destroy(collectable.transform.gameObject);
+            collectable.transform.gameObject.SetActive(false);
         }
     }
 
     void OnTriggerExitPlayer(Collider other) {
         if (other.TryGetComponent(out Inventory inventory))
         {
-            if (inventory.Items.Count > 0)
+            _playerTransform = inventory.transform;
+
+            int inventoryItemCount = inventory.Items.Count;
+
+            if (inventoryItemCount > 0)
             {
-                WinResponse();
+                WinResponse(inventoryItemCount).Forget();
                 return;
             }
 
@@ -46,53 +51,60 @@ public class FinishLine : MonoBehaviour
         }
     }
 
-    void WinResponse() {
+    async UniTaskVoid WinResponse(int inventoryItemCount) {
+        Vector3 targetDestination = pointDestinations[inventoryItemCount - 1].transform.position;
+        float targetDestinationZ = targetDestination.z;
+
+        await UniTask.WaitUntil(() => targetDestinationZ - _playerTransform.position.z < 0.01f);
+
         for (int i = 0; i < winGameParticleFX.Length; i++)
         {
+            Vector3 particleDestination = new Vector3(winGameParticleFX[i].transform.position.x, winGameParticleFX[i].transform.position.y, targetDestinationZ);
+            winGameParticleFX[i].transform.position = particleDestination;
             winGameParticleFX[i].Play();
         }
 
         GameManager.Instance.WinGame();
     }
 
-    void StackCollectables(ICollectable collectable) {
-        Transform collectableTransform = collectable.transform;
+    //void StackCollectables(ICollectable collectable) {
+    //    Transform collectableTransform = collectable.transform;
 
-        Destroy(collectable.GetFollowWithOffset);
-        Destroy(collectable.GetSmoothFollow);
+    //    Destroy(collectable.GetFollowWithOffset);
+    //    Destroy(collectable.GetSmoothFollow);
 
-        if (collectable.Type.Point == 10)
-        {
-            collectableTransform.SetParent(collectableStackPoints[0]);
+    //    if (collectable.Type.Point == 10)
+    //    {
+    //        collectableTransform.SetParent(collectableStackPoints[0]);
 
-            if (stackedSphereCollectableTransforms.Count == 0)
-            {
-                collectableTransform.localPosition = Vector3.zero;
-            }
-            else
-            {
-                Transform lastCollectableTransform = stackedSphereCollectableTransforms.Peek();
-                collectableTransform.localPosition = new Vector3(0, lastCollectableTransform.localPosition.y + lastCollectableTransform.localScale.y + itemStackOffset, 0);
-            }
+    //        if (stackedSphereCollectableTransforms.Count == 0)
+    //        {
+    //            collectableTransform.localPosition = Vector3.zero;
+    //        }
+    //        else
+    //        {
+    //            Transform lastCollectableTransform = stackedSphereCollectableTransforms.Peek();
+    //            collectableTransform.localPosition = new Vector3(0, lastCollectableTransform.localPosition.y + lastCollectableTransform.localScale.y + itemStackOffset, 0);
+    //        }
 
-            stackedSphereCollectableTransforms.Push(collectableTransform);
+    //        stackedSphereCollectableTransforms.Push(collectableTransform);
 
-            return;
-        }
+    //        return;
+    //    }
 
-        collectableTransform.SetParent(collectableStackPoints[1]);
+    //    collectableTransform.SetParent(collectableStackPoints[1]);
 
-        if (stackedCubeCollectableTransforms.Count == 0)
-        {
-            collectableTransform.localPosition = Vector3.zero;
-        }
-        else
-        {
-            Transform lastCollectableTransform = stackedCubeCollectableTransforms.Peek();
-            collectableTransform.localPosition = new Vector3(0, lastCollectableTransform.localPosition.y + lastCollectableTransform.localScale.y + itemStackOffset, 0);
-            collectableTransform.localRotation = Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0));
-        }
+    //    if (stackedCubeCollectableTransforms.Count == 0)
+    //    {
+    //        collectableTransform.localPosition = Vector3.zero;
+    //    }
+    //    else
+    //    {
+    //        Transform lastCollectableTransform = stackedCubeCollectableTransforms.Peek();
+    //        collectableTransform.localPosition = new Vector3(0, lastCollectableTransform.localPosition.y + lastCollectableTransform.localScale.y + itemStackOffset, 0);
+    //        collectableTransform.localRotation = Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0));
+    //    }
 
-        stackedCubeCollectableTransforms.Push(collectableTransform);
-    }
+    //    stackedCubeCollectableTransforms.Push(collectableTransform);
+    //}
 }

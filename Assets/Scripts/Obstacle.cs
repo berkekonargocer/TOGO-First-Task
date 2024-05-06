@@ -27,7 +27,7 @@ public class Obstacle : MonoBehaviour, ITrigger
         if (GameManager.Instance.PlayerInventory.Items.Count == 0)
         {
             GameManager.Instance.LoseGame();
-            Destroy(gameObject);
+            //Destroy(gameObject);
             return;
         }
 

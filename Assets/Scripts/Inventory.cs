@@ -127,6 +127,9 @@ public class Inventory : MonoBehaviour
 
         foreach (ICollectable collectable in tempList)
         {
+            if (collectable == null)
+                continue;
+
             float initialScale = collectable.transform.localScale.x;
             collectable.transform.DOScale(0.15f, 0.15f).SetRelative().OnComplete(() => collectable.transform.DOScale(initialScale, 0.15f));
             yield return waitTime;

@@ -1,4 +1,3 @@
-using NOJUMPO;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -16,13 +15,21 @@ public class FinishLine : MonoBehaviour
     Stack<Transform> stackedCubeCollectableTransforms = new Stack<Transform>();
 
 
-
     void OnTriggerExit(Collider other) {
+        OnTriggerExitICollectable(other);
+
+        OnTriggerExitPlayer(other);
+    }
+
+
+    void OnTriggerExitICollectable(Collider other) {
         if (other.TryGetComponent(out ICollectable collectable))
         {
             Destroy(collectable.transform.gameObject);
         }
+    }
 
+    void OnTriggerExitPlayer(Collider other) {
         if (other.TryGetComponent(out Inventory inventory))
         {
             if (inventory.Items.Count > 0)

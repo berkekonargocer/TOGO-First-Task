@@ -11,7 +11,7 @@ public class Obstacle : MonoBehaviour, ITrigger
 
     [SerializeField] UnityEvent onTriggered;
 
-    int _destroyCount;
+    //int _destroyCount;
 
     ParticleSpawner _particleSpawner;
 
@@ -27,7 +27,7 @@ public class Obstacle : MonoBehaviour, ITrigger
 
         onTriggered?.Invoke();
         GameManager.Instance.LoseGame();
-        //Destroy(gameObject);
+        Destroy(gameObject);
 
 
         //_destroyCount++;

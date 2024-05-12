@@ -27,37 +27,37 @@ public class Inventory : MonoBehaviour
 
 
     public void AddItem(ICollectable collectable) {
-        Transform collectableTransform = collectable.transform;
+        //Transform collectableTransform = collectable.transform;
 
-        Collider collectableCollider = collectable.GetCollider;
-        collectableCollider.enabled = false;
+        //Collider collectableCollider = collectable.GetCollider;
+        //collectableCollider.enabled = false;
 
-        collectableTransform.SetParent(ItemCarryPosition);
-        collectableTransform.localPosition = Vector3.zero;
-        collectableTransform.localRotation = Quaternion.Euler(Vector3.zero);
+        //collectableTransform.SetParent(ItemCarryPosition);
+        //collectableTransform.localPosition = Vector3.zero;
+        //collectableTransform.localRotation = Quaternion.Euler(Vector3.zero);
 
-        FollowWithOffset fwOffset = collectable.GetFollowWithOffset;
-        SmoothFollow smoothFollow = collectable.GetSmoothFollow;
+        //FollowWithOffset fwOffset = collectable.GetFollowWithOffset;
+        //SmoothFollow smoothFollow = collectable.GetSmoothFollow;
 
-        if (Items.Count == 0)
-        {
-            fwOffset.Setup(ItemCarryPosition, Vector3.zero, FollowDirection.Z);
-            smoothFollow.Setup(transform, Vector3.zero, FollowDirection.X, 16);
-        }
-        else
-        {
-            Transform lastItemTransform = Items.Peek().transform;
-            fwOffset.Setup(lastItemTransform, new Vector3(0, 0, lastItemTransform.localScale.z + itemStackOffset), FollowDirection.Z);
-            smoothFollow.Setup(lastItemTransform, Vector3.zero, FollowDirection.X, 16);
-        }
+        //if (Items.Count == 0)
+        //{
+        //    fwOffset.Setup(ItemCarryPosition, Vector3.zero, FollowDirection.Z);
+        //    smoothFollow.Setup(transform, Vector3.zero, FollowDirection.X, 16);
+        //}
+        //else
+        //{
+        //    Transform lastItemTransform = Items.Peek().transform;
+        //    fwOffset.Setup(lastItemTransform, new Vector3(0, 0, lastItemTransform.localScale.z + itemStackOffset), FollowDirection.Z);
+        //    smoothFollow.Setup(lastItemTransform, Vector3.zero, FollowDirection.X, 16);
+        //}
 
         Items.Push(collectable);
 
         OnItemAmountChange?.Invoke(Items.Count);
 
-        ItemAddAnimation();
+        //ItemAddAnimation();
 
-        collectableCollider.enabled = true;
+        //collectableCollider.enabled = true;
     }
 
     public void RemoveItem() {

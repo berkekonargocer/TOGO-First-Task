@@ -6,7 +6,7 @@ using NOJUMPO;
 public class GameOverUI : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI gameOverText;
-    [SerializeField] CountingFloat score;
+    [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] Transform gameOverPanel;
 
     [SerializeField] GameObject scoreHUDGameObj;
@@ -16,17 +16,19 @@ public class GameOverUI : MonoBehaviour
 
     void OnEnable() {
         gameOverPanel.gameObject.SetActive(false);
+        ScoreManager.Instance.OnScoreChanged += UpdateScore;
         GameManager.Instance.OnWinGame += DisplayWinGamePanel;
         GameManager.Instance.OnLoseGame += DisplayLoseGamePanel;
     }
 
     void OnDisable() {
+        ScoreManager.Instance.OnScoreChanged -= UpdateScore;
         GameManager.Instance.OnWinGame -= DisplayWinGamePanel;
         GameManager.Instance.OnLoseGame -= DisplayLoseGamePanel;
     }
 
     void UpdateScore(int score) {
-        this.score.Value = score;
+        scoreText.text = $"<color=\"green\"> {score} </color>";
     }
 
     void DisplayWinGamePanel(int score) {
@@ -44,7 +46,7 @@ public class GameOverUI : MonoBehaviour
         gameOverPanel.gameObject.SetActive(true);
 
         gameOverPanel.DOMoveY(600, showPanelAnimationDuration)
-                         .SetUpdate(true)
-                         .OnComplete(() => UpdateScore(score));
+                         .SetUpdate(true);
+                         //.OnComplete(() => UpdateScore(score));
     }
 }

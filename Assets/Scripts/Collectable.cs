@@ -38,6 +38,7 @@ public class Collectable : MonoBehaviour, ICollectable
         inventory.AddItem(this);
         ScoreManager.Instance.IncrementScore(Type.Point);
         AudioManager.Instance.PlaySFX(collectSFX);
+        Destroy(gameObject);
     }
 
     public void SetType(CollectableType type) {

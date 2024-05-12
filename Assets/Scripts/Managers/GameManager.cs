@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public event Action OnStartGame;
     public event Action<int> OnLoseGame;
     public event Action<int> OnWinGame;
+    bool isGameOver = false;
 
 
     void Awake() {
@@ -26,7 +27,7 @@ public class GameManager : MonoBehaviour
     void OnEnable() {
         if (_playerInventory == null)
         {
-            _playerInventory = GameObject.FindWithTag("Player").GetComponent<Inventory>(); 
+            _playerInventory = GameObject.FindWithTag("Player").GetComponent<Inventory>();
         }
     }
 
@@ -43,6 +44,10 @@ public class GameManager : MonoBehaviour
     }
 
     public void LoseGame() {
+        if (isGameOver)
+            return;
+
+        isGameOver = true;
         OnLoseGame?.Invoke(ScoreManager.Instance.Score);
         AudioManager.Instance.StopMusic();
         AudioManager.Instance.PlaySFX(LoseGameSFX);

@@ -7,7 +7,7 @@ namespace NOJUMPO
     {
         // -------------------------------- FIELDS ---------------------------------
         [SerializeField] GameObject leftCharacter, rightCharacter, middleCharacter;
-        [SerializeField] float moveSensitivity = 0.25f;
+        [SerializeField] float moveSensitivity = 0.35f;
 
         [SerializeField] Animator leftCharacterAnimator, rightCharacterAnimator, middleCharacterAnimator;
         PlayerInput _playerInput;
@@ -60,7 +60,7 @@ namespace NOJUMPO
         void TryMerge() {
             float distance = Vector3.Distance(leftCharacter.transform.position, rightCharacter.transform.position);
 
-            if (distance <= 0.5f && !_isMerged)
+            if (distance <= 1f && !_isMerged)
             {
                 middleCharacter.SetActive(true);
                 SetParameters(middleCharacterAnimator, leftCharacterAnimator);
@@ -68,7 +68,7 @@ namespace NOJUMPO
                 rightCharacter.SetActive(false);
                 _isMerged = true;
             }
-            else if (distance > 0.5f && _isMerged)
+            else if (distance > 1f && _isMerged)
             {
                 leftCharacter.SetActive(true);
                 rightCharacter.SetActive(true);

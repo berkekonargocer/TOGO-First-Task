@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class Obstacle : MonoBehaviour, ITrigger
 {
     [SerializeField] ParticleSystem obstacleHitParticleFX;
-    [SerializeField] TextMeshPro destroyCountText;
+    //[SerializeField] TextMeshPro destroyCountText;
 
     [SerializeField] UnityEvent onTriggered;
 
@@ -24,15 +24,13 @@ public class Obstacle : MonoBehaviour, ITrigger
     public void Trigger() {
         _particleSpawner.SpawnParticle(obstacleHitParticleFX);
 
-        if (GameManager.Instance.PlayerInventory.Items.Count == 0)
-        {
-            GameManager.Instance.LoseGame();
-            //Destroy(gameObject);
-            return;
-        }
 
         onTriggered?.Invoke();
-        _destroyCount++;
-        destroyCountText.SetText(_destroyCount.ToString());
+        GameManager.Instance.LoseGame();
+        //Destroy(gameObject);
+
+
+        //_destroyCount++;
+        //destroyCountText.SetText(_destroyCount.ToString());
     }
 }

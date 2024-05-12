@@ -9,8 +9,8 @@ public class PlayerAnimator : MonoBehaviour
     void OnEnable() {
         //GameManager.Instance.PlayerInventory.OnItemAmountChange += SetItemAmountParameter;
 
-        GroundedCheck groundedCheck = GetComponent<GroundedCheck>();
-        groundedCheck.OnGrounded += StopJumpAnimation;
+        //GroundedCheck groundedCheck = GetComponent<GroundedCheck>();
+        //groundedCheck.OnGrounded += StopJumpAnimation;
 
         GameManager.Instance.OnWinGame += PlayWinGameAnimation;
         GameManager.Instance.OnLoseGame += PlayLoseGameAnimation;
@@ -20,8 +20,8 @@ public class PlayerAnimator : MonoBehaviour
     void OnDisable() {
         //GameManager.Instance.PlayerInventory.OnItemAmountChange -= SetItemAmountParameter;
 
-        GroundedCheck groundedCheck = GetComponent<GroundedCheck>();
-        groundedCheck.OnGrounded -= StopJumpAnimation;
+        //GroundedCheck groundedCheck = GetComponent<GroundedCheck>();
+        //groundedCheck.OnGrounded -= StopJumpAnimation;
 
         GameManager.Instance.OnWinGame -= PlayWinGameAnimation;
         GameManager.Instance.OnLoseGame -= PlayLoseGameAnimation;

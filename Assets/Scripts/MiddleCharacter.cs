@@ -9,21 +9,6 @@ namespace NOJUMPO
 
 
         // ------------------------- UNITY BUILT-IN METHODS ------------------------
-        void Awake() {
-        }
-
-        void OnEnable() {
-        }
-
-        void OnDisable() {
-        }
-
-        void Start() {
-        }
-
-        void Update() {
-        }
-
         void OnTriggerEnter(Collider other) {
             if (other.gameObject.CompareTag("Trigger"))
             {

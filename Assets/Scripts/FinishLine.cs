@@ -35,19 +35,20 @@ public class FinishLine : MonoBehaviour
     }
 
     void OnTriggerExitPlayer(Collider other) {
-        if (other.TryGetComponent(out Inventory inventory))
+        if (other.CompareTag("Player"))
         {
-            _playerTransform = inventory.transform;
+            WinResponse();
+            //_playerTransform = inventory.transform;
 
-            int inventoryItemCount = inventory.Items.Count;
+            //int inventoryItemCount = inventory.Items.Count;
 
-            if (inventoryItemCount > 0)
-            {
-                WinResponse();
-                return;
-            }
+            //if (inventoryItemCount > 0)
+            //{
+            //    WinResponse();
+            //    return;
+            //}
 
-            GameManager.Instance.LoseGame();
+            //GameManager.Instance.LoseGame();
         }
     }
 

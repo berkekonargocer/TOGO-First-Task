@@ -27,6 +27,36 @@ public class Collectable : MonoBehaviour, ICollectable
         _floatAnimation = GetComponent<FloatAnimation>();
     }
 
+    void OnTriggerEnter(Collider other) {
+        switch (other.tag)
+        {
+            case "Collectable":
+                ICollectable collectable = other.gameObject.GetComponent<ICollectable>();
+                collectable?.Collect(GameManager.Instance.PlayerInventory);
+                break;
+            case "Trigger":
+                ITrigger triggerable = other.gameObject.GetComponent<ITrigger>();
+                triggerable?.Trigger();
+                break;
+            case "CollectableTrigger":
+                ICollectableTrigger collectableTrigger = other.gameObject.GetComponent<ICollectableTrigger>();
+                collectableTrigger?.Trigger(this);
+                break;
+        }
+    }
+
+    void OnDestroy() {
+        _meshFilter = null;
+        _transformVFX = null;
+        _floatAnimation = null;
+        collectSFX = null;
+        onCollected = null;
+        Type = null;
+        GetCollider = null;
+        GetFollowWithOffset = null;
+        GetSmoothFollow = null;
+    }
+
 
     public void Collect(Inventory inventory) {
         Destroy(_floatAnimation);
@@ -48,23 +78,5 @@ public class Collectable : MonoBehaviour, ICollectable
         ScoreManager.Instance.IncrementScore(type.Point);
         Type = type;
         Type.ApplyTransformation(_meshFilter);
-    }
-
-    void OnTriggerEnter(Collider other) {
-        switch (other.tag)
-        {
-            case "Collectable":
-                ICollectable collectable = other.gameObject.GetComponent<ICollectable>();
-                collectable?.Collect(GameManager.Instance.PlayerInventory);
-                break;
-            case "Trigger":
-                ITrigger triggerable = other.gameObject.GetComponent<ITrigger>();
-                triggerable?.Trigger();
-                break;
-            case "CollectableTrigger":
-                ICollectableTrigger collectableTrigger = other.gameObject.GetComponent<ICollectableTrigger>();
-                collectableTrigger?.Trigger(this);
-                break;
-        }
     }
 }

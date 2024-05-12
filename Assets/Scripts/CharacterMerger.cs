@@ -7,7 +7,7 @@ namespace NOJUMPO
     {
         // -------------------------------- FIELDS ---------------------------------
         [SerializeField] GameObject leftCharacter, rightCharacter, middleCharacter;
-        [SerializeField] float moveSensitivity;
+        [SerializeField] float moveSensitivity = 0.25f;
 
         [SerializeField] Animator leftCharacterAnimator, rightCharacterAnimator, middleCharacterAnimator;
         PlayerInput _playerInput;
@@ -20,15 +20,19 @@ namespace NOJUMPO
             _playerInput = GetComponent<PlayerInput>();
         }
 
+        void OnEnable() {
+            GameManager.Instance.OnStartGame += ActivateInput;
+            _playerInput.enabled = false;
+        }
+
+        void OnDisable() {
+            GameManager.Instance.OnStartGame -= ActivateInput;
+        }
+
         void Update() {
             ApplyMovement();
             TryMerge();
         }
-
-        // ------------------------- CUSTOM PUBLIC METHODS -------------------------
-
-
-        // ------------------------ CUSTOM PROTECTED METHODS -----------------------
 
 
         // ------------------------- CUSTOM PRIVATE METHODS ------------------------
@@ -75,6 +79,10 @@ namespace NOJUMPO
             animator1.SetBool("isMoving", animator2.GetBool("isMoving"));
             animator1.SetBool("hasWon", animator2.GetBool("hasWon"));
             animator1.SetBool("hasLost", animator2.GetBool("hasLost"));
+        }
+
+        void ActivateInput() {
+            _playerInput.enabled = true;
         }
     }
 }

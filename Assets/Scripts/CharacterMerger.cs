@@ -12,7 +12,7 @@ namespace NOJUMPO
         [SerializeField] Animator leftCharacterAnimator, rightCharacterAnimator, middleCharacterAnimator;
         PlayerInput _playerInput;
         Vector2 _moveDirection;
-        const float MAX_X_POSITION = 4.85f;
+        const float MAX_X_POSITION = 3.25f;
         bool _isMerged = false;
 
         // ------------------------- UNITY BUILT-IN METHODS ------------------------

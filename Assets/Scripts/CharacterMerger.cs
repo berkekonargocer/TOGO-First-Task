@@ -21,12 +21,16 @@ namespace NOJUMPO
         }
 
         void OnEnable() {
-            GameManager.Instance.OnStartGame += ActivateInput;
+            GameManager.Instance.OnStartGame += EnableInput;
+            GameManager.Instance.OnLoseGame += DisableInput;
+            GameManager.Instance.OnWinGame += DisableInput;
             _playerInput.enabled = false;
         }
 
         void OnDisable() {
-            GameManager.Instance.OnStartGame -= ActivateInput;
+            GameManager.Instance.OnStartGame -= EnableInput;
+            GameManager.Instance.OnLoseGame -= DisableInput;
+            GameManager.Instance.OnWinGame -= DisableInput;
         }
 
         void Update() {
@@ -81,8 +85,12 @@ namespace NOJUMPO
             animator1.SetBool("hasLost", animator2.GetBool("hasLost"));
         }
 
-        void ActivateInput() {
+        void EnableInput() {
             _playerInput.enabled = true;
+        }
+
+        void DisableInput(int score) {
+            _playerInput.enabled = false;   
         }
     }
 }

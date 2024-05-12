@@ -8,7 +8,7 @@ public class FinishLine : MonoBehaviour
 {
     [SerializeField] ParticleSystem[] winGameParticleFX;
 
-    [SerializeField] Transform[] pointDestinations;
+    //[SerializeField] Transform[] pointDestinations;
 
     //[SerializeField] Transform[] collectableStackPoints = new Transform[2];
 
@@ -43,7 +43,7 @@ public class FinishLine : MonoBehaviour
 
             if (inventoryItemCount > 0)
             {
-                WinResponse(inventoryItemCount).Forget();
+                WinResponse();
                 return;
             }
 
@@ -51,16 +51,16 @@ public class FinishLine : MonoBehaviour
         }
     }
 
-    async UniTaskVoid WinResponse(int inventoryItemCount) {
-        Vector3 targetDestination = pointDestinations[inventoryItemCount - 1].transform.position;
-        float targetDestinationZ = targetDestination.z;
+    void WinResponse() {
+        //Vector3 targetDestination = pointDestinations[inventoryItemCount - 1].transform.position;
+        //float targetDestinationZ = targetDestination.z;
 
-        await UniTask.WaitUntil(() => targetDestinationZ - _playerTransform.position.z < 0.01f);
+        //await UniTask.WaitUntil(() => targetDestinationZ - _playerTransform.position.z < 0.01f);
 
         for (int i = 0; i < winGameParticleFX.Length; i++)
         {
-            Vector3 particleDestination = new Vector3(winGameParticleFX[i].transform.position.x, winGameParticleFX[i].transform.position.y, targetDestinationZ);
-            winGameParticleFX[i].transform.position = particleDestination;
+            //Vector3 particleDestination = new Vector3(winGameParticleFX[i].transform.position.x, winGameParticleFX[i].transform.position.y, targetDestinationZ);
+            //winGameParticleFX[i].transform.position = particleDestination;
             winGameParticleFX[i].Play();
         }
 

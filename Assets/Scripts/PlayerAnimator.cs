@@ -67,4 +67,10 @@ public class PlayerAnimator : MonoBehaviour
         transform.LookAt(lookRotation);
         _playerAnimator?.SetBool("hasLost", true);
     }
+
+    public void SetParameters(Animator animator) {
+        animator.SetBool("isMoving", _playerAnimator.GetBool("isMoving"));
+        animator.SetBool("hasWon", _playerAnimator.GetBool("hasWon"));
+        animator.SetBool("hasLost", _playerAnimator.GetBool("hasLost"));
+    }
 }

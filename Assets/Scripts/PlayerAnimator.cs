@@ -7,7 +7,7 @@ public class PlayerAnimator : MonoBehaviour
 
 
     void OnEnable() {
-        GameManager.Instance.PlayerInventory.OnItemAmountChange += SetItemAmountParameter;
+        //GameManager.Instance.PlayerInventory.OnItemAmountChange += SetItemAmountParameter;
 
         GroundedCheck groundedCheck = GetComponent<GroundedCheck>();
         groundedCheck.OnGrounded += StopJumpAnimation;
@@ -18,7 +18,7 @@ public class PlayerAnimator : MonoBehaviour
     }
 
     void OnDisable() {
-        GameManager.Instance.PlayerInventory.OnItemAmountChange -= SetItemAmountParameter;
+        //GameManager.Instance.PlayerInventory.OnItemAmountChange -= SetItemAmountParameter;
 
         GroundedCheck groundedCheck = GetComponent<GroundedCheck>();
         groundedCheck.OnGrounded -= StopJumpAnimation;
@@ -34,7 +34,7 @@ public class PlayerAnimator : MonoBehaviour
 
 
     public void PlayPointCollectAnimation() {
-        _playerAnimator.SetTrigger("pointCollected");
+        _playerAnimator?.SetTrigger("pointCollected");
     }
 
     public void PlayJumpAnimation() {
@@ -50,7 +50,7 @@ public class PlayerAnimator : MonoBehaviour
     }
 
     void PlayMovingAnimation() {
-        _playerAnimator.SetBool("isMoving", true);
+        _playerAnimator?.SetBool("isMoving", true);
     }
 
     void PlayWinGameAnimation(int score) {
@@ -58,13 +58,13 @@ public class PlayerAnimator : MonoBehaviour
         Vector3 lookRotation = new Vector3(Camera.main.transform.position.x, transform.position.y, Camera.main.transform.position.z);
         transform.LookAt(lookRotation);
         
-        _playerAnimator.SetBool("hasWon", true);
+        _playerAnimator?.SetBool("hasWon", true);
     }
 
     void PlayLoseGameAnimation(int score) {
         SetItemAmountParameter(0);
         Vector3 lookRotation = new Vector3(Camera.main.transform.position.x, transform.position.y, Camera.main.transform.position.z);
         transform.LookAt(lookRotation);
-        _playerAnimator.SetBool("hasLost", true);
+        _playerAnimator?.SetBool("hasLost", true);
     }
 }
